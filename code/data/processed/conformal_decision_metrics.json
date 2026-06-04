@@ -1,0 +1,329 @@
+{
+  "interpretation": "Set size 1 is a decisive singleton prediction; set size 2 is an abstention-like ambiguous prediction set. Empty sets are reported if they occur.",
+  "datasets": {
+    "SPT_Cetin2018": {
+      "n": 208,
+      "n_groups": 27,
+      "alpha": {
+        "0.05": {
+          "target_coverage": 0.95,
+          "plain": {
+            "coverage": 0.960720540405304,
+            "mean_set_size": 1.7280460345258943,
+            "singleton_rate": 0.27195396547410555,
+            "two_label_rate": 0.7280460345258944,
+            "empty_rate": 0.0,
+            "n_predictions": 3997
+          },
+          "mechanism_band": {
+            "coverage": 0.9372029021766325,
+            "mean_set_size": 1.6705028771578685,
+            "singleton_rate": 0.3184888666499875,
+            "two_label_rate": 0.6760070052539404,
+            "empty_rate": 0.0055041280960720545,
+            "n_predictions": 3997
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.8853932584269663,
+              "mean_set_size": 1.5359550561797752,
+              "singleton_rate": 0.41460674157303373,
+              "two_label_rate": 0.5606741573033708,
+              "empty_rate": 0.024719101123595506,
+              "n_predictions": 890
+            },
+            "1": {
+              "coverage": 0.9525660964230172,
+              "mean_set_size": 1.884914463452566,
+              "singleton_rate": 0.1150855365474339,
+              "two_label_rate": 0.8849144634525661,
+              "empty_rate": 0.0,
+              "n_predictions": 1286
+            },
+            "2": {
+              "coverage": 0.9516749038989566,
+              "mean_set_size": 1.584843492586491,
+              "singleton_rate": 0.41515650741350907,
+              "two_label_rate": 0.5848434925864909,
+              "empty_rate": 0.0,
+              "n_predictions": 1821
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 362,
+            "mean": 0.9214647461194423,
+            "p10": 0.6666666666666666,
+            "min": 0.3333333333333333,
+            "frac_below_target": 0.3314917127071823
+          }
+        },
+        "0.10": {
+          "target_coverage": 0.9,
+          "plain": {
+            "coverage": 0.9282214600685939,
+            "mean_set_size": 1.5560999510044096,
+            "singleton_rate": 0.4439000489955904,
+            "two_label_rate": 0.5560999510044096,
+            "empty_rate": 0.0,
+            "n_predictions": 4082
+          },
+          "mechanism_band": {
+            "coverage": 0.9230769230769231,
+            "mean_set_size": 1.5607545320921117,
+            "singleton_rate": 0.43140617344439003,
+            "two_label_rate": 0.5646741793238609,
+            "empty_rate": 0.0039196472317491425,
+            "n_predictions": 4082
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.9325323475046211,
+              "mean_set_size": 1.61275415896488,
+              "singleton_rate": 0.38724584103512016,
+              "two_label_rate": 0.6127541589648798,
+              "empty_rate": 0.0,
+              "n_predictions": 1082
+            },
+            "1": {
+              "coverage": 0.9312344656172328,
+              "mean_set_size": 1.8541839270919636,
+              "singleton_rate": 0.14581607290803644,
+              "two_label_rate": 0.8541839270919636,
+              "empty_rate": 0.0,
+              "n_predictions": 1207
+            },
+            "2": {
+              "coverage": 0.9118795315114333,
+              "mean_set_size": 1.3318460680423871,
+              "singleton_rate": 0.6503067484662577,
+              "two_label_rate": 0.34076965978806467,
+              "empty_rate": 0.008923591745677636,
+              "n_predictions": 1793
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 349,
+            "mean": 0.9195695183517533,
+            "p10": 0.6666666666666666,
+            "min": 0.35714285714285715,
+            "frac_below_target": 0.2664756446991404
+          }
+        },
+        "0.20": {
+          "target_coverage": 0.8,
+          "plain": {
+            "coverage": 0.8296413502109705,
+            "mean_set_size": 1.3011603375527425,
+            "singleton_rate": 0.6935654008438819,
+            "two_label_rate": 0.3037974683544304,
+            "empty_rate": 0.0026371308016877636,
+            "n_predictions": 3792
+          },
+          "mechanism_band": {
+            "coverage": 0.8438818565400844,
+            "mean_set_size": 1.34915611814346,
+            "singleton_rate": 0.6070675105485233,
+            "two_label_rate": 0.37104430379746833,
+            "empty_rate": 0.02188818565400844,
+            "n_predictions": 3792
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.8588351431391905,
+              "mean_set_size": 1.3632773938795657,
+              "singleton_rate": 0.6110562685093781,
+              "two_label_rate": 0.3761105626850938,
+              "empty_rate": 0.012833168805528134,
+              "n_predictions": 1013
+            },
+            "1": {
+              "coverage": 0.8791704238052299,
+              "mean_set_size": 1.7204688908926962,
+              "singleton_rate": 0.26690712353471596,
+              "two_label_rate": 0.7267808836789901,
+              "empty_rate": 0.0063119927862939585,
+              "n_predictions": 1109
+            },
+            "2": {
+              "coverage": 0.811377245508982,
+              "mean_set_size": 1.0940119760479041,
+              "singleton_rate": 0.8305389221556886,
+              "two_label_rate": 0.1317365269461078,
+              "empty_rate": 0.03772455089820359,
+              "n_predictions": 1670
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 352,
+            "mean": 0.8230282738095237,
+            "p10": 0.5742857142857143,
+            "min": 0.0,
+            "frac_below_target": 0.375
+          }
+        }
+      }
+    },
+    "CPT_Geyin2021": {
+      "n": 275,
+      "n_groups": 21,
+      "alpha": {
+        "0.05": {
+          "target_coverage": 0.95,
+          "plain": {
+            "coverage": 0.9557386472504311,
+            "mean_set_size": 1.8578271699559303,
+            "singleton_rate": 0.14217283004406975,
+            "two_label_rate": 0.8578271699559302,
+            "empty_rate": 0.0,
+            "n_predictions": 5219
+          },
+          "mechanism_band": {
+            "coverage": 0.9404100402375934,
+            "mean_set_size": 1.8342594366736922,
+            "singleton_rate": 0.15960912052117263,
+            "two_label_rate": 0.8373251580762598,
+            "empty_rate": 0.003065721402567542,
+            "n_predictions": 5219
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.8949958982772764,
+              "mean_set_size": 1.7202625102543068,
+              "singleton_rate": 0.2649712879409352,
+              "two_label_rate": 0.7276456111566858,
+              "empty_rate": 0.007383100902378999,
+              "n_predictions": 1219
+            },
+            "1": {
+              "coverage": 0.949438202247191,
+              "mean_set_size": 1.882825040128411,
+              "singleton_rate": 0.11717495987158909,
+              "two_label_rate": 0.8828250401284109,
+              "empty_rate": 0.0,
+              "n_predictions": 1246
+            },
+            "2": {
+              "coverage": 0.9564270152505446,
+              "mean_set_size": 1.8627450980392157,
+              "singleton_rate": 0.13217138707334786,
+              "two_label_rate": 0.8652868554829339,
+              "empty_rate": 0.002541757443718228,
+              "n_predictions": 2754
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 320,
+            "mean": 0.9245974773954033,
+            "p10": 0.7366459627329193,
+            "min": 0.2,
+            "frac_below_target": 0.35625
+          }
+        },
+        "0.10": {
+          "target_coverage": 0.9,
+          "plain": {
+            "coverage": 0.9027628274129889,
+            "mean_set_size": 1.6989594546106925,
+            "singleton_rate": 0.3010405453893075,
+            "two_label_rate": 0.6989594546106925,
+            "empty_rate": 0.0,
+            "n_predictions": 5574
+          },
+          "mechanism_band": {
+            "coverage": 0.894151417294582,
+            "mean_set_size": 1.6914244707570865,
+            "singleton_rate": 0.29709364908503766,
+            "two_label_rate": 0.6971654108360243,
+            "empty_rate": 0.0057409400789379264,
+            "n_predictions": 5574
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.9068514241724404,
+              "mean_set_size": 1.7074672825250192,
+              "singleton_rate": 0.2894534257120862,
+              "two_label_rate": 0.7090069284064665,
+              "empty_rate": 0.001539645881447267,
+              "n_predictions": 1299
+            },
+            "1": {
+              "coverage": 0.9328756674294432,
+              "mean_set_size": 1.8512585812356979,
+              "singleton_rate": 0.14874141876430205,
+              "two_label_rate": 0.851258581235698,
+              "empty_rate": 0.0,
+              "n_predictions": 1311
+            },
+            "2": {
+              "coverage": 0.8714574898785425,
+              "mean_set_size": 1.613697705802969,
+              "singleton_rate": 0.36605937921727394,
+              "two_label_rate": 0.6238191632928475,
+              "empty_rate": 0.010121457489878543,
+              "n_predictions": 2964
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 317,
+            "mean": 0.8935788709533318,
+            "p10": 0.6725490196078432,
+            "min": 0.2,
+            "frac_below_target": 0.36908517350157727
+          }
+        },
+        "0.20": {
+          "target_coverage": 0.8,
+          "plain": {
+            "coverage": 0.7922939068100359,
+            "mean_set_size": 1.403046594982079,
+            "singleton_rate": 0.5969534050179212,
+            "two_label_rate": 0.40304659498207884,
+            "empty_rate": 0.0,
+            "n_predictions": 5580
+          },
+          "mechanism_band": {
+            "coverage": 0.8093189964157707,
+            "mean_set_size": 1.4625448028673835,
+            "singleton_rate": 0.5270609318996415,
+            "two_label_rate": 0.46774193548387094,
+            "empty_rate": 0.005197132616487455,
+            "n_predictions": 5580
+          },
+          "mechanism_band_by_band": {
+            "0": {
+              "coverage": 0.7755555555555556,
+              "mean_set_size": 1.4348148148148148,
+              "singleton_rate": 0.542962962962963,
+              "two_label_rate": 0.44592592592592595,
+              "empty_rate": 0.011111111111111112,
+              "n_predictions": 1350
+            },
+            "1": {
+              "coverage": 0.8515176374077112,
+              "mean_set_size": 1.6800656275635768,
+              "singleton_rate": 0.31009023789991796,
+              "two_label_rate": 0.6849876948318294,
+              "empty_rate": 0.004922067268252666,
+              "n_predictions": 1219
+            },
+            "2": {
+              "coverage": 0.8073729657920956,
+              "mean_set_size": 1.3869146462969113,
+              "singleton_rate": 0.6077715044835603,
+              "two_label_rate": 0.38957157090667555,
+              "empty_rate": 0.002656924609764198,
+              "n_predictions": 3011
+            }
+          },
+          "per_event_mechanism_band": {
+            "n_event_evals": 315,
+            "mean": 0.7978407811318341,
+            "p10": 0.5781512605042017,
+            "min": 0.2,
+            "frac_below_target": 0.3968253968253968
+          }
+        }
+      }
+    }
+  }
+}

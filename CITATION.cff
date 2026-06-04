@@ -1,17 +1,19 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper."
-title: "Mechanistic sufficiency and reliable prediction of seismic liquefaction"
+title: "A physics-informed validation framework for reliable machine-learning liquefaction prediction"
 authors:
   - family-names: "[Family name]"
     given-names: "[Given name]"
 affiliation: "Inner Mongolia University of Technology"
 year: 2026
 version: "0.1.0-submission-prep"
-repository-code: "https://github.com/Johnsonlijian/[repository-name-to-create]"
+repository-code: "https://github.com/Johnsonlijian/geostructural-reliability-ai-p1"
 license: "MIT"
 keywords:
   - soil liquefaction
   - earthquake engineering
   - effective stress
+  - physics-informed machine learning
+  - operational non-inferiority
   - conformal prediction
   - trustworthy AI

@@ -43,6 +43,23 @@ def test_p1_conservative_audits_exist_and_keep_claim_bounded():
     assert ambiguity["SPT_Cetin2018"]["bin_count_sensitivity"][2]["n_bins"] == 10
     assert ambiguity["CPT_Geyin2021"]["bin_count_sensitivity"][2]["n_bins"] == 10
 
+    practical = load("practical_equivalence_audit.json")
+    summary = practical["summary"]
+    assert summary["SPT_Cetin2018"]["excludes_full_AUC_gain_gt_0.02"] is True
+    assert summary["SPT_Cetin2018"]["excludes_model_logloss_gain_gt_0.10"] is True
+    assert summary["SPT_Cetin2018"]["excludes_residual_variant_logloss_gain_gt_0.10"] is False
+    assert summary["CPT_Geyin2021"]["excludes_residual_variant_logloss_gain_gt_0.10"] is True
+
+
+def test_conformal_decision_metrics_make_uncertainty_operational():
+    decision = load("conformal_decision_metrics.json")
+    spt = decision["datasets"]["SPT_Cetin2018"]["alpha"]["0.10"]
+    cpt = decision["datasets"]["CPT_Geyin2021"]["alpha"]["0.10"]
+    assert round(spt["mechanism_band"]["singleton_rate"], 3) == 0.431
+    assert spt["mechanism_band_by_band"]["1"]["two_label_rate"] > 0.80
+    assert cpt["mechanism_band"]["two_label_rate"] > 0.65
+    assert cpt["mechanism_band_by_band"]["1"]["two_label_rate"] > 0.80
+
 
 def test_groundwater_residual_stratification_stays_diagnostic_not_causal():
     gw = load("groundwater_residual_stratification.json")

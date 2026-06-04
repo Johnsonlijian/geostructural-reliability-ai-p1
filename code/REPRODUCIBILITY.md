@@ -45,6 +45,8 @@ python run_sufficiency_likelihood.py
 python run_residual_sufficiency_audit.py
 python run_ambiguity_floor_sensitivity.py
 python run_groundwater_residual_stratification.py
+python run_practical_equivalence_audit.py
+python run_conformal_decision_metrics.py
 python run_sensitivity.py
 python run_cross_region.py
 
@@ -72,6 +74,8 @@ Under `data/processed/`:
 - `residual_sufficiency_audit.json`
 - `ambiguity_floor_sensitivity.json`
 - `groundwater_residual_stratification.json`
+- `practical_equivalence_audit.json`
+- `conformal_decision_metrics.json`
 - `cross_region_transfer.json`
 - `sensitivity.json`
 

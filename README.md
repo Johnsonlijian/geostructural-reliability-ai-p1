@@ -1,8 +1,8 @@
-# Mechanistic Sufficiency and Reliable Prediction of Seismic Liquefaction
+# Physics-Informed Validation for Reliable Liquefaction AI
 
 This is the public reproducibility package for the paper:
 
-**Mechanistic sufficiency and reliable prediction of seismic liquefaction**
+**A physics-informed validation framework for reliable machine-learning liquefaction prediction**
 
 The package contains code, tests, derived outputs, figure-generation scripts, figure specifications,
 and publication-figure exports. It intentionally excludes active manuscript files, cover letters,
@@ -32,10 +32,11 @@ Set-Location code
 python -m pytest tests -q
 ```
 
-Expected result at package preparation: `25 passed`.
+Expected result at package preparation: `26 passed`.
 
 ## Repository Status
 
 This is a local GitHub-ready package. Before public release, replace author placeholders in
-`CITATION.cff`, confirm the license with all co-authors, create the GitHub repository under
-`https://github.com/Johnsonlijian/`, and insert the final repository URL/DOI into the manuscript.
+`CITATION.cff`, confirm the license with all co-authors, create or activate the GitHub repository at
+`https://github.com/Johnsonlijian/geostructural-reliability-ai-p1`, and insert the final repository
+URL/DOI into the manuscript.

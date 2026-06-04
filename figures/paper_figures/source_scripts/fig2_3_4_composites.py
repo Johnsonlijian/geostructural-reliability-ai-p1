@@ -144,42 +144,35 @@ def panel_residual(ax, residual):
     ax.text(0.02, 0.92, "No CI is entirely below zero", transform=ax.transAxes, fontsize=8.5, color="#374151")
 
 
-def panel_region(ax, cross):
-    label(ax, "D", "Leave-one-region-out transfer")
-    regions = [r["region"] for r in cross["by_region"]]
-    phys = [r["physics_AUC"] for r in cross["by_region"]]
-    ml = [r["ML_trained_elsewhere_AUC"] for r in cross["by_region"]]
-    y = np.arange(len(regions))
-    for i, (p, m) in enumerate(zip(phys, ml)):
-        ax.plot([m, p], [i, i], color="#6b7280", lw=1.6)
-        ax.scatter(m, i, color=RED, edgecolor=DARK, s=44)
-        ax.scatter(p, i, color=BLUE, edgecolor=DARK, s=44)
+def panel_practical_gain(ax, practical):
+    label(ax, "D", "Practical-improvement audit bounds the claim")
+    rows = [
+        ("SPT", "AUC gain > 0.02", practical["summary"]["SPT_Cetin2018"]["excludes_full_AUC_gain_gt_0.02"]),
+        ("SPT", "full-model log-loss gain > 0.10", practical["summary"]["SPT_Cetin2018"]["excludes_model_logloss_gain_gt_0.10"]),
+        ("SPT", "residual log-loss gain > 0.10", practical["summary"]["SPT_Cetin2018"]["excludes_residual_variant_logloss_gain_gt_0.10"]),
+        ("CPT", "AUC gain > 0.02", practical["summary"]["CPT_Geyin2021"]["excludes_full_AUC_gain_gt_0.02"]),
+        ("CPT", "full-model log-loss gain > 0.10", practical["summary"]["CPT_Geyin2021"]["excludes_model_logloss_gain_gt_0.10"]),
+        ("CPT", "residual log-loss gain > 0.10", practical["summary"]["CPT_Geyin2021"]["excludes_residual_variant_logloss_gain_gt_0.10"]),
+    ]
+    y = np.arange(len(rows))
+    colors = [GREEN if r[2] else AMBER for r in rows]
+    ax.barh(y, [1] * len(rows), color=colors, edgecolor=DARK, height=0.62)
     ax.set_yticks(y)
-    ax.set_yticklabels(regions)
-    ax.set_xlim(0.78, 1.02)
-    ax.set_xlabel("held-out region AUC")
-    ax.grid(axis="x", color="#e5e7eb")
-    pooled = cross["pooled"]
-    ax.text(
-        0.56,
-        0.93,
-        "blue: mechanism\nred: ML trained elsewhere",
-        transform=ax.transAxes,
-        fontsize=8.2,
-        color="#374151",
-        ha="left",
-        va="top",
-    )
-    ax.text(
-        0.56,
-        0.77,
-        f"pooled AUC:\n{pooled['physics_pooled_AUC']:.3f} vs {pooled['ML_crossregion_pooled_AUC']:.3f}",
-        transform=ax.transAxes,
-        fontsize=8.2,
-        color="#374151",
-        ha="left",
-        va="top",
-    )
+    ax.set_yticklabels([f"{ds}: {claim}" for ds, claim, _ in rows], fontsize=7.4)
+    ax.set_xlim(0, 1)
+    ax.set_xticks([])
+    ax.invert_yaxis()
+    for yi, (_, _, passed) in enumerate(rows):
+        ax.text(
+            0.50,
+            yi,
+            "excluded" if passed else "not excluded",
+            ha="center",
+            va="center",
+            fontsize=8.4,
+            fontweight="bold",
+            color="#0f172a",
+        )
 
 
 def fig2():
@@ -188,13 +181,13 @@ def fig2():
     rel = load("reliability_upgrade.json")
     suff = load("sufficiency_likelihood.json")
     residual = load("residual_sufficiency_audit.json")
-    cross = load("cross_region_transfer.json")
+    practical = load("practical_equivalence_audit.json")
     fig, axs = plt.subplots(2, 2, figsize=(13.2, 8.7))
     panel_validation(axs[0, 0], spt_grouped, cpt, rel)
     panel_logloss(axs[0, 1], suff)
     panel_residual(axs[1, 0], residual)
-    panel_region(axs[1, 1], cross)
-    fig.suptitle("Transferable sufficiency under earthquake-grouped validation", fontsize=15, fontweight="bold", y=0.99)
+    panel_practical_gain(axs[1, 1], practical)
+    fig.suptitle("Operational non-inferiority under earthquake-grouped validation", fontsize=15, fontweight="bold", y=0.99)
     fig.tight_layout(rect=[0, 0.02, 1, 0.96])
     save(fig, "Fig2_transfer_sufficiency")
 
@@ -261,33 +254,41 @@ def panel_mondrian(ax, innov):
     ax.legend(frameon=False, fontsize=7, ncol=2, loc="lower center")
 
 
-def panel_boundary(ax, innov, ambsens):
-    label(ax, "D", "Critical band is the main residual problem")
+def panel_decision_sets(ax, decision):
+    label(ax, "D", "Prediction sets flag critical-band decisions")
     labels = ["SPT", "CPT"]
-    keys1 = ["SPT/Cetin2018", "CPT/Geyin2021"]
+    keys = ["SPT_Cetin2018", "CPT_Geyin2021"]
     x = np.arange(2)
-    frac = [innov[k]["A3_irreducible"]["frac_bayes_err_in_ambiguous_band"] for k in keys1]
-    auc = [innov[k]["A2_screening_ambiguous_band"]["ML_AUC_within_band"] for k in keys1]
-    ax.bar(x - 0.15, frac, width=0.30, color=AMBER, edgecolor=DARK, label="ambiguity in critical band")
-    ax.scatter(x + 0.20, auc, marker="D", color=RED, edgecolor=DARK, s=60, label="ML AUC within band")
-    ax.axhline(0.5, color="#6b7280", ls=":", lw=1.2)
+    w = 0.22
+    singleton = []
+    two_label = []
+    critical_two = []
+    for key in keys:
+        a = decision["datasets"][key]["alpha"]["0.10"]
+        singleton.append(a["mechanism_band"]["singleton_rate"])
+        two_label.append(a["mechanism_band"]["two_label_rate"])
+        critical_two.append(a["mechanism_band_by_band"]["1"]["two_label_rate"])
+    ax.bar(x - w, singleton, width=w, color=BLUE, edgecolor=DARK, label="singleton decision")
+    ax.bar(x, two_label, width=w, color=GRAY, edgecolor=DARK, label="two-label uncertain")
+    ax.bar(x + w, critical_two, width=w, color=AMBER, edgecolor=DARK, label="critical-band uncertain")
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
     ax.set_ylim(0, 1.0)
-    ax.set_ylabel("fraction / AUC")
+    ax.set_ylabel("prediction-set rate")
     ax.grid(axis="y", color="#e5e7eb")
-    ax.legend(frameon=False, fontsize=8, loc="upper right")
+    ax.legend(frameon=False, fontsize=7.5, loc="upper left")
 
 
 def fig3():
     innov = load("innovation_analysis.json")
     rel = load("reliability_upgrade.json")
     ambsens = load("ambiguity_floor_sensitivity.json")
+    decision = load("conformal_decision_metrics.json")
     fig, axs = plt.subplots(2, 2, figsize=(13.2, 8.7))
     panel_ambiguity(axs[0, 0], innov)
     panel_reliability(axs[0, 1], rel)
     panel_mondrian(axs[1, 0], innov)
-    panel_boundary(axs[1, 1], innov, ambsens)
+    panel_decision_sets(axs[1, 1], decision)
     fig.suptitle("Coordinate ambiguity and mechanism-conditioned reliability", fontsize=15, fontweight="bold", y=0.99)
     fig.tight_layout(rect=[0, 0.02, 1, 0.96])
     save(fig, "Fig3_ambiguity_reliability")

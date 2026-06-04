@@ -1,0 +1,27 @@
+{
+  "title": "A physics-informed validation framework for reliable machine-learning liquefaction prediction",
+  "upload_type": "software",
+  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, and publication figure sources for a physics-informed validation framework for reliable machine-learning liquefaction prediction.",
+  "creators": [
+    {
+      "name": "[Family name], [Given name]",
+      "affiliation": "Inner Mongolia University of Technology"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "soil liquefaction",
+    "geotechnical AI",
+    "physics-informed machine learning",
+    "grouped validation",
+    "conformal prediction",
+    "operational non-inferiority"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Johnsonlijian/geostructural-reliability-ai-p1",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

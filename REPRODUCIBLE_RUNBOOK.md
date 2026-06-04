@@ -28,7 +28,7 @@ python -m pytest tests -q
 Expected result at package preparation:
 
 ```text
-25 passed
+26 passed
 ```
 
 ## Analysis Pipeline
@@ -50,6 +50,8 @@ python run_reliability_upgrade.py
 python run_sensitivity.py
 python run_cross_region.py
 python run_groundwater_residual_stratification.py
+python run_practical_equivalence_audit.py
+python run_conformal_decision_metrics.py
 ```
 
 ## Figure Regeneration

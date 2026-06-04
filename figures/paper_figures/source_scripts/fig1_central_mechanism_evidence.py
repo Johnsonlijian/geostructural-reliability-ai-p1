@@ -93,7 +93,7 @@ def arrow(ax, start, end, color="#34495e", lw=1.7):
 
 
 def panel_a(ax) -> None:
-    add_panel_label(ax, "A", "Effective-stress mechanism as a compressive coordinate")
+    add_panel_label(ax, "A", "Physics-informed margin as a compressive coordinate")
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
@@ -122,7 +122,7 @@ def panel_a(ax) -> None:
     ax.text(
         0.50,
         0.04,
-        "Data help most after the mechanism: residual checks and reliability calibration.",
+        "Data help most after the mechanism: residual checks, claim bounds, and reliability calibration.",
         ha="center",
         fontsize=8.5,
         color="#37474f",
@@ -130,7 +130,7 @@ def panel_a(ax) -> None:
 
 
 def panel_b(ax, rel: dict) -> None:
-    add_panel_label(ax, "B", "Grouped validation: mechanism remains the strongest baseline")
+    add_panel_label(ax, "B", "Grouped validation: margin is not outperformed")
     datasets = ["SPT\ntriggering", "CPT\nmanifestation"]
     phys = [
         rel["SPT_Cetin2018"]["physics_auc_ci"],
@@ -249,7 +249,7 @@ def main() -> None:
     panel_d(fig.add_subplot(gs[1, 1]), innov)
 
     fig.suptitle(
-        "Mechanistic sufficiency and reliability in seismic liquefaction prediction",
+        "Physics-informed validation for reliable liquefaction AI",
         fontsize=15,
         fontweight="bold",
         y=0.985,
