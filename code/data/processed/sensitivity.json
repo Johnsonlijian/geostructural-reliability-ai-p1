@@ -1,0 +1,62 @@
+{
+  "threshold_sensitivity": {
+    "SPT_FS_threshold": {
+      "0.9": 0.827,
+      "1.0": 0.832,
+      "1.1": 0.822,
+      "1.2": 0.822
+    },
+    "CPT_LPI_threshold": {
+      "4": 0.702,
+      "5": 0.713,
+      "6": 0.727,
+      "7": 0.727
+    }
+  },
+  "sufficiency_across_models": {
+    "SPT/Cetin2018": {
+      "logistic": {
+        "full": 0.85,
+        "margin_only": 0.898,
+        "margin_minus_full": 0.048
+      },
+      "random_forest": {
+        "full": 0.842,
+        "margin_only": 0.859,
+        "margin_minus_full": 0.016
+      },
+      "grad_boost": {
+        "full": 0.851,
+        "margin_only": 0.872,
+        "margin_minus_full": 0.021
+      },
+      "hist_gbt": {
+        "full": 0.865,
+        "margin_only": 0.889,
+        "margin_minus_full": 0.024
+      }
+    },
+    "CPT/Geyin2021": {
+      "logistic": {
+        "full": 0.648,
+        "margin_only": 0.714,
+        "margin_minus_full": 0.066
+      },
+      "random_forest": {
+        "full": 0.633,
+        "margin_only": 0.658,
+        "margin_minus_full": 0.025
+      },
+      "grad_boost": {
+        "full": 0.641,
+        "margin_only": 0.684,
+        "margin_minus_full": 0.042
+      },
+      "hist_gbt": {
+        "full": 0.613,
+        "margin_only": 0.666,
+        "margin_minus_full": 0.053
+      }
+    }
+  }
+}

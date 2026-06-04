@@ -1,0 +1,20 @@
+{
+  "n_used": 208,
+  "n_earthquakes": 27,
+  "n_sources": 43,
+  "physics_BI2014_auc_split_invariant": 0.9233,
+  "by_split": {
+    "random_kfold": {
+      "grad_boost_auc": 0.9004,
+      "logistic_auc": 0.8862
+    },
+    "earthquake_grouped": {
+      "grad_boost_auc": 0.851,
+      "logistic_auc": 0.8503
+    },
+    "source(reference)_grouped": {
+      "grad_boost_auc": 0.8799,
+      "logistic_auc": 0.8758
+    }
+  }
+}

@@ -1,0 +1,29 @@
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.tmp
+*.log
+*.aux
+*.out
+*.synctex.gz
+
+# Raw third-party datasets are not redistributed.
+code/data/raw/
+*.xls
+*.xlsx
+*.mat
+*.zip
+*.tar
+*.tar.gz
+
+# Submission and internal-review materials are intentionally excluded.
+P1_manuscript/
+manuscript.*
+COVER_LETTER*
+RESPONSE_TO_REVIEWERS*
+INDEPENDENT_REVIEW*
+SELF_REVIEW*
+rounds/
+logs/

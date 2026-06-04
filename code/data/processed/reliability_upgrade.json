@@ -1,0 +1,116 @@
+{
+  "SPT_Cetin2018": {
+    "n": 208,
+    "n_groups": 27,
+    "label": "triggering",
+    "physics_auc_ci": {
+      "auc": 0.9233348858872847,
+      "lo": 0.8851142515252123,
+      "hi": 0.9526776409216886
+    },
+    "ml_grouped_auc_ci": {
+      "auc": 0.8650675360968793,
+      "lo": 0.8147364785420341,
+      "hi": 0.9071048748978554
+    },
+    "paired_physics_minus_ml": {
+      "delta": 0.05826734979040549,
+      "lo": 0.017053351365130677,
+      "hi": 0.10523447001368183,
+      "P(delta>0)": 0.997
+    },
+    "calibration": {
+      "physics": {
+        "brier": 0.1357,
+        "ece": 0.0955
+      },
+      "ml_grouped": {
+        "brier": 0.1533,
+        "ece": 0.1001
+      }
+    },
+    "conformal_coverage_alpha0.10": {
+      "random_calib": {
+        "mode": "random",
+        "target_coverage": 0.9,
+        "n_rep_used": 12,
+        "mean_coverage": 0.9193121693121694,
+        "std_coverage": 0.029310211383809983,
+        "mean_set_size": 1.3161375661375663
+      },
+      "earthquake_grouped_calib": {
+        "mode": "grouped",
+        "target_coverage": 0.9,
+        "n_rep_used": 12,
+        "mean_coverage": 0.9338515414951013,
+        "std_coverage": 0.07012723207061448,
+        "mean_set_size": 1.5796444417470268
+      }
+    },
+    "conformal_conditional_grouped": {
+      "target_coverage": 0.9,
+      "n_event_evals": 76,
+      "mean_conditional_coverage": 0.9121397243107768,
+      "p10_conditional_coverage": 0.6666666666666666,
+      "min_conditional_coverage": 0.3333333333333333,
+      "frac_events_undercovered": 0.3026315789473684
+    }
+  },
+  "CPT_Geyin2021": {
+    "n": 275,
+    "n_groups": 21,
+    "label": "manifestation",
+    "physics_auc_ci": {
+      "auc": 0.749972890913034,
+      "lo": 0.6438101886573723,
+      "hi": 0.8581424936271626
+    },
+    "ml_grouped_auc_ci": {
+      "auc": 0.6126111472565604,
+      "lo": 0.5319876290495836,
+      "hi": 0.6872108739214002
+    },
+    "paired_physics_minus_ml": {
+      "delta": 0.13736174365647358,
+      "lo": 0.045091215868440775,
+      "hi": 0.2408326427324119,
+      "P(delta>0)": 1.0
+    },
+    "calibration": {
+      "physics": {
+        "brier": 0.211,
+        "ece": 0.0543
+      },
+      "ml_grouped": {
+        "brier": 0.3145,
+        "ece": 0.2831
+      }
+    },
+    "conformal_coverage_alpha0.10": {
+      "random_calib": {
+        "mode": "random",
+        "target_coverage": 0.9,
+        "n_rep_used": 12,
+        "mean_coverage": 0.8885542168674697,
+        "std_coverage": 0.047210112230958806,
+        "mean_set_size": 1.5692771084337351
+      },
+      "earthquake_grouped_calib": {
+        "mode": "grouped",
+        "target_coverage": 0.9,
+        "n_rep_used": 12,
+        "mean_coverage": 0.8929613498409346,
+        "std_coverage": 0.06786295349679107,
+        "mean_set_size": 1.6569133067242259
+      }
+    },
+    "conformal_conditional_grouped": {
+      "target_coverage": 0.9,
+      "n_event_evals": 62,
+      "mean_conditional_coverage": 0.8930030813341294,
+      "p10_conditional_coverage": 0.6714285714285714,
+      "min_conditional_coverage": 0.3333333333333333,
+      "frac_events_undercovered": 0.3870967741935484
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "SPT/Cetin2018": {
+    "n": 208,
+    "n_eq": 27,
+    "A1_sufficiency": {
+      "auc_physics_raw": 0.923,
+      "auc_margin_only_ML": 0.898,
+      "auc_full_feature_ML": 0.865,
+      "delta_margin_minus_full": 0.033,
+      "CI95": [
+        -0.003,
+        0.089
+      ],
+      "P(margin>=full)": 0.966
+    },
+    "A2_screening_ambiguous_band": {
+      "n_in_band": 119,
+      "ML_AUC_within_band": 0.667
+    },
+    "A3_irreducible": {
+      "bayes_error_lower_bound": 0.188,
+      "ML_full_error": 0.192,
+      "frac_bayes_err_in_ambiguous_band": 0.821,
+      "bands": [
+        {
+          "p_mean": 0.004,
+          "liq_freq": 0.0,
+          "bayes_err": 0.0,
+          "n": 21
+        },
+        {
+          "p_mean": 0.282,
+          "liq_freq": 0.095,
+          "bayes_err": 0.095,
+          "n": 21
+        },
+        {
+          "p_mean": 0.438,
+          "liq_freq": 0.143,
+          "bayes_err": 0.143,
+          "n": 21
+        },
+        {
+          "p_mean": 0.518,
+          "liq_freq": 0.429,
+          "bayes_err": 0.429,
+          "n": 21
+        },
+        {
+          "p_mean": 0.569,
+          "liq_freq": 0.524,
+          "bayes_err": 0.476,
+          "n": 21
+        },
+        {
+          "p_mean": 0.624,
+          "liq_freq": 0.667,
+          "bayes_err": 0.333,
+          "n": 21
+        },
+        {
+          "p_mean": 0.672,
+          "liq_freq": 0.857,
+          "bayes_err": 0.143,
+          "n": 21
+        },
+        {
+          "p_mean": 0.725,
+          "liq_freq": 0.857,
+          "bayes_err": 0.143,
+          "n": 21
+        },
+        {
+          "p_mean": 0.786,
+          "liq_freq": 0.95,
+          "bayes_err": 0.05,
+          "n": 20
+        },
+        {
+          "p_mean": 0.914,
+          "liq_freq": 0.95,
+          "bayes_err": 0.05,
+          "n": 20
+        }
+      ]
+    },
+    "A4_mondrian_band_coverage": {
+      "target": 0.9,
+      "plain": {
+        "0": 0.877,
+        "1": 0.996,
+        "2": 0.903
+      },
+      "mondrian": {
+        "0": 0.926,
+        "1": 0.894,
+        "2": 0.918
+      }
+    }
+  },
+  "CPT/Geyin2021": {
+    "n": 275,
+    "n_eq": 21,
+    "A1_sufficiency": {
+      "auc_physics_raw": 0.75,
+      "auc_margin_only_ML": 0.714,
+      "auc_full_feature_ML": 0.613,
+      "delta_margin_minus_full": 0.101,
+      "CI95": [
+        0.03,
+        0.221
+      ],
+      "P(margin>=full)": 1.0
+    },
+    "A2_screening_ambiguous_band": {
+      "n_in_band": 125,
+      "ML_AUC_within_band": 0.517
+    },
+    "A3_irreducible": {
+      "bayes_error_lower_bound": 0.305,
+      "ML_full_error": 0.407,
+      "frac_bayes_err_in_ambiguous_band": 0.523,
+      "bands": [
+        {
+          "p_mean": 0.111,
+          "liq_freq": 0.107,
+          "bayes_err": 0.107,
+          "n": 28
+        },
+        {
+          "p_mean": 0.266,
+          "liq_freq": 0.321,
+          "bayes_err": 0.321,
+          "n": 28
+        },
+        {
+          "p_mean": 0.432,
+          "liq_freq": 0.536,
+          "bayes_err": 0.464,
+          "n": 28
+        },
+        {
+          "p_mean": 0.528,
+          "liq_freq": 0.536,
+          "bayes_err": 0.464,
+          "n": 28
+        },
+        {
+          "p_mean": 0.613,
+          "liq_freq": 0.536,
+          "bayes_err": 0.464,
+          "n": 28
+        },
+        {
+          "p_mean": 0.676,
+          "liq_freq": 0.815,
+          "bayes_err": 0.185,
+          "n": 27
+        },
+        {
+          "p_mean": 0.717,
+          "liq_freq": 0.741,
+          "bayes_err": 0.259,
+          "n": 27
+        },
+        {
+          "p_mean": 0.763,
+          "liq_freq": 0.852,
+          "bayes_err": 0.148,
+          "n": 27
+        },
+        {
+          "p_mean": 0.801,
+          "liq_freq": 0.667,
+          "bayes_err": 0.333,
+          "n": 27
+        },
+        {
+          "p_mean": 0.861,
+          "liq_freq": 0.704,
+          "bayes_err": 0.296,
+          "n": 27
+        }
+      ]
+    },
+    "A4_mondrian_band_coverage": {
+      "target": 0.9,
+      "plain": {
+        "0": 0.88,
+        "1": 0.999,
+        "2": 0.883
+      },
+      "mondrian": {
+        "0": 0.894,
+        "1": 0.909,
+        "2": 0.9
+      }
+    }
+  }
+}

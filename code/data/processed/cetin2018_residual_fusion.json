@@ -1,0 +1,13 @@
+{
+  "n_used": 208,
+  "n_earthquakes": 27,
+  "M0_physics_only_BI2014": 0.9233,
+  "M1_calibrated_physics_grouped": 0.8982,
+  "M2_ML_features_only_grouped": 0.851,
+  "M3_fusion_features+physics_grouped": 0.8583,
+  "M3_fusion_random": 0.903,
+  "M3_optimism_gap": 0.0447,
+  "fusion_beats_code_grouped": false,
+  "fusion_gain_over_code_grouped": -0.065,
+  "fusion_gain_over_blackbox_grouped": 0.0073
+}

@@ -1,0 +1,26 @@
+{
+  "n_used": 208,
+  "n_earthquakes": 27,
+  "n_splits": 5,
+  "BI2014_physics_baseline_auc": 0.9233,
+  "models": {
+    "logistic": {
+      "random_cv_auc": 0.8878,
+      "event_grouped_auc": 0.8419,
+      "optimism_gap": 0.0459,
+      "beats_BI2014_under_grouped": false
+    },
+    "random_forest": {
+      "random_cv_auc": 0.9202,
+      "event_grouped_auc": 0.8693,
+      "optimism_gap": 0.0509,
+      "beats_BI2014_under_grouped": false
+    },
+    "grad_boost": {
+      "random_cv_auc": 0.9094,
+      "event_grouped_auc": 0.8695,
+      "optimism_gap": 0.0399,
+      "beats_BI2014_under_grouped": false
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "design": "leave-one-region-out (train other regions' earthquakes, test held-out region)",
+  "by_region": [
+    {
+      "region": "China",
+      "n": 10,
+      "n_liq": 8,
+      "physics_AUC": 1.0,
+      "ML_trained_elsewhere_AUC": 1.0,
+      "logistic_elsewhere_AUC": 1.0
+    },
+    {
+      "region": "Japan",
+      "n": 128,
+      "n_liq": 65,
+      "physics_AUC": 0.943,
+      "ML_trained_elsewhere_AUC": 0.831,
+      "logistic_elsewhere_AUC": 0.816
+    },
+    {
+      "region": "Other",
+      "n": 16,
+      "n_liq": 10,
+      "physics_AUC": 0.983,
+      "ML_trained_elsewhere_AUC": 0.95,
+      "logistic_elsewhere_AUC": 0.95
+    },
+    {
+      "region": "USA",
+      "n": 54,
+      "n_liq": 30,
+      "physics_AUC": 0.85,
+      "ML_trained_elsewhere_AUC": 0.851,
+      "logistic_elsewhere_AUC": 0.846
+    }
+  ],
+  "pooled": {
+    "physics_pooled_AUC": 0.923,
+    "ML_crossregion_pooled_AUC": 0.834,
+    "logistic_crossregion_pooled_AUC": 0.8,
+    "paired_physics_minus_ML": {
+      "delta": 0.09,
+      "CI95": [
+        -0.005,
+        0.119
+      ],
+      "P(phys>ML)": 0.938
+    }
+  }
+}

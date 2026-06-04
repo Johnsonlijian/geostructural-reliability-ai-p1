@@ -1,0 +1,4 @@
+dataset,role,official_record,doi,redistribution_status,local_raw_path
+Cetin et al. 2018 SPT liquefaction dataset,SPT triggering case histories,Data in Brief article and supplementary files,10.1016/j.dib.2018.08.043,not redistributed; download from publisher,code/data/raw/cetin2018_spt/
+Geyin and Maurer 2021 CPT liquefaction dataset,CPT manifestation case histories,DesignSafe-CI project record,10.17603/ds2-wftt-mv37,not redistributed; download from DesignSafe,code/data/raw/geyin_maurer_2021_cpt/
+Boulanger and Idriss 2014 report,mechanistic triggering procedure,UC Davis Center for Geotechnical Modeling report URL,,not redistributed; cite official report,external/reference_only/

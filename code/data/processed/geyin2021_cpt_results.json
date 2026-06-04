@@ -1,0 +1,40 @@
+{
+  "dataset": "Geyin & Maurer (2021) CPT, DOI 10.17603/ds2-wftt-mv37, PRJ-3012",
+  "n_cases": 275,
+  "n_events": 21,
+  "n_yes": 159,
+  "n_no": 116,
+  "physics_baseline": "BI2014-CPT triggering -> LPI (Iwasaki 1978)",
+  "BI2014_CPT_LPI_zero_shot": {
+    "roc_auc_LPI": 0.75,
+    "accuracy_LPI>=5": 0.7127,
+    "confusion_[[TN,FP],[FN,TP]]": [
+      [
+        54,
+        62
+      ],
+      [
+        17,
+        142
+      ]
+    ],
+    "false_alarm": 0.5345,
+    "miss": 0.1069
+  },
+  "ML_optimism_gap": {
+    "hist_gbt": {
+      "random": 0.7249,
+      "event_grouped": 0.6126,
+      "optimism_gap": 0.1123
+    },
+    "logistic": {
+      "random": 0.712,
+      "event_grouped": 0.6477,
+      "optimism_gap": 0.0643
+    }
+  },
+  "cross_DB": {
+    "SPT_Cetin2018_physics_auc_triggering": 0.923,
+    "CPT_Geyin2021_physics_auc_manifestation_LPI": 0.75
+  }
+}

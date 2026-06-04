@@ -1,0 +1,149 @@
+{
+  "interpretation": "Residuals are observed label minus grouped out-of-fold predicted probability. Bins are by groundwater depth. Values near zero indicate little systematic bias in that groundwater-depth stratum. This is a diagnostic for residual bias, not causal identification.",
+  "SPT_Cetin2018": {
+    "max_abs_margin_bin_residual": 0.05729,
+    "max_abs_full_ml_bin_residual": 0.02832,
+    "n_bins": 3,
+    "bins": [
+      {
+        "groundwater_bin": "<=2 m",
+        "n": 122,
+        "n_groups": 24,
+        "mean_depth_m": 1.272,
+        "observed_rate": 0.55738,
+        "margin_pred_mean": 0.55984,
+        "full_ml_pred_mean": 0.57352,
+        "margin_residual_y_minus_p": {
+          "mean": -0.00246,
+          "lo": -0.12213,
+          "hi": 0.08725,
+          "n_groups": 24
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": -0.01614,
+          "lo": -0.10927,
+          "hi": 0.06818,
+          "n_groups": 24
+        },
+        "abs_residual_reduction_full_minus_margin": 0.01368
+      },
+      {
+        "groundwater_bin": "2-5 m",
+        "n": 81,
+        "n_groups": 17,
+        "mean_depth_m": 3.127,
+        "observed_rate": 0.51852,
+        "margin_pred_mean": 0.53655,
+        "full_ml_pred_mean": 0.54684,
+        "margin_residual_y_minus_p": {
+          "mean": -0.01803,
+          "lo": -0.16396,
+          "hi": 0.12135,
+          "n_groups": 17
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": -0.02832,
+          "lo": -0.17804,
+          "hi": 0.08464,
+          "n_groups": 17
+        },
+        "abs_residual_reduction_full_minus_margin": 0.01029
+      },
+      {
+        "groundwater_bin": "5-10 m",
+        "n": 5,
+        "n_groups": 4,
+        "mean_depth_m": 6.671,
+        "observed_rate": 0.6,
+        "margin_pred_mean": 0.54271,
+        "full_ml_pred_mean": 0.59624,
+        "margin_residual_y_minus_p": {
+          "mean": 0.05729,
+          "lo": -0.31517,
+          "hi": 0.43102,
+          "n_groups": 4
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": 0.00376,
+          "lo": -0.41518,
+          "hi": 0.68451,
+          "n_groups": 4
+        },
+        "abs_residual_reduction_full_minus_margin": -0.05353
+      }
+    ]
+  },
+  "CPT_Geyin2021": {
+    "max_abs_margin_bin_residual": 0.08149,
+    "max_abs_full_ml_bin_residual": 0.07436,
+    "n_bins": 3,
+    "bins": [
+      {
+        "groundwater_bin": "<=2 m",
+        "n": 131,
+        "n_groups": 19,
+        "mean_depth_m": 1.326,
+        "observed_rate": 0.61069,
+        "margin_pred_mean": 0.64701,
+        "full_ml_pred_mean": 0.68505,
+        "margin_residual_y_minus_p": {
+          "mean": -0.03632,
+          "lo": -0.16153,
+          "hi": 0.0878,
+          "n_groups": 19
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": -0.07436,
+          "lo": -0.21233,
+          "hi": 0.06881,
+          "n_groups": 19
+        },
+        "abs_residual_reduction_full_minus_margin": 0.03804
+      },
+      {
+        "groundwater_bin": "2-5 m",
+        "n": 130,
+        "n_groups": 16,
+        "mean_depth_m": 3.134,
+        "observed_rate": 0.56154,
+        "margin_pred_mean": 0.52398,
+        "full_ml_pred_mean": 0.56397,
+        "margin_residual_y_minus_p": {
+          "mean": 0.03756,
+          "lo": -0.12534,
+          "hi": 0.21432,
+          "n_groups": 16
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": -0.00243,
+          "lo": -0.24193,
+          "hi": 0.25528,
+          "n_groups": 16
+        },
+        "abs_residual_reduction_full_minus_margin": -0.03513
+      },
+      {
+        "groundwater_bin": "5-10 m",
+        "n": 14,
+        "n_groups": 6,
+        "mean_depth_m": 6.249,
+        "observed_rate": 0.42857,
+        "margin_pred_mean": 0.34708,
+        "full_ml_pred_mean": 0.43011,
+        "margin_residual_y_minus_p": {
+          "mean": 0.08149,
+          "lo": -0.14409,
+          "hi": 0.39698,
+          "n_groups": 6
+        },
+        "full_ml_residual_y_minus_p": {
+          "mean": -0.00153,
+          "lo": -0.43786,
+          "hi": 0.46619,
+          "n_groups": 6
+        },
+        "abs_residual_reduction_full_minus_margin": -0.07996
+      }
+    ]
+  }
+}

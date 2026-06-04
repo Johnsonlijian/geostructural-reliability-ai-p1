@@ -1,0 +1,36 @@
+{
+  "n_used": 208,
+  "engine_selfcheck_effstress": {
+    "pearson_r": 0.98911,
+    "MAE_psf": 6.6245
+  },
+  "counterfactual_water_table": {
+    "surface(dw=0)": {
+      "median_FS": 0.64,
+      "p25_FS": 0.473,
+      "p75_FS": 1.063,
+      "pred_liq_rate_FS<1": 0.726
+    },
+    "actual": {
+      "median_FS": 0.903,
+      "p25_FS": 0.631,
+      "p75_FS": 1.465,
+      "pred_liq_rate_FS<1": 0.567
+    },
+    "deep/dry(dw=z)": {
+      "median_FS": 1.252,
+      "p25_FS": 0.938,
+      "p75_FS": 2.1,
+      "pred_liq_rate_FS<1": 0.303
+    }
+  },
+  "hazard_call_accuracy": {
+    "actual_wt": 0.832,
+    "wrong_surface_wt": 0.798
+  },
+  "ML_grouped_AUC": {
+    "with_groundwater": 0.8557,
+    "without_groundwater": 0.8569,
+    "drop": -0.0012
+  }
+}

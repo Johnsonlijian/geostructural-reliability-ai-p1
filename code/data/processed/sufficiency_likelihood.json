@@ -1,0 +1,124 @@
+{
+  "SPT/Cetin2018": {
+    "margin_only": {
+      "logloss": 0.4499,
+      "auc": 0.898
+    },
+    "logistic": {
+      "logloss": 0.4747,
+      "auc": 0.85,
+      "dlogloss_full_minus_margin": 0.0247,
+      "CI95": [
+        -0.0843,
+        0.1083
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.0242
+    },
+    "random_forest": {
+      "logloss": 0.4938,
+      "auc": 0.843,
+      "dlogloss_full_minus_margin": 0.0439,
+      "CI95": [
+        -0.0416,
+        0.1271
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.0369
+    },
+    "grad_boost": {
+      "logloss": 0.5895,
+      "auc": 0.851,
+      "dlogloss_full_minus_margin": 0.1396,
+      "CI95": [
+        0.015,
+        0.298
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.2609
+    },
+    "hist_gbt": {
+      "logloss": 0.4964,
+      "auc": 0.865,
+      "dlogloss_full_minus_margin": 0.0465,
+      "CI95": [
+        -0.0652,
+        0.158
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.1188
+    },
+    "neural_net": {
+      "logloss": 1.2078,
+      "auc": 0.842,
+      "dlogloss_full_minus_margin": 0.7578,
+      "CI95": [
+        0.3976,
+        1.0957
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 1.0563
+    }
+  },
+  "CPT/Geyin2021": {
+    "margin_only": {
+      "logloss": 0.6049,
+      "auc": 0.714
+    },
+    "logistic": {
+      "logloss": 0.7381,
+      "auc": 0.648,
+      "dlogloss_full_minus_margin": 0.1332,
+      "CI95": [
+        0.0416,
+        0.2622
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.126
+    },
+    "random_forest": {
+      "logloss": 0.7055,
+      "auc": 0.631,
+      "dlogloss_full_minus_margin": 0.1006,
+      "CI95": [
+        0.0484,
+        0.1745
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.2003
+    },
+    "grad_boost": {
+      "logloss": 0.8588,
+      "auc": 0.641,
+      "dlogloss_full_minus_margin": 0.2538,
+      "CI95": [
+        0.1633,
+        0.3799
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.413
+    },
+    "hist_gbt": {
+      "logloss": 1.0695,
+      "auc": 0.613,
+      "dlogloss_full_minus_margin": 0.4646,
+      "CI95": [
+        0.3431,
+        0.6443
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 0.7186
+    },
+    "neural_net": {
+      "logloss": 2.254,
+      "auc": 0.557,
+      "dlogloss_full_minus_margin": 1.6491,
+      "CI95": [
+        1.1192,
+        2.3655
+      ],
+      "full_improves_OOS_loglik": false,
+      "band_dll": 1.9259
+    }
+  }
+}

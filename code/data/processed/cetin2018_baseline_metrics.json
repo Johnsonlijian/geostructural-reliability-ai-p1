@@ -1,0 +1,32 @@
+{
+  "dataset": "Cetin et al. (2018) Data in Brief, DOI 10.1016/j.dib.2018.08.043",
+  "n_total_rows": 212,
+  "n_liquefied": 113,
+  "n_nonliquefied": 95,
+  "n_marginal_or_unmapped": 4,
+  "n_used_in_metrics": 208,
+  "csr_validation_vs_cetin": {
+    "pearson_r": 1.0,
+    "MAE": 0.0,
+    "max_abs_err": 0.0
+  },
+  "BI2014_zero_shot_baseline": {
+    "FS_threshold": 1.0,
+    "accuracy": 0.8317,
+    "roc_auc": 0.9233,
+    "precision_liq": 0.8305,
+    "recall_liq": 0.8673,
+    "confusion_matrix_[[TN,FP],[FN,TP]]": [
+      [
+        75,
+        20
+      ],
+      [
+        15,
+        98
+      ]
+    ],
+    "false_alarm_rate_FP_over_FP+TN": 0.2105,
+    "miss_rate_FN_over_FN+TP": 0.1327
+  }
+}

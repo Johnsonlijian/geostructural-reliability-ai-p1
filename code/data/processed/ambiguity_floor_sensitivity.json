@@ -1,0 +1,715 @@
+{
+  "interpretation": "These values are empirical mechanistic-coordinate ambiguity floors, not strict Bayes errors for the full physical state space. They show how much binary label ambiguity remains after reducing the available public predictors to the margin coordinate.",
+  "SPT_Cetin2018": {
+    "n": 208,
+    "n_groups": 27,
+    "margin_grouped_logistic": {
+      "auc": 0.89818,
+      "logloss": 0.44992
+    },
+    "bin_count_sensitivity": [
+      {
+        "n_bins": 6,
+        "coordinate_ambiguity_floor": 0.17788,
+        "frac_floor_in_0.30_0.70_band": 0.81077,
+        "bins": [
+          {
+            "p_mean": 0.1016,
+            "label_freq": 0.0286,
+            "ambiguity": 0.0286,
+            "n": 35
+          },
+          {
+            "p_mean": 0.4326,
+            "label_freq": 0.1429,
+            "ambiguity": 0.1429,
+            "n": 35
+          },
+          {
+            "p_mean": 0.5521,
+            "label_freq": 0.5429,
+            "ambiguity": 0.4571,
+            "n": 35
+          },
+          {
+            "p_mean": 0.6408,
+            "label_freq": 0.7429,
+            "ambiguity": 0.2571,
+            "n": 35
+          },
+          {
+            "p_mean": 0.723,
+            "label_freq": 0.8824,
+            "ambiguity": 0.1176,
+            "n": 34
+          },
+          {
+            "p_mean": 0.8661,
+            "label_freq": 0.9412,
+            "ambiguity": 0.0588,
+            "n": 34
+          }
+        ]
+      },
+      {
+        "n_bins": 8,
+        "coordinate_ambiguity_floor": 0.1875,
+        "frac_floor_in_0.30_0.70_band": 0.89733,
+        "bins": [
+          {
+            "p_mean": 0.0303,
+            "label_freq": 0.0,
+            "ambiguity": 0.0,
+            "n": 26
+          },
+          {
+            "p_mean": 0.3556,
+            "label_freq": 0.0769,
+            "ambiguity": 0.0769,
+            "n": 26
+          },
+          {
+            "p_mean": 0.4923,
+            "label_freq": 0.3846,
+            "ambiguity": 0.3846,
+            "n": 26
+          },
+          {
+            "p_mean": 0.5611,
+            "label_freq": 0.4615,
+            "ambiguity": 0.4615,
+            "n": 26
+          },
+          {
+            "p_mean": 0.6277,
+            "label_freq": 0.7308,
+            "ambiguity": 0.2692,
+            "n": 26
+          },
+          {
+            "p_mean": 0.6877,
+            "label_freq": 0.8462,
+            "ambiguity": 0.1538,
+            "n": 26
+          },
+          {
+            "p_mean": 0.7555,
+            "label_freq": 0.9231,
+            "ambiguity": 0.0769,
+            "n": 26
+          },
+          {
+            "p_mean": 0.8926,
+            "label_freq": 0.9231,
+            "ambiguity": 0.0769,
+            "n": 26
+          }
+        ]
+      },
+      {
+        "n_bins": 10,
+        "coordinate_ambiguity_floor": 0.1875,
+        "frac_floor_in_0.30_0.70_band": 0.82056,
+        "bins": [
+          {
+            "p_mean": 0.0045,
+            "label_freq": 0.0,
+            "ambiguity": 0.0,
+            "n": 21
+          },
+          {
+            "p_mean": 0.2816,
+            "label_freq": 0.0952,
+            "ambiguity": 0.0952,
+            "n": 21
+          },
+          {
+            "p_mean": 0.4375,
+            "label_freq": 0.1429,
+            "ambiguity": 0.1429,
+            "n": 21
+          },
+          {
+            "p_mean": 0.5181,
+            "label_freq": 0.4286,
+            "ambiguity": 0.4286,
+            "n": 21
+          },
+          {
+            "p_mean": 0.5688,
+            "label_freq": 0.5238,
+            "ambiguity": 0.4762,
+            "n": 21
+          },
+          {
+            "p_mean": 0.6242,
+            "label_freq": 0.6667,
+            "ambiguity": 0.3333,
+            "n": 21
+          },
+          {
+            "p_mean": 0.6725,
+            "label_freq": 0.8571,
+            "ambiguity": 0.1429,
+            "n": 21
+          },
+          {
+            "p_mean": 0.725,
+            "label_freq": 0.8571,
+            "ambiguity": 0.1429,
+            "n": 21
+          },
+          {
+            "p_mean": 0.7857,
+            "label_freq": 0.95,
+            "ambiguity": 0.05,
+            "n": 20
+          },
+          {
+            "p_mean": 0.9142,
+            "label_freq": 0.95,
+            "ambiguity": 0.05,
+            "n": 20
+          }
+        ]
+      },
+      {
+        "n_bins": 12,
+        "coordinate_ambiguity_floor": 0.18269,
+        "frac_floor_in_0.30_0.70_band": 0.86842,
+        "bins": [
+          {
+            "p_mean": 0.0008,
+            "label_freq": 0.0,
+            "ambiguity": 0.0,
+            "n": 18
+          },
+          {
+            "p_mean": 0.2152,
+            "label_freq": 0.0556,
+            "ambiguity": 0.0556,
+            "n": 18
+          },
+          {
+            "p_mean": 0.3908,
+            "label_freq": 0.0556,
+            "ambiguity": 0.0556,
+            "n": 18
+          },
+          {
+            "p_mean": 0.4885,
+            "label_freq": 0.3333,
+            "ambiguity": 0.3333,
+            "n": 18
+          },
+          {
+            "p_mean": 0.5361,
+            "label_freq": 0.4706,
+            "ambiguity": 0.4706,
+            "n": 17
+          },
+          {
+            "p_mean": 0.5758,
+            "label_freq": 0.5882,
+            "ambiguity": 0.4118,
+            "n": 17
+          },
+          {
+            "p_mean": 0.6219,
+            "label_freq": 0.6471,
+            "ambiguity": 0.3529,
+            "n": 17
+          },
+          {
+            "p_mean": 0.6621,
+            "label_freq": 0.8235,
+            "ambiguity": 0.1765,
+            "n": 17
+          },
+          {
+            "p_mean": 0.6997,
+            "label_freq": 0.8824,
+            "ambiguity": 0.1176,
+            "n": 17
+          },
+          {
+            "p_mean": 0.7462,
+            "label_freq": 0.8824,
+            "ambiguity": 0.1176,
+            "n": 17
+          },
+          {
+            "p_mean": 0.8055,
+            "label_freq": 0.9412,
+            "ambiguity": 0.0588,
+            "n": 17
+          },
+          {
+            "p_mean": 0.9267,
+            "label_freq": 0.9412,
+            "ambiguity": 0.0588,
+            "n": 17
+          }
+        ]
+      },
+      {
+        "n_bins": 15,
+        "coordinate_ambiguity_floor": 0.15865,
+        "frac_floor_in_0.30_0.70_band": 0.87882,
+        "bins": [
+          {
+            "p_mean": 0.0001,
+            "label_freq": 0.0,
+            "ambiguity": 0.0,
+            "n": 14
+          },
+          {
+            "p_mean": 0.0956,
+            "label_freq": 0.0,
+            "ambiguity": 0.0,
+            "n": 14
+          },
+          {
+            "p_mean": 0.3334,
+            "label_freq": 0.1429,
+            "ambiguity": 0.1429,
+            "n": 14
+          },
+          {
+            "p_mean": 0.4174,
+            "label_freq": 0.0714,
+            "ambiguity": 0.0714,
+            "n": 14
+          },
+          {
+            "p_mean": 0.489,
+            "label_freq": 0.2143,
+            "ambiguity": 0.2143,
+            "n": 14
+          },
+          {
+            "p_mean": 0.5271,
+            "label_freq": 0.5714,
+            "ambiguity": 0.4286,
+            "n": 14
+          },
+          {
+            "p_mean": 0.5599,
+            "label_freq": 0.3571,
+            "ambiguity": 0.3571,
+            "n": 14
+          },
+          {
+            "p_mean": 0.5967,
+            "label_freq": 0.7143,
+            "ambiguity": 0.2857,
+            "n": 14
+          },
+          {
+            "p_mean": 0.6328,
+            "label_freq": 0.7143,
+            "ambiguity": 0.2857,
+            "n": 14
+          },
+          {
+            "p_mean": 0.6656,
+            "label_freq": 0.8571,
+            "ambiguity": 0.1429,
+            "n": 14
+          },
+          {
+            "p_mean": 0.696,
+            "label_freq": 0.8571,
+            "ambiguity": 0.1429,
+            "n": 14
+          },
+          {
+            "p_mean": 0.7346,
+            "label_freq": 0.8571,
+            "ambiguity": 0.1429,
+            "n": 14
+          },
+          {
+            "p_mean": 0.7709,
+            "label_freq": 1.0,
+            "ambiguity": 0.0,
+            "n": 14
+          },
+          {
+            "p_mean": 0.8406,
+            "label_freq": 0.8462,
+            "ambiguity": 0.1538,
+            "n": 13
+          },
+          {
+            "p_mean": 0.9446,
+            "label_freq": 1.0,
+            "ambiguity": 0.0,
+            "n": 13
+          }
+        ]
+      }
+    ],
+    "isotonic_descriptive_sensitivity": {
+      "descriptive_isotonic_logloss": 0.29909,
+      "descriptive_isotonic_auc": 0.93218,
+      "mean_min_p_1minus_p": 0.15385
+    }
+  },
+  "CPT_Geyin2021": {
+    "n": 275,
+    "n_groups": 21,
+    "margin_grouped_logistic": {
+      "auc": 0.71378,
+      "logloss": 0.60493
+    },
+    "bin_count_sensitivity": [
+      {
+        "n_bins": 6,
+        "coordinate_ambiguity_floor": 0.30545,
+        "frac_floor_in_0.30_0.70_band": 0.63097,
+        "bins": [
+          {
+            "p_mean": 0.1589,
+            "label_freq": 0.1739,
+            "ambiguity": 0.1739,
+            "n": 46
+          },
+          {
+            "p_mean": 0.4208,
+            "label_freq": 0.5435,
+            "ambiguity": 0.4565,
+            "n": 46
+          },
+          {
+            "p_mean": 0.579,
+            "label_freq": 0.4783,
+            "ambiguity": 0.4783,
+            "n": 46
+          },
+          {
+            "p_mean": 0.6859,
+            "label_freq": 0.7826,
+            "ambiguity": 0.2174,
+            "n": 46
+          },
+          {
+            "p_mean": 0.7622,
+            "label_freq": 0.8261,
+            "ambiguity": 0.1739,
+            "n": 46
+          },
+          {
+            "p_mean": 0.8406,
+            "label_freq": 0.6667,
+            "ambiguity": 0.3333,
+            "n": 45
+          }
+        ]
+      },
+      {
+        "n_bins": 8,
+        "coordinate_ambiguity_floor": 0.31273,
+        "frac_floor_in_0.30_0.70_band": 0.66278,
+        "bins": [
+          {
+            "p_mean": 0.1269,
+            "label_freq": 0.1429,
+            "ambiguity": 0.1429,
+            "n": 35
+          },
+          {
+            "p_mean": 0.3332,
+            "label_freq": 0.4286,
+            "ambiguity": 0.4286,
+            "n": 35
+          },
+          {
+            "p_mean": 0.4986,
+            "label_freq": 0.5429,
+            "ambiguity": 0.4571,
+            "n": 35
+          },
+          {
+            "p_mean": 0.5997,
+            "label_freq": 0.5,
+            "ambiguity": 0.5,
+            "n": 34
+          },
+          {
+            "p_mean": 0.6791,
+            "label_freq": 0.7353,
+            "ambiguity": 0.2647,
+            "n": 34
+          },
+          {
+            "p_mean": 0.7349,
+            "label_freq": 0.8235,
+            "ambiguity": 0.1765,
+            "n": 34
+          },
+          {
+            "p_mean": 0.7848,
+            "label_freq": 0.8235,
+            "ambiguity": 0.1765,
+            "n": 34
+          },
+          {
+            "p_mean": 0.8537,
+            "label_freq": 0.6471,
+            "ambiguity": 0.3529,
+            "n": 34
+          }
+        ]
+      },
+      {
+        "n_bins": 10,
+        "coordinate_ambiguity_floor": 0.30545,
+        "frac_floor_in_0.30_0.70_band": 0.52383,
+        "bins": [
+          {
+            "p_mean": 0.111,
+            "label_freq": 0.1071,
+            "ambiguity": 0.1071,
+            "n": 28
+          },
+          {
+            "p_mean": 0.2658,
+            "label_freq": 0.3214,
+            "ambiguity": 0.3214,
+            "n": 28
+          },
+          {
+            "p_mean": 0.4322,
+            "label_freq": 0.5357,
+            "ambiguity": 0.4643,
+            "n": 28
+          },
+          {
+            "p_mean": 0.5278,
+            "label_freq": 0.5357,
+            "ambiguity": 0.4643,
+            "n": 28
+          },
+          {
+            "p_mean": 0.6132,
+            "label_freq": 0.5357,
+            "ambiguity": 0.4643,
+            "n": 28
+          },
+          {
+            "p_mean": 0.6763,
+            "label_freq": 0.8148,
+            "ambiguity": 0.1852,
+            "n": 27
+          },
+          {
+            "p_mean": 0.7174,
+            "label_freq": 0.7407,
+            "ambiguity": 0.2593,
+            "n": 27
+          },
+          {
+            "p_mean": 0.7634,
+            "label_freq": 0.8519,
+            "ambiguity": 0.1481,
+            "n": 27
+          },
+          {
+            "p_mean": 0.8014,
+            "label_freq": 0.6667,
+            "ambiguity": 0.3333,
+            "n": 27
+          },
+          {
+            "p_mean": 0.8613,
+            "label_freq": 0.7037,
+            "ambiguity": 0.2963,
+            "n": 27
+          }
+        ]
+      },
+      {
+        "n_bins": 12,
+        "coordinate_ambiguity_floor": 0.30182,
+        "frac_floor_in_0.30_0.70_band": 0.55424,
+        "bins": [
+          {
+            "p_mean": 0.0979,
+            "label_freq": 0.1304,
+            "ambiguity": 0.1304,
+            "n": 23
+          },
+          {
+            "p_mean": 0.2198,
+            "label_freq": 0.2174,
+            "ambiguity": 0.2174,
+            "n": 23
+          },
+          {
+            "p_mean": 0.3636,
+            "label_freq": 0.4783,
+            "ambiguity": 0.4783,
+            "n": 23
+          },
+          {
+            "p_mean": 0.478,
+            "label_freq": 0.6087,
+            "ambiguity": 0.3913,
+            "n": 23
+          },
+          {
+            "p_mean": 0.5428,
+            "label_freq": 0.4783,
+            "ambiguity": 0.4783,
+            "n": 23
+          },
+          {
+            "p_mean": 0.6152,
+            "label_freq": 0.4783,
+            "ambiguity": 0.4783,
+            "n": 23
+          },
+          {
+            "p_mean": 0.6709,
+            "label_freq": 0.8261,
+            "ambiguity": 0.1739,
+            "n": 23
+          },
+          {
+            "p_mean": 0.7009,
+            "label_freq": 0.7391,
+            "ambiguity": 0.2609,
+            "n": 23
+          },
+          {
+            "p_mean": 0.7468,
+            "label_freq": 0.7826,
+            "ambiguity": 0.2174,
+            "n": 23
+          },
+          {
+            "p_mean": 0.7775,
+            "label_freq": 0.8696,
+            "ambiguity": 0.1304,
+            "n": 23
+          },
+          {
+            "p_mean": 0.8166,
+            "label_freq": 0.5652,
+            "ambiguity": 0.4348,
+            "n": 23
+          },
+          {
+            "p_mean": 0.8657,
+            "label_freq": 0.7727,
+            "ambiguity": 0.2273,
+            "n": 22
+          }
+        ]
+      },
+      {
+        "n_bins": 15,
+        "coordinate_ambiguity_floor": 0.28727,
+        "frac_floor_in_0.30_0.70_band": 0.55695,
+        "bins": [
+          {
+            "p_mean": 0.088,
+            "label_freq": 0.1053,
+            "ambiguity": 0.1053,
+            "n": 19
+          },
+          {
+            "p_mean": 0.1836,
+            "label_freq": 0.2632,
+            "ambiguity": 0.2632,
+            "n": 19
+          },
+          {
+            "p_mean": 0.3022,
+            "label_freq": 0.2632,
+            "ambiguity": 0.2632,
+            "n": 19
+          },
+          {
+            "p_mean": 0.4165,
+            "label_freq": 0.5789,
+            "ambiguity": 0.4211,
+            "n": 19
+          },
+          {
+            "p_mean": 0.495,
+            "label_freq": 0.6316,
+            "ambiguity": 0.3684,
+            "n": 19
+          },
+          {
+            "p_mean": 0.5433,
+            "label_freq": 0.4444,
+            "ambiguity": 0.4444,
+            "n": 18
+          },
+          {
+            "p_mean": 0.6019,
+            "label_freq": 0.4444,
+            "ambiguity": 0.4444,
+            "n": 18
+          },
+          {
+            "p_mean": 0.6531,
+            "label_freq": 0.7778,
+            "ambiguity": 0.2222,
+            "n": 18
+          },
+          {
+            "p_mean": 0.6816,
+            "label_freq": 0.7778,
+            "ambiguity": 0.2222,
+            "n": 18
+          },
+          {
+            "p_mean": 0.7067,
+            "label_freq": 0.6667,
+            "ambiguity": 0.3333,
+            "n": 18
+          },
+          {
+            "p_mean": 0.7441,
+            "label_freq": 0.8333,
+            "ambiguity": 0.1667,
+            "n": 18
+          },
+          {
+            "p_mean": 0.7704,
+            "label_freq": 0.8889,
+            "ambiguity": 0.1111,
+            "n": 18
+          },
+          {
+            "p_mean": 0.7915,
+            "label_freq": 0.7778,
+            "ambiguity": 0.2222,
+            "n": 18
+          },
+          {
+            "p_mean": 0.8336,
+            "label_freq": 0.5556,
+            "ambiguity": 0.4444,
+            "n": 18
+          },
+          {
+            "p_mean": 0.8689,
+            "label_freq": 0.7222,
+            "ambiguity": 0.2778,
+            "n": 18
+          }
+        ]
+      }
+    ],
+    "isotonic_descriptive_sensitivity": {
+      "descriptive_isotonic_logloss": 0.53609,
+      "descriptive_isotonic_auc": 0.77085,
+      "mean_min_p_1minus_p": 0.26545
+    }
+  }
+}

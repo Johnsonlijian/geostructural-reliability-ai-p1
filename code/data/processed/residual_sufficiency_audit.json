@@ -1,0 +1,296 @@
+{
+  "interpretation": "Positive dlogloss means the tested variant is worse than the margin-only logistic coordinate under earthquake-grouped CV. A negative CI entirely below zero would be evidence that residual/raw variables improve OOS likelihood after the margin.",
+  "SPT_Cetin2018": {
+    "n": 208,
+    "n_groups": 27,
+    "variants": {
+      "standard_public_features::logistic": {
+        "logloss": 0.43732,
+        "auc": 0.87303,
+        "dlogloss_variant_minus_margin": {
+          "mean": -0.01261,
+          "lo": -0.09412,
+          "hi": 0.04823,
+          "P_gt_0": 0.358
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "standard_public_features::hist_gbt": {
+        "logloss": 0.47163,
+        "auc": 0.90265,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.02171,
+          "lo": -0.12012,
+          "hi": 0.16689,
+          "P_gt_0": 0.646
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "standard_public_features::hist_gbt_without_margin": {
+        "logloss": 0.49642,
+        "auc": 0.86507,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.0465,
+          "lo": -0.06517,
+          "hi": 0.15802,
+          "P_gt_0": 0.814
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "raw_no_explicit_effstress_or_gwt::logistic": {
+        "logloss": 0.42971,
+        "auc": 0.87778,
+        "dlogloss_variant_minus_margin": {
+          "mean": -0.02021,
+          "lo": -0.09966,
+          "hi": 0.0394,
+          "P_gt_0": 0.273
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "raw_no_explicit_effstress_or_gwt::hist_gbt": {
+        "logloss": 0.47652,
+        "auc": 0.90536,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.0266,
+          "lo": -0.10718,
+          "hi": 0.15301,
+          "P_gt_0": 0.6645
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "raw_no_explicit_effstress_or_gwt::hist_gbt_without_margin": {
+        "logloss": 0.51166,
+        "auc": 0.86768,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.06174,
+          "lo": -0.04426,
+          "hi": 0.16739,
+          "P_gt_0": 0.868
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::logistic": {
+        "logloss": 0.47445,
+        "auc": 0.8653,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.02453,
+          "lo": 0.00596,
+          "hi": 0.04478,
+          "P_gt_0": 0.9925
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::hist_gbt": {
+        "logloss": 0.48111,
+        "auc": 0.87857,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.03119,
+          "lo": -0.08187,
+          "hi": 0.13204,
+          "P_gt_0": 0.7285
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::hist_gbt_without_margin": {
+        "logloss": 0.75757,
+        "auc": 0.47671,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.30765,
+          "lo": 0.21249,
+          "hi": 0.37191,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      }
+    },
+    "margin_only_logistic": {
+      "logloss": 0.44992,
+      "auc": 0.89818
+    },
+    "ambiguous_band": {
+      "n": 119,
+      "prob_range": [
+        0.3,
+        0.7
+      ],
+      "standard_public_features": {
+        "logloss": 0.75896,
+        "auc": 0.66709
+      },
+      "raw_no_explicit_effstress_or_gwt": {
+        "logloss": 0.77586,
+        "auc": 0.67542
+      },
+      "groundwater_only_after_margin": {
+        "logloss": 0.79652,
+        "auc": 0.38362
+      }
+    }
+  },
+  "CPT_Geyin2021": {
+    "n": 275,
+    "n_groups": 21,
+    "variants": {
+      "all_features_including_LPI_FS::logistic": {
+        "logloss": 0.70978,
+        "auc": 0.67014,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.10486,
+          "lo": 0.02112,
+          "hi": 0.22586,
+          "P_gt_0": 0.995
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "all_features_including_LPI_FS::hist_gbt": {
+        "logloss": 1.0707,
+        "auc": 0.61294,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.46577,
+          "lo": 0.34237,
+          "hi": 0.64477,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "all_features_including_LPI_FS::hist_gbt_without_margin": {
+        "logloss": 1.06952,
+        "auc": 0.61261,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.46459,
+          "lo": 0.3431,
+          "hi": 0.64433,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_or_FS::logistic": {
+        "logloss": 0.7031,
+        "auc": 0.67605,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.09817,
+          "lo": 0.01491,
+          "hi": 0.2169,
+          "P_gt_0": 0.994
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_or_FS::hist_gbt": {
+        "logloss": 1.07267,
+        "auc": 0.62356,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.46774,
+          "lo": 0.31782,
+          "hi": 0.67749,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_or_FS::hist_gbt_without_margin": {
+        "logloss": 0.96531,
+        "auc": 0.57732,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.36039,
+          "lo": 0.28233,
+          "hi": 0.4876,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_FS_or_GWT::logistic": {
+        "logloss": 0.70967,
+        "auc": 0.6645,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.10474,
+          "lo": 0.03417,
+          "hi": 0.19367,
+          "P_gt_0": 0.998
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_FS_or_GWT::hist_gbt": {
+        "logloss": 1.02542,
+        "auc": 0.63012,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.42049,
+          "lo": 0.28117,
+          "hi": 0.62961,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "rawish_no_LPI_FS_or_GWT::hist_gbt_without_margin": {
+        "logloss": 0.9135,
+        "auc": 0.58057,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.30857,
+          "lo": 0.2066,
+          "hi": 0.45035,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::logistic": {
+        "logloss": 0.60227,
+        "auc": 0.71731,
+        "dlogloss_variant_minus_margin": {
+          "mean": -0.00265,
+          "lo": -0.01744,
+          "hi": 0.01047,
+          "P_gt_0": 0.3345
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::hist_gbt": {
+        "logloss": 0.8339,
+        "auc": 0.6096,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.22897,
+          "lo": 0.1261,
+          "hi": 0.34294,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      },
+      "groundwater_only_after_margin::hist_gbt_without_margin": {
+        "logloss": 0.75391,
+        "auc": 0.49488,
+        "dlogloss_variant_minus_margin": {
+          "mean": 0.14898,
+          "lo": 0.06276,
+          "hi": 0.26952,
+          "P_gt_0": 1.0
+        },
+        "variant_improves_OOS_logloss": false
+      }
+    },
+    "margin_only_logistic": {
+      "logloss": 0.60493,
+      "auc": 0.71378
+    },
+    "ambiguous_band": {
+      "n": 125,
+      "prob_range": [
+        0.3,
+        0.7
+      ],
+      "all_features_including_LPI_FS": {
+        "logloss": 0.98043,
+        "auc": 0.51682
+      },
+      "rawish_no_LPI_or_FS": {
+        "logloss": 0.95447,
+        "auc": 0.46583
+      },
+      "rawish_no_LPI_FS_or_GWT": {
+        "logloss": 0.93971,
+        "auc": 0.48826
+      },
+      "groundwater_only_after_margin": {
+        "logloss": 0.82181,
+        "auc": 0.33086
+      }
+    }
+  }
+}
