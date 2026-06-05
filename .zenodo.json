@@ -1,7 +1,7 @@
 {
-  "title": "A physics-informed validation framework for reliable machine-learning liquefaction prediction",
+  "title": "Effective-stress coordinates bound transferable machine-learning gains in liquefaction prediction",
   "upload_type": "software",
-  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, and publication figure sources for a physics-informed validation framework for reliable machine-learning liquefaction prediction.",
+  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of effective-stress coordinate bounds and conformal decision reliability in machine-learning liquefaction prediction.",
   "creators": [
     {
       "name": "[Family name], [Given name]",
@@ -13,6 +13,7 @@
     "soil liquefaction",
     "geotechnical AI",
     "physics-informed machine learning",
+    "measured improvement bound",
     "grouped validation",
     "conformal prediction",
     "operational non-inferiority"

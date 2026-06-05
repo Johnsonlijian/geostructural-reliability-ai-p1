@@ -61,6 +61,34 @@ def test_conformal_decision_metrics_make_uncertainty_operational():
     assert cpt["mechanism_band_by_band"]["1"]["two_label_rate"] > 0.80
 
 
+def test_repeated_random_split_sensitivity_quantifies_optimism():
+    random_split = load("random_split_sensitivity.json")
+    assert random_split["random_split_protocol"]["n_repeats"] == 100
+    assert random_split["headline_models"]["SPT_Cetin2018"] == "hist_gbt"
+    assert random_split["headline_models"]["CPT_Geyin2021"] == "hist_gbt"
+
+    spt = random_split["datasets"]["SPT_Cetin2018"]["models"]["hist_gbt"]
+    cpt = random_split["datasets"]["CPT_Geyin2021"]["models"]["hist_gbt"]
+    assert 0.046 <= spt["optimism_gap_random_minus_grouped"]["median"] <= 0.047
+    assert spt["optimism_gap_random_minus_grouped"]["q05"] > 0.02
+    assert round(cpt["optimism_gap_random_minus_grouped"]["median"], 3) == 0.117
+    assert cpt["optimism_gap_random_minus_grouped"]["q05"] > 0.09
+
+
+def test_conformal_split_sensitivity_keeps_decision_pattern_bounded():
+    split = load("conformal_split_sensitivity.json")
+    assert split["settings"]["alpha"] == 0.1
+
+    spt = split["datasets"]["SPT_Cetin2018"]
+    cpt = split["datasets"]["CPT_Geyin2021"]
+    assert spt["n_valid_splits"] == 100
+    assert cpt["n_valid_splits"] == 100
+    assert round(spt["summary"]["mechanism_band_coverage"]["median"], 3) == 0.931
+    assert round(cpt["summary"]["mechanism_band_coverage"]["median"], 3) == 0.931
+    assert spt["summary"]["critical_band_two_label_rate"]["median"] > 0.90
+    assert cpt["summary"]["critical_band_two_label_rate"]["median"] > 0.90
+
+
 def test_groundwater_residual_stratification_stays_diagnostic_not_causal():
     gw = load("groundwater_residual_stratification.json")
     assert "not causal identification" in gw["interpretation"]

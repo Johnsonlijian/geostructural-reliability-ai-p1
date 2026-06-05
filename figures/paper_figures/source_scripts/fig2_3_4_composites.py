@@ -63,19 +63,21 @@ def save(fig, stem: str):
         print(f"wrote {path}")
 
 
-def panel_validation(ax, spt_grouped, cpt, rel):
-    label(ax, "A", "Why grouped validation sets the ceiling")
+def panel_validation(ax, rel, random_sens):
+    label(ax, "A", "Grouped validation defines the measured bound")
     datasets = ["SPT triggering", "CPT manifestation"]
     xbase = np.arange(2)
+    spt_rand = random_sens["datasets"]["SPT_Cetin2018"]["models"]["hist_gbt"]
+    cpt_rand = random_sens["datasets"]["CPT_Geyin2021"]["models"]["hist_gbt"]
     vals = {
         "mechanism": [rel["SPT_Cetin2018"]["physics_auc_ci"]["auc"], rel["CPT_Geyin2021"]["physics_auc_ci"]["auc"]],
         "random ML": [
-            spt_grouped["models"]["random_forest"]["random_cv_auc"],
-            cpt["ML_optimism_gap"]["hist_gbt"]["random"],
+            spt_rand["random_auc"]["median"],
+            cpt_rand["random_auc"]["median"],
         ],
         "grouped ML": [
-            spt_grouped["models"]["random_forest"]["event_grouped_auc"],
-            cpt["ML_optimism_gap"]["hist_gbt"]["event_grouped"],
+            spt_rand["grouped_auc_reference"],
+            cpt_rand["grouped_auc_reference"],
         ],
     }
     markers = {"mechanism": "o", "random ML": "s", "grouped ML": "^"}
@@ -90,7 +92,7 @@ def panel_validation(ax, spt_grouped, cpt, rel):
     ax.set_ylim(0.56, 0.96)
     ax.grid(axis="y", color="#e5e7eb")
     ax.legend(frameon=False, fontsize=8, loc="lower left")
-    ax.text(0.52, 0.91, "optimism gap\n+0.055 / +0.112", transform=ax.transAxes, fontsize=8.5, color="#374151")
+    ax.text(0.52, 0.91, "100-repeat optimism gap\n+0.047 / +0.117", transform=ax.transAxes, fontsize=8.5, color="#374151")
 
 
 def panel_logloss(ax, suff):
@@ -150,7 +152,7 @@ def panel_residual(ax, residual):
 
 
 def panel_practical_gain(ax, practical):
-    label(ax, "D", "Excluded-gain audit defines the ceiling")
+    label(ax, "D", "Excluded-gain audit defines the bound")
     rows = [
         ("SPT", practical["summary"]["SPT_Cetin2018"]),
         ("CPT", practical["summary"]["CPT_Geyin2021"]),
@@ -191,18 +193,17 @@ def panel_practical_gain(ax, practical):
 
 
 def fig2():
-    spt_grouped = load("cetin2018_grouped_validation.json")
-    cpt = load("geyin2021_cpt_results.json")
     rel = load("reliability_upgrade.json")
+    random_sens = load("random_split_sensitivity.json")
     suff = load("sufficiency_likelihood.json")
     residual = load("residual_sufficiency_audit.json")
     practical = load("practical_equivalence_audit.json")
     fig, axs = plt.subplots(2, 2, figsize=(13.2, 8.7))
-    panel_validation(axs[0, 0], spt_grouped, cpt, rel)
+    panel_validation(axs[0, 0], rel, random_sens)
     panel_logloss(axs[0, 1], suff)
     panel_residual(axs[1, 0], residual)
     panel_practical_gain(axs[1, 1], practical)
-    fig.suptitle("Ceiling and excluded-gain audit beyond the effective-stress margin", fontsize=15, fontweight="bold", y=0.99)
+    fig.suptitle("Measured bound and excluded-gain audit beyond the effective-stress margin", fontsize=15, fontweight="bold", y=0.99)
     fig.tight_layout(rect=[0, 0.02, 1, 0.96])
     save(fig, "Fig2_transfer_sufficiency")
 

@@ -19,7 +19,7 @@ Uncertainty / reliability synthesis.
 
 | Panel | Job | Evidence |
 |---|---|---|
-| A | Show coverage failure: plain conformal over-covers the safe/critical bands and under-covers high-risk tails. | `innovation_analysis.json` |
+| A | Show coverage failure: plain conformal over-covers the critical band but under-covers the safe band and, for CPT, the high-risk band. | `innovation_analysis.json` |
 | B | Give the failure a mechanism address using observed frequency vs mechanistic probability and the critical band. | `innovation_analysis.json`, `ambiguity_floor_sensitivity.json` |
 | C | Show repair: mechanism-band conformal moves regime coverage toward the target. | `innovation_analysis.json` |
 | D | Show decision handoff: singleton, two-label, and critical-band uncertain set rates. | `conformal_decision_metrics.json` |

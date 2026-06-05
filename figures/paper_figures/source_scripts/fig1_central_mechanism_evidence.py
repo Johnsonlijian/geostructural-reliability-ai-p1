@@ -161,7 +161,7 @@ def panel_b(ax, rel: dict) -> None:
     ax.axhline(0.5, color="#9aa0a6", lw=0.8)
     ax.legend(frameon=False, fontsize=8, loc="lower left")
     ax.grid(axis="y", color="#e5e7eb", lw=0.8)
-    ax.text(0.02, 0.94, "Random split optimism:\n+0.055 SPT, +0.112 CPT", transform=ax.transAxes, fontsize=8.5)
+    ax.text(0.02, 0.94, "100-repeat random optimism:\n+0.047 SPT, +0.117 CPT", transform=ax.transAxes, fontsize=8.5)
 
 
 def panel_c(ax, amb: dict) -> None:
@@ -261,7 +261,7 @@ def main() -> None:
     fig.text(
         0.50,
         0.942,
-        "mechanism -> measured ceiling -> failure locus -> decision repair -> bounded claim",
+        "mechanism -> measured bound -> failure locus -> decision repair -> bounded claim",
         ha="center",
         fontsize=9,
         color="#37474f",

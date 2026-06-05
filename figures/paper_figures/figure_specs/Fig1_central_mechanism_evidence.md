@@ -24,6 +24,7 @@ tasks.
 ## Evidence Sources
 
 - `code/data/processed/reliability_upgrade.json`
+- `code/data/processed/random_split_sensitivity.json`
 - `code/data/processed/ambiguity_floor_sensitivity.json`
 - `code/data/processed/innovation_analysis.json`
 - `code/data/processed/conformal_decision_metrics.json`

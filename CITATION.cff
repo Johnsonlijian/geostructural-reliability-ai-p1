@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper."
-title: "Measured mechanistic-coordinate ceilings and conformal decision reliability for machine-learning liquefaction prediction"
+title: "Effective-stress coordinates bound transferable machine-learning gains in liquefaction prediction"
 authors:
   - family-names: "[Family name]"
     given-names: "[Given name]"

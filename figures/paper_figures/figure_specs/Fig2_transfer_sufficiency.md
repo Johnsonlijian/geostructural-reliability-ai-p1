@@ -1,4 +1,4 @@
-# Fig. 2 Ceiling And Excluded-Gain Audit
+# Fig. 2 Measured Bound And Excluded-Gain Audit
 
 ## Scientific Question
 
@@ -19,7 +19,7 @@ Integrated result figure / evidence-chain figure.
 
 | Panel | Job | Evidence |
 |---|---|---|
-| A | Show why grouped validation sets the ceiling by contrasting random optimism against the physics baseline. | `cetin2018_grouped_validation.json`, `geyin2021_cpt_results.json`, `reliability_upgrade.json` |
+| A | Show why grouped validation defines the measured bound by contrasting 100-repeat random optimism against the physics baseline. | `random_split_sensitivity.json`, `reliability_upgrade.json` |
 | B | Show that full-feature likelihood gains are not supported. | `sufficiency_likelihood.json` |
 | C | Show that residual/raw/groundwater terms test what the margin leaves behind. | `residual_sufficiency_audit.json` |
 | D | Present a 2 x 3 excluded-gain matrix; SPT residual log-loss gain is the explicit caveat. | `practical_equivalence_audit.json` |

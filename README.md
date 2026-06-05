@@ -1,9 +1,8 @@
-# Mechanistic-Coordinate Ceilings And Conformal Decision Reliability For Liquefaction AI
+# Effective-Stress Coordinate Bounds And Conformal Decision Reliability For Liquefaction AI
 
 This is the public reproducibility package for the paper:
 
-**Measured mechanistic-coordinate ceilings and conformal decision reliability for machine-learning
-liquefaction prediction**
+**Effective-stress coordinates bound transferable machine-learning gains in liquefaction prediction**
 
 The package contains code, tests, derived outputs, figure-generation scripts, figure specifications,
 and publication-figure exports. It intentionally excludes active manuscript files, cover letters,
@@ -34,6 +33,9 @@ effective-stress margin. It does not claim mathematical sufficiency, a universal
 groundwater is physically unimportant; groundwater is treated as physically essential but largely
 absorbed into the margin before residual learning is tested.
 
+The `postliq_settlement` helper is retained as a tested utility for future mechanics extensions. It is
+not used as evidence for the P1 manuscript conclusions.
+
 ## Quick Check
 
 ```powershell
@@ -41,7 +43,7 @@ Set-Location code
 python -m pytest tests -q
 ```
 
-Expected result at package preparation: `26 passed`.
+Expected result at package preparation: `28 passed`.
 
 ## Repository Status
 
