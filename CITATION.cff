@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper."
-title: "A physics-informed validation framework for reliable machine-learning liquefaction prediction"
+title: "Measured mechanistic-coordinate ceilings and conformal decision reliability for machine-learning liquefaction prediction"
 authors:
   - family-names: "[Family name]"
     given-names: "[Given name]"
@@ -14,6 +14,8 @@ keywords:
   - earthquake engineering
   - effective stress
   - physics-informed machine learning
+  - measured improvement bound
   - operational non-inferiority
   - conformal prediction
+  - decision reliability
   - trustworthy AI

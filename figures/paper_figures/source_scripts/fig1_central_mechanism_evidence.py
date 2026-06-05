@@ -93,7 +93,7 @@ def arrow(ax, start, end, color="#34495e", lw=1.7):
 
 
 def panel_a(ax) -> None:
-    add_panel_label(ax, "A", "Physics-informed margin as a compressive coordinate")
+    add_panel_label(ax, "A", "Mechanism: groundwater is absorbed through effective stress")
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.axis("off")
@@ -109,10 +109,12 @@ def panel_a(ax) -> None:
     rounded(ax, (0.38, 0.78), 0.22, 0.11, "soil\nresistance\nCRR", "#a9d18e")
     rounded(ax, (0.70, 0.78), 0.22, 0.11, "effective\nstress\nstate", "#9dc3e6")
     rounded(ax, (0.29, 0.37), 0.38, 0.13, "margin coordinate\ns = ln(CSR/CRR) or ln(1+LPI)", "#f7f3d7", fs=9)
+    rounded(ax, (0.70, 0.36), 0.24, 0.13, "GWT shift\nFS 0.64 -> 0.90 -> 1.25", "#dceefb", fs=8)
 
     arrow(ax, (0.18, 0.78), (0.38, 0.50))
     arrow(ax, (0.49, 0.78), (0.49, 0.50))
     arrow(ax, (0.81, 0.78), (0.60, 0.50))
+    arrow(ax, (0.71, 0.43), (0.66, 0.43), color="#145a7a", lw=1.4)
 
     ax.plot([0.20, 0.78], [0.24, 0.24], color="#2c3e50", lw=2.0)
     ax.add_patch(Polygon([[0.48, 0.21], [0.52, 0.21], [0.52, 0.27], [0.48, 0.27]], color="#c0392b"))
@@ -122,7 +124,7 @@ def panel_a(ax) -> None:
     ax.text(
         0.50,
         0.04,
-        "Data help most after the mechanism: residual checks, claim bounds, and reliability calibration.",
+        "Known physics enters the margin; data audit tests only what remains.",
         ha="center",
         fontsize=8.5,
         color="#37474f",
@@ -130,7 +132,7 @@ def panel_a(ax) -> None:
 
 
 def panel_b(ax, rel: dict) -> None:
-    add_panel_label(ax, "B", "Grouped validation: margin is not outperformed")
+    add_panel_label(ax, "B", "Evidence audit: no supported OOD gain beyond the margin")
     datasets = ["SPT\ntriggering", "CPT\nmanifestation"]
     phys = [
         rel["SPT_Cetin2018"]["physics_auc_ci"],
@@ -163,7 +165,7 @@ def panel_b(ax, rel: dict) -> None:
 
 
 def panel_c(ax, amb: dict) -> None:
-    add_panel_label(ax, "C", "Coordinate ambiguity is stable and localized near the boundary")
+    add_panel_label(ax, "C", "Failure locus: ambiguity concentrates near the boundary")
     colors = {"SPT_Cetin2018": "#2f80ed", "CPT_Geyin2021": "#6f4e9b"}
     labels = {"SPT_Cetin2018": "SPT triggering", "CPT_Geyin2021": "CPT manifestation"}
     for key in ["SPT_Cetin2018", "CPT_Geyin2021"]:
@@ -196,38 +198,40 @@ def panel_c(ax, amb: dict) -> None:
     )
 
 
-def panel_d(ax, innov: dict) -> None:
-    add_panel_label(ax, "D", "Mechanism-conditioned conformal moves coverage toward target")
-    bands = ["safe", "critical", "high"]
-    plain = innov["SPT/Cetin2018"]["A4_mondrian_band_coverage"]["plain"]
-    mondrian = innov["SPT/Cetin2018"]["A4_mondrian_band_coverage"]["mondrian"]
-    x = np.arange(3)
-    w = 0.34
-    ax.bar(x - w / 2, [plain[str(i)] for i in range(3)], width=w, color="#b7bdc5", edgecolor="#1b1f23", label="plain")
-    ax.bar(x + w / 2, [mondrian[str(i)] for i in range(3)], width=w, color="#27ae60", edgecolor="#1b1f23", label="margin-band")
-    ax.axhline(0.90, color="#c0392b", ls="--", lw=1.4)
-    ax.text(2.36, 0.902, "target 0.90", fontsize=8, color="#7b241c")
+def panel_d(ax, decision: dict) -> None:
+    add_panel_label(ax, "D", "Decision repair: critical band becomes a two-label flag")
+    keys = ["SPT_Cetin2018", "CPT_Geyin2021"]
+    labels = ["SPT\ntriggering", "CPT\nmanifestation"]
+    coverage = []
+    critical_two = []
+    two_label = []
+    for key in keys:
+        a = decision["datasets"][key]["alpha"]["0.10"]
+        coverage.append(a["mechanism_band"]["coverage"])
+        two_label.append(a["mechanism_band"]["two_label_rate"])
+        critical_two.append(a["mechanism_band_by_band"]["1"]["two_label_rate"])
+    x = np.arange(2)
+    w = 0.24
+    ax.bar(x - w, coverage, width=w, color="#27ae60", edgecolor="#1b1f23", label="band coverage")
+    ax.bar(x, two_label, width=w, color="#b7bdc5", edgecolor="#1b1f23", label="two-label all")
+    ax.bar(x + w, critical_two, width=w, color="#f2c94c", edgecolor="#1b1f23", label="two-label critical")
+    ax.axhline(0.90, color="#c0392b", ls="--", lw=1.2)
+    ax.text(1.29, 0.905, "target 0.90", fontsize=8, color="#7b241c")
     ax.set_xticks(x)
-    ax.set_xticklabels(bands)
-    ax.set_ylabel("SPT band coverage")
-    ax.set_ylim(0.84, 1.01)
+    ax.set_xticklabels(labels)
+    ax.set_ylabel("coverage or set rate")
+    ax.set_ylim(0, 1.0)
     ax.grid(axis="y", color="#e5e7eb", lw=0.8)
-    ax.legend(frameon=False, fontsize=8, loc="lower right")
-    ax.text(
-        0.02,
-        0.80,
-        "Critical band moves\nfrom over-coverage\ntoward the target",
-        transform=ax.transAxes,
-        fontsize=8.2,
-        color="#37474f",
-    )
+    ax.legend(frameon=False, fontsize=7.4, loc="lower right")
+    for xi, val in zip(x + w, critical_two):
+        ax.text(xi, val + 0.025, f"{val*100:.1f}%", ha="center", fontsize=8, color="#7b5a00")
 
 
 def main() -> None:
     ensure_dirs()
     rel = load_json("reliability_upgrade.json")
     amb = load_json("ambiguity_floor_sensitivity.json")
-    innov = load_json("innovation_analysis.json")
+    decision = load_json("conformal_decision_metrics.json")
 
     plt.rcParams.update(
         {
@@ -246,13 +250,21 @@ def main() -> None:
     panel_a(fig.add_subplot(gs[0, 0]))
     panel_b(fig.add_subplot(gs[0, 1]), rel)
     panel_c(fig.add_subplot(gs[1, 0]), amb)
-    panel_d(fig.add_subplot(gs[1, 1]), innov)
+    panel_d(fig.add_subplot(gs[1, 1]), decision)
 
     fig.suptitle(
-        "Physics-informed validation for reliable liquefaction AI",
+        "Mechanism-evidence-decision loop for reliable liquefaction AI",
         fontsize=15,
         fontweight="bold",
         y=0.985,
+    )
+    fig.text(
+        0.50,
+        0.942,
+        "mechanism -> measured ceiling -> failure locus -> decision repair -> bounded claim",
+        ha="center",
+        fontsize=9,
+        color="#37474f",
     )
     paths = {
         "svg": OUT / "svg" / "Fig1_central_mechanism_evidence.svg",

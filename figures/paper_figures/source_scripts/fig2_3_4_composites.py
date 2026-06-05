@@ -64,7 +64,7 @@ def save(fig, stem: str):
 
 
 def panel_validation(ax, spt_grouped, cpt, rel):
-    label(ax, "A", "Random validation inflates apparent ML skill")
+    label(ax, "A", "Why grouped validation sets the ceiling")
     datasets = ["SPT triggering", "CPT manifestation"]
     xbase = np.arange(2)
     vals = {
@@ -94,7 +94,7 @@ def panel_validation(ax, spt_grouped, cpt, rel):
 
 
 def panel_logloss(ax, suff):
-    label(ax, "B", "Full models do not improve OOS likelihood")
+    label(ax, "B", "Full-feature gains are not supported")
     models = ["logistic", "random_forest", "grad_boost", "hist_gbt", "neural_net"]
     y_positions = np.arange(len(models) * 2)
     rows = []
@@ -105,16 +105,19 @@ def panel_logloss(ax, suff):
     for y, (name, mean, lo, hi, color) in zip(y_positions, rows):
         ax.errorbar(mean, y, xerr=[[mean - lo], [hi - mean]], fmt="o", color=color, ecolor=color, capsize=2.5, ms=4.5)
     ax.axvline(0, color="#111827", lw=1)
+    ax.axvline(-0.10, color="#c0392b", lw=1, ls="--")
     ax.set_yticks(y_positions)
     ax.set_yticklabels([r[0] for r in rows], fontsize=7.2)
     ax.invert_yaxis()
-    ax.set_xlabel("d log-loss: full model minus margin")
+    ax.set_xlabel("Delta log-loss (candidate - margin; <0 favors candidate)")
+    xmin = min(-0.13, min(r[2] for r in rows) - 0.03)
+    xmax = max(r[3] for r in rows) + 0.08
+    ax.set_xlim(xmin, xmax)
     ax.grid(axis="x", color="#e5e7eb")
-    ax.text(0.02, 0.04, "left of zero would support residual gain", transform=ax.transAxes, fontsize=8, color="#374151")
 
 
 def panel_residual(ax, residual):
-    label(ax, "C", "Residual/raw variables after the margin")
+    label(ax, "C", "Residual and groundwater terms test what the margin leaves behind")
     pick = [
         ("SPT", "standard_public_features::logistic", BLUE),
         ("SPT", "raw_no_explicit_effstress_or_gwt::logistic", BLUE),
@@ -136,43 +139,55 @@ def panel_residual(ax, residual):
         mean, lo, hi = ci["mean"], ci["lo"], ci["hi"]
         ax.errorbar(mean, y, xerr=[[mean - lo], [hi - mean]], fmt="D", ms=4.5, color=color, ecolor=color, capsize=3)
     ax.axvline(0, color="#111827", lw=1)
+    ax.axvline(-0.10, color="#c0392b", lw=1, ls="--")
     ax.set_yticks(range(len(pick)))
     ax.set_yticklabels([f"{ds}: {labels.get(key, key)}" for ds, key, _ in pick], fontsize=7.5)
     ax.invert_yaxis()
-    ax.set_xlabel("d log-loss after margin")
+    ax.set_xlabel("Delta log-loss (candidate - margin; <0 favors candidate)")
+    ax.set_xlim(-0.13, 0.50)
     ax.grid(axis="x", color="#e5e7eb")
-    ax.text(0.02, 0.92, "No CI is entirely below zero", transform=ax.transAxes, fontsize=8.5, color="#374151")
+    ax.text(0.54, 0.08, "No CI is entirely below zero", transform=ax.transAxes, fontsize=8.4, color="#374151")
 
 
 def panel_practical_gain(ax, practical):
-    label(ax, "D", "Practical-improvement audit bounds the claim")
+    label(ax, "D", "Excluded-gain audit defines the ceiling")
     rows = [
-        ("SPT", "AUC gain > 0.02", practical["summary"]["SPT_Cetin2018"]["excludes_full_AUC_gain_gt_0.02"]),
-        ("SPT", "full-model log-loss gain > 0.10", practical["summary"]["SPT_Cetin2018"]["excludes_model_logloss_gain_gt_0.10"]),
-        ("SPT", "residual log-loss gain > 0.10", practical["summary"]["SPT_Cetin2018"]["excludes_residual_variant_logloss_gain_gt_0.10"]),
-        ("CPT", "AUC gain > 0.02", practical["summary"]["CPT_Geyin2021"]["excludes_full_AUC_gain_gt_0.02"]),
-        ("CPT", "full-model log-loss gain > 0.10", practical["summary"]["CPT_Geyin2021"]["excludes_model_logloss_gain_gt_0.10"]),
-        ("CPT", "residual log-loss gain > 0.10", practical["summary"]["CPT_Geyin2021"]["excludes_residual_variant_logloss_gain_gt_0.10"]),
+        ("SPT", practical["summary"]["SPT_Cetin2018"]),
+        ("CPT", practical["summary"]["CPT_Geyin2021"]),
     ]
-    y = np.arange(len(rows))
-    colors = [GREEN if r[2] else AMBER for r in rows]
-    ax.barh(y, [1] * len(rows), color=colors, edgecolor=DARK, height=0.62)
-    ax.set_yticks(y)
-    ax.set_yticklabels([f"{ds}: {claim}" for ds, claim, _ in rows], fontsize=7.4)
-    ax.set_xlim(0, 1)
-    ax.set_xticks([])
-    ax.invert_yaxis()
-    for yi, (_, _, passed) in enumerate(rows):
-        ax.text(
-            0.50,
-            yi,
-            "excluded" if passed else "not excluded",
-            ha="center",
-            va="center",
-            fontsize=8.4,
-            fontweight="bold",
-            color="#0f172a",
-        )
+    cols = [
+        ("AUC gain\n> 0.02", "excludes_full_AUC_gain_gt_0.02"),
+        ("full log-loss\ngain > 0.10", "excludes_model_logloss_gain_gt_0.10"),
+        ("residual log-loss\ngain > 0.10", "excludes_residual_variant_logloss_gain_gt_0.10"),
+    ]
+    ax.set_xlim(0, 3)
+    ax.set_ylim(0, 2)
+    ax.set_xticks([0.5, 1.5, 2.5])
+    ax.set_xticklabels([c[0] for c in cols], fontsize=8)
+    ax.set_yticks([1.5, 0.5])
+    ax.set_yticklabels([r[0] for r in rows], fontsize=9, fontweight="bold")
+    ax.tick_params(length=0)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    for i, (_, summary) in enumerate(rows):
+        y = 1 - i
+        for j, (_, key) in enumerate(cols):
+            passed = summary[key]
+            face = GREEN if passed else AMBER
+            box = FancyBboxPatch((j + 0.06, y + 0.10), 0.88, 0.78, boxstyle="round,pad=0.01,rounding_size=0.025", facecolor=face, edgecolor=DARK, lw=1.1)
+            ax.add_patch(box)
+            ax.text(
+                j + 0.50,
+                y + (0.55 if not passed else 0.50),
+                "excluded" if passed else "not excluded",
+                ha="center",
+                va="center",
+                fontsize=8.5,
+                fontweight="bold",
+                color="#0f172a",
+            )
+            if not passed:
+                ax.text(j + 0.50, y + 0.32, "SPT residual caveat", ha="center", va="center", fontsize=7.5, color="#7b5a00")
 
 
 def fig2():
@@ -187,13 +202,35 @@ def fig2():
     panel_logloss(axs[0, 1], suff)
     panel_residual(axs[1, 0], residual)
     panel_practical_gain(axs[1, 1], practical)
-    fig.suptitle("Operational non-inferiority under earthquake-grouped validation", fontsize=15, fontweight="bold", y=0.99)
+    fig.suptitle("Ceiling and excluded-gain audit beyond the effective-stress margin", fontsize=15, fontweight="bold", y=0.99)
     fig.tight_layout(rect=[0, 0.02, 1, 0.96])
     save(fig, "Fig2_transfer_sufficiency")
 
 
+def panel_plain_failure(ax, innov):
+    label(ax, "A", "Plain marginal coverage hides regime-level failure")
+    bands = ["safe", "critical", "high"]
+    x = np.arange(3)
+    w = 0.26
+    for ds, color, off in [("SPT/Cetin2018", BLUE, -w / 2), ("CPT/Geyin2021", PURPLE, w / 2)]:
+        plain = innov[ds]["A4_mondrian_band_coverage"]["plain"]
+        vals = [plain[str(j)] for j in range(3)]
+        ax.bar(x + off, vals, width=w, color=color, edgecolor=DARK, alpha=0.88, label=f"{ds.split('/')[0]} plain")
+        for xi, val in zip(x + off, vals):
+            ax.text(xi, val + 0.006, f"{val:.3f}", ha="center", fontsize=7.2, color="#374151")
+    ax.axhline(0.90, color="#c0392b", ls="--", lw=1.2)
+    ax.text(2.08, 0.902, "target 0.90", fontsize=8, color="#7b241c")
+    ax.set_xticks(x)
+    ax.set_xticklabels(bands)
+    ax.set_ylabel("plain conformal coverage")
+    ax.set_ylim(0.84, 1.02)
+    ax.grid(axis="y", color="#e5e7eb")
+    ax.legend(frameon=False, fontsize=8, loc="lower center", ncol=2)
+    ax.text(0.02, 0.08, "Marginal validity does not imply regime reliability.", transform=ax.transAxes, fontsize=8.2, color="#374151")
+
+
 def panel_ambiguity(ax, innov):
-    label(ax, "A", "Observed frequency follows the margin, with a critical ambiguity band")
+    label(ax, "B", "Critical-state band locates the remaining ambiguity")
     for ds, color, marker in [("SPT/Cetin2018", BLUE, "o"), ("CPT/Geyin2021", PURPLE, "s")]:
         rows = innov[ds]["A3_irreducible"]["bands"]
         p = [r["p_mean"] for r in rows]
@@ -208,6 +245,7 @@ def panel_ambiguity(ax, innov):
     ax.set_ylim(0, 1)
     ax.legend(frameon=False, fontsize=8)
     ax.grid(color="#e5e7eb")
+    ax.text(0.32, 0.08, "82% / 52% of coordinate ambiguity\nlies in the critical band", fontsize=8.2, color="#7b5a00")
 
 
 def panel_reliability(ax, rel):
@@ -236,7 +274,7 @@ def panel_reliability(ax, rel):
 
 
 def panel_mondrian(ax, innov):
-    label(ax, "C", "Mechanism-band conformal targets the regimes")
+    label(ax, "C", "Mechanism-band conformal repairs regime coverage")
     bands = ["safe", "critical", "high"]
     x = np.arange(3)
     w = 0.18
@@ -271,6 +309,9 @@ def panel_decision_sets(ax, decision):
     ax.bar(x - w, singleton, width=w, color=BLUE, edgecolor=DARK, label="singleton decision")
     ax.bar(x, two_label, width=w, color=GRAY, edgecolor=DARK, label="two-label uncertain")
     ax.bar(x + w, critical_two, width=w, color=AMBER, edgecolor=DARK, label="critical-band uncertain")
+    for xs, vals in [(x, two_label), (x + w, critical_two)]:
+        for xi, val in zip(xs, vals):
+            ax.text(xi, val + 0.025, f"{val*100:.1f}%", ha="center", fontsize=7.8, color="#374151")
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
     ax.set_ylim(0, 1.0)
@@ -285,11 +326,11 @@ def fig3():
     ambsens = load("ambiguity_floor_sensitivity.json")
     decision = load("conformal_decision_metrics.json")
     fig, axs = plt.subplots(2, 2, figsize=(13.2, 8.7))
-    panel_ambiguity(axs[0, 0], innov)
-    panel_reliability(axs[0, 1], rel)
+    panel_plain_failure(axs[0, 0], innov)
+    panel_ambiguity(axs[0, 1], innov)
     panel_mondrian(axs[1, 0], innov)
     panel_decision_sets(axs[1, 1], decision)
-    fig.suptitle("Coordinate ambiguity and mechanism-conditioned reliability", fontsize=15, fontweight="bold", y=0.99)
+    fig.suptitle("Critical-state decision reliability", fontsize=15, fontweight="bold", y=0.99)
     fig.tight_layout(rect=[0, 0.02, 1, 0.96])
     save(fig, "Fig3_ambiguity_reliability")
 

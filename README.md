@@ -1,8 +1,9 @@
-# Physics-Informed Validation for Reliable Liquefaction AI
+# Mechanistic-Coordinate Ceilings And Conformal Decision Reliability For Liquefaction AI
 
 This is the public reproducibility package for the paper:
 
-**A physics-informed validation framework for reliable machine-learning liquefaction prediction**
+**Measured mechanistic-coordinate ceilings and conformal decision reliability for machine-learning
+liquefaction prediction**
 
 The package contains code, tests, derived outputs, figure-generation scripts, figure specifications,
 and publication-figure exports. It intentionally excludes active manuscript files, cover letters,
@@ -24,6 +25,14 @@ Raw third-party datasets are not included. Users should retrieve them from the o
 in `DATASETS_AND_LINKS.csv`, then place them under the local paths described in the runbook. Derived
 processed outputs are included so that reported tables and figures can be inspected without
 redistributing the raw sources.
+
+## Evidence Boundary
+
+The package supports a bounded, reviewer-auditable claim: tested public predictors under
+earthquake-grouped validation show a measured upper bound on recoverable gain beyond an
+effective-stress margin. It does not claim mathematical sufficiency, a universal Bayes limit, or that
+groundwater is physically unimportant; groundwater is treated as physically essential but largely
+absorbed into the margin before residual learning is tested.
 
 ## Quick Check
 

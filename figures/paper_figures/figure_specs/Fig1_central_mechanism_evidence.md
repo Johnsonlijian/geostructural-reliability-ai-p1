@@ -1,30 +1,39 @@
-# Fig. 1 Central Mechanism-Evidence Synthesis
+# Fig. 1 Mechanism-Evidence-Decision Loop
 
 ## Purpose
 
-Make the paper understandable in one glance: liquefaction prediction is governed by a
-physics-informed effective-stress margin; flexible learners do not show a statistically supported
-transferable likelihood gain beyond that coordinate; remaining ambiguity is concentrated near the
-critical boundary; data are most useful for claim-bound auditing and mechanism-conditioned
-reliability.
+Make the paper understandable in one glance: known effective-stress physics, including groundwater,
+is absorbed into a scalar margin; grouped validation measures the recoverable gain left for standard
+public predictors; remaining ambiguity is concentrated near the critical boundary; conformal
+prediction sets turn that ambiguity into a decision object.
 
 ## Panels
 
-A. Mechanism schematic: earthquake demand and groundwater reduce effective stress; soil resistance and demand combine into a margin coordinate; the critical boundary defines the ambiguity zone.
+A. Mechanism schematic: earthquake demand, soil resistance, and groundwater enter effective stress
+and the margin; a small groundwater inset shows the physical shift while the caption makes clear that
+the residual audit tests only what remains.
 
-B. Transferability summary: grouped-validation AUC for the mechanistic margin versus flexible ML in
-SPT triggering and CPT manifestation.
+B. Evidence audit: grouped-validation AUC for the mechanistic margin versus flexible ML in SPT
+triggering and CPT manifestation, with random-split optimism called out.
 
-C. Mechanistic-coordinate ambiguity: sensitivity of ambiguity floor to bin count for SPT and CPT, with critical-band share callouts.
+C. Failure locus: mechanistic-coordinate ambiguity floor and critical-band share for SPT and CPT.
 
-D. Reliability repair: plain conformal under-covers unseen earthquakes, while
-mechanism-conditioned/Mondrian calibration targets the margin bands.
+D. Decision repair: mechanism-band conformal coverage and critical-band two-label rates for both
+tasks.
 
 ## Evidence Sources
 
 - `code/data/processed/reliability_upgrade.json`
 - `code/data/processed/ambiguity_floor_sensitivity.json`
 - `code/data/processed/innovation_analysis.json`
+- `code/data/processed/conformal_decision_metrics.json`
+- `code/data/processed/cetin2018_groundwater_ablation.json`
+
+## Caption First Sentence
+
+Known effective-stress physics enters the margin before residual learning is tested; the remaining
+ambiguity is audited as a measured upper bound and converted into mechanism-band conformal decision
+sets.
 
 ## Export Contract
 
