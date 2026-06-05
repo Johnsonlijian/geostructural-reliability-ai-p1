@@ -1,4 +1,6 @@
-# Fig. 4 Groundwater Mechanism And Residual Boundary
+# Supplementary Fig. S1 Groundwater Mechanism And Residual Boundary
+
+File stem `Fig4_groundwater_boundary` is retained for pipeline compatibility.
 
 ## Scientific Question
 
@@ -24,4 +26,3 @@ Mechanism plus residual diagnostic.
 ## Caption First Sentence
 
 Groundwater matters physically through effective stress, but adds little residual event-transferable signal after the margin in the tested public predictors.
-

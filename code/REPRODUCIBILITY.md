@@ -1,23 +1,20 @@
-# Reproducibility - P1 Liquefaction Mechanistic-Compression Study
+# Reproducibility - P1 Effective-Stress Coordinate Bound Study
 
 Deterministic analysis; no wet lab; public data only. The public package should distribute scripts, configuration, provenance records, derived non-sensitive outputs, and generated figures. Do not redistribute raw third-party data unless the source license explicitly permits it.
 
 ## Environment
 
 - Python 3.11
-- numpy 2.4
-- pandas 3.0
-- scikit-learn 1.8
-- scipy 1.17
-- matplotlib 3.10
-- xlrd 2.0
+- Required packages are listed in `requirements.txt`.
+- The release package also provides `environment.yml`.
 - No GPU required
 
 ## Data Acquisition
 
 - SPT: Cetin et al. (2018), Data in Brief, DOI `10.1016/j.dib.2018.08.043`. Use `mmc2.xls` sheet `CETIN_2018` under `data/raw/cetin2018_spt/mmc2.xls`.
 - CPT: Geyin & Maurer (2021), DesignSafe DOI `10.17603/ds2-wftt-mv37`, PRJ-3012. Use the published MATLAB structure under `data/raw/geyin_maurer_2021_cpt/GLOBALDATASETV1.mat`.
-- Provenance files: `data/raw/cetin2018_spt/SOURCE.md` and `data/raw/geyin_maurer_2021_cpt/SOURCE.md`.
+- Release provenance: see the package-level `DATASETS_AND_LINKS.csv`.
+- If rerunning from raw data locally, keep optional source notes beside the downloaded raw files.
 
 Hard rule: no record without provenance enters the analysis; no value is fabricated or imputed as a result.
 
@@ -25,7 +22,7 @@ Hard rule: no record without provenance enters the analysis; no value is fabrica
 
 ```powershell
 # 1. Engine and snapshot tests
-$env:PYTHONPATH="R:\NAS_DRIVE\IMUT\1-Research_Output\1-Papers\1_In_Preparation\2026-GeoStructural-Reliability-AI\code"
+$env:PYTHONPATH=(Get-Location).Path
 python -m pytest tests -q
 
 # 2. SPT pipeline, Cetin 2018
@@ -38,7 +35,7 @@ python run_source_grouped.py
 # 3. CPT pipeline, Geyin-Maurer 2021
 python run_baseline_cpt_geyin.py
 
-# 4. Reliability, sufficiency, bounded-claim audits, and robustness
+# 4. Reliability, bounded-claim audits, and robustness
 python run_reliability_upgrade.py
 python run_innovation_analysis.py
 python run_sufficiency_likelihood.py
@@ -47,10 +44,12 @@ python run_ambiguity_floor_sensitivity.py
 python run_groundwater_residual_stratification.py
 python run_practical_equivalence_audit.py
 python run_conformal_decision_metrics.py
+python run_random_split_sensitivity.py
+python run_conformal_split_sensitivity.py
 python run_sensitivity.py
 python run_cross_region.py
 
-# 5. Figures, 300 dpi PNG previews
+# 5. Figures, including vector manuscript figures where available
 python make_figures.py
 python make_figures_innovation.py
 python make_figures_mechanism.py
@@ -76,6 +75,8 @@ Under `data/processed/`:
 - `groundwater_residual_stratification.json`
 - `practical_equivalence_audit.json`
 - `conformal_decision_metrics.json`
+- `random_split_sensitivity.json`
+- `conformal_split_sensitivity.json`
 - `cross_region_transfer.json`
 - `sensitivity.json`
 

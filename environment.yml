@@ -1,0 +1,16 @@
+name: geostructural-reliability-ai-p1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - pytest
+  - openpyxl
+  - xlrd
+  - pip
+  - pip:
+      - mat73

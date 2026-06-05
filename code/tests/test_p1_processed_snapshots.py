@@ -39,7 +39,7 @@ def test_p1_conservative_audits_exist_and_keep_claim_bounded():
             assert row["variant_improves_OOS_logloss"] is False
 
     ambiguity = load("ambiguity_floor_sensitivity.json")
-    assert "not strict Bayes" in ambiguity["interpretation"]
+    assert "not strict theoretical" in ambiguity["interpretation"]
     assert ambiguity["SPT_Cetin2018"]["bin_count_sensitivity"][2]["n_bins"] == 10
     assert ambiguity["CPT_Geyin2021"]["bin_count_sensitivity"][2]["n_bins"] == 10
 

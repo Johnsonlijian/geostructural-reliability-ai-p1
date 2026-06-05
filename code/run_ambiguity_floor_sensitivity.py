@@ -1,6 +1,6 @@
 """Mechanistic-coordinate ambiguity floor sensitivity for P1.
 
-The manuscript previously used "Bayes floor" language. This audit reports a
+Earlier drafts used stronger theoretical language. This audit reports a
 more defensible empirical lower-bound proxy: label ambiguity after conditioning
 on the mechanistic coordinate, under several bin counts and an isotonic-smoothed
 coordinate probability.
@@ -94,7 +94,7 @@ def main():
 
     out = {
         "interpretation": (
-            "These values are empirical mechanistic-coordinate ambiguity floors, not strict Bayes "
+            "These values are empirical mechanistic-coordinate ambiguity floors, not strict theoretical "
             "errors for the full physical state space. They show how much binary label ambiguity "
             "remains after reducing the available public predictors to the margin coordinate."
         ),

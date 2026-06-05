@@ -1,4 +1,4 @@
-"""A5 robustness: (i) decision-threshold sensitivity; (ii) sufficiency holds across model classes."""
+"""A5 robustness: decision-threshold sensitivity and model-class transfer checks."""
 import json
 import os
 import sys
@@ -34,7 +34,7 @@ out["threshold_sensitivity"]["SPT_FS_threshold"] = {
 out["threshold_sensitivity"]["CPT_LPI_threshold"] = {
     str(t): round(float(np.mean((LPI >= t).astype(int) == yC)), 3) for t in [4, 5, 6, 7]}
 
-# (ii) sufficiency across model classes (margin-only vs full, earthquake-grouped OOF AUC)
+# (ii) model-class transfer checks (margin-only vs full, earthquake-grouped OOF AUC)
 models = {
     "logistic": lambda: make_pipeline(SimpleImputer(strategy="median"), StandardScaler(), LogisticRegression(max_iter=5000)),
     "random_forest": lambda: make_pipeline(SimpleImputer(strategy="median"), RandomForestClassifier(n_estimators=400, random_state=0)),
@@ -64,7 +64,7 @@ with open(os.path.join(PROC, "sensitivity.json"), "w", encoding="utf-8") as f:
 print("THRESHOLD SENSITIVITY")
 print(" SPT acc by FS thr:", out["threshold_sensitivity"]["SPT_FS_threshold"])
 print(" CPT acc by LPI thr:", out["threshold_sensitivity"]["CPT_LPI_threshold"])
-print("\nSUFFICIENCY ACROSS MODELS (margin_only - full, earthquake-grouped; >=0 => margin sufficient)")
+print("\nMODEL-CLASS TRANSFER CHECKS (margin_only - full, earthquake-grouped; >=0 => no full-feature gain)")
 for db, row in out["sufficiency_across_models"].items():
     print(f" {db}:")
     for m, v in row.items():

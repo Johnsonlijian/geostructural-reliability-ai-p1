@@ -17,6 +17,9 @@ rights are not controlled by the authors.
 - `figures/paper_figures/output/`: SVG, PDF, and PNG figure outputs.
 - `DATASETS_AND_LINKS.csv`: official source records for raw data retrieval.
 - `REPRODUCIBLE_RUNBOOK.md`: end-to-end reproduction commands.
+- `environment.yml`: Conda environment specification.
+- `DERIVED_OUTPUT_CHECKSUMS.sha256`: checksums for derived processed outputs and figure exports.
+- `RELEASE_CHECKLIST.md`: human-only release and DOI checklist.
 
 ## Data Boundary
 
@@ -45,9 +48,27 @@ python -m pytest tests -q
 
 Expected result at package preparation: `28 passed`.
 
+For a package-level processed-data reproduction check:
+
+```powershell
+.\run_all.ps1
+```
+
+This regenerates the key derived sensitivity audits, runs the test suite, redraws manuscript figure
+exports, and updates `DERIVED_OUTPUT_CHECKSUMS.sha256`.
+
+If local PowerShell execution policy blocks scripts, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_all.ps1
+```
+
 ## Repository Status
 
 This is a local GitHub-ready package. Before public release, replace author placeholders in
 `CITATION.cff`, confirm the license with all co-authors, create or activate the GitHub repository at
 `https://github.com/Johnsonlijian/geostructural-reliability-ai-p1`, and insert the final repository
 URL/DOI into the manuscript.
+
+The release and DOI steps are intentionally not automated in this repository because they require
+human approval, author/license confirmation, and final submission timing.

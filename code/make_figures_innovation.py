@@ -1,4 +1,4 @@
-"""Innovation figures: sufficiency, irreducibility (Bayes vs margin), Mondrian coverage."""
+"""Legacy innovation figures: grouped-transfer bound, ambiguity proxy, Mondrian coverage."""
 import json
 import os
 import sys
@@ -16,7 +16,7 @@ C_PHYS, C_ML, C_MARG = "#1f3b73", "#c0392b", "#2e8b57"
 J = json.load(open(os.path.join(PROC, "innovation_analysis.json"), encoding="utf-8"))
 names = list(J.keys())
 
-# ---- fig7 sufficiency ----
+# ---- fig7 grouped-transfer bound ----
 fig, ax = plt.subplots(figsize=(7.2, 4.3))
 x = np.arange(len(names)); w = 0.26
 full = [J[n]["A1_sufficiency"]["auc_full_feature_ML"] for n in names]
@@ -31,23 +31,23 @@ for i in range(len(names)):
 ax.set_xticks(x); ax.set_xticklabels([n.split("/")[0] + "\n" + n.split("/")[1] for n in names])
 ax.set_ylabel("out-of-distribution ROC-AUC (earthquake-grouped)")
 ax.set_ylim(0.5, 1.0); ax.legend(loc="lower right", fontsize=9)
-ax.set_title("Sufficiency: the single effective-stress margin out-generalizes the full ML feature set")
+ax.set_title("Grouped-transfer check: the margin is the strongest tested coordinate")
 fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig7_sufficiency.png"), dpi=300, bbox_inches="tight"); plt.close(fig)
 
-# ---- fig8 irreducibility ----
+# ---- fig8 ambiguity proxy ----
 fig, axs = plt.subplots(1, 2, figsize=(9.2, 4.3))
 for ax, n in zip(axs, names):
     bands = J[n]["A3_irreducible"]["bands"]
     pm = [b["p_mean"] for b in bands]; fr = [b["liq_freq"] for b in bands]; be = [b["bayes_err"] for b in bands]
     ax.axvspan(0.3, 0.7, color="#f2c200", alpha=0.18, label="critical-state band")
-    ax.bar(pm, be, width=0.07, color="#aaaaaa", edgecolor="k", label="irreducible (Bayes) error")
+    ax.bar(pm, be, width=0.07, color="#aaaaaa", edgecolor="k", label="coordinate ambiguity proxy")
     ax.plot(pm, fr, "-o", color=C_PHYS, lw=2, label="observed liquefaction freq.")
     ax.plot([0, 1], [0.5, 0.5], ":", color="gray", lw=1)
     a3 = J[n]["A3_irreducible"]
-    ax.set_title(f"{n}\nML err {a3['ML_full_error']} ~ Bayes floor {a3['bayes_error_lower_bound']}; {int(a3['frac_bayes_err_in_ambiguous_band']*100)}% of error at FS~1", fontsize=9)
+    ax.set_title(f"{n}\nML err {a3['ML_full_error']} vs ambiguity proxy {a3['bayes_error_lower_bound']}; {int(a3['frac_bayes_err_in_ambiguous_band']*100)}% near FS~1", fontsize=9)
     ax.set_xlabel("mechanistic margin (calibrated P)"); ax.set_ylabel("frequency / error"); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
     ax.legend(fontsize=7.5, loc="upper left")
-fig.suptitle("Irreducible uncertainty is localized at the critical state FS~1", fontsize=11)
+fig.suptitle("Coordinate ambiguity is localized at the critical state FS~1", fontsize=11)
 fig.tight_layout(); fig.savefig(os.path.join(FIG, "fig8_irreducibility.png"), dpi=300, bbox_inches="tight"); plt.close(fig)
 
 # ---- fig9 Mondrian ----

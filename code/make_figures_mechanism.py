@@ -77,15 +77,15 @@ axc.text(0.58, 0.50, "effective-stress\nmargin\n" + r"$\ln(\mathrm{CSR}/\mathrm{
 axc.annotate("", xy=(0.92, 0.5), xytext=(0.72, 0.5), arrowprops=dict(arrowstyle="->", lw=2.2))
 axc.add_patch(FancyBboxPatch((0.80, 0.42), 0.17, 0.16, boxstyle="round,pad=0.02", fc=C_CRIT, ec="k"))
 axc.text(0.885, 0.50, "liquefy?", ha="center", va="center", fontsize=8.5)
-axc.text(0.5, 0.93, "(c) Sufficient statistic:\nfeatures add no transferable information", ha="center", fontsize=9.5)
-axc.text(0.5, 0.14, "residual is irreducible — peaks at FS$\\approx$1", ha="center", fontsize=8.3, style="italic", color="#555")
+axc.text(0.5, 0.93, "(c) Effective-stress coordinate:\ntested features add little grouped-transfer gain", ha="center", fontsize=9.5)
+axc.text(0.5, 0.14, "ambiguity proxy peaks at FS$\\approx$1", ha="center", fontsize=8.3, style="italic", color="#555")
 fig.savefig(os.path.join(FIG, "fig1_mechanism.png"), dpi=300, bbox_inches="tight"); plt.close(fig)
 
 # ============ FIG 0: graphical abstract ============
 fig = plt.figure(figsize=(12, 4.2))
 gs = fig.add_gridspec(1, 4, width_ratios=[1.15, 1, 1, 1], wspace=0.33)
-fig.suptitle("The effective-stress margin is a sufficient statistic for seismic liquefaction:\n"
-             "ML cannot exceed it, the residual is irreducible at the critical state, and reliability must be mechanism-conditioned",
+fig.suptitle("The effective-stress margin bounds tested transferable ML gain in seismic liquefaction:\n"
+             "full-feature ML does not exceed it under grouped validation, with ambiguity concentrated near the critical state",
              fontsize=11, y=1.06)
 # left: pipeline
 ax0 = fig.add_subplot(gs[0, 0]); ax0.axis("off"); ax0.set_xlim(0, 1); ax0.set_ylim(0, 1)
@@ -95,19 +95,19 @@ for (yy, t, c) in [(0.78, "hazard\n$M_w,\\ a_{max}$", C_ML), (0.50, "groundwater
 ax0.annotate("", xy=(0.5, 0.60), xytext=(0.5, 0.68), arrowprops=dict(arrowstyle="->", lw=1.6))
 ax0.annotate("", xy=(0.5, 0.32), xytext=(0.5, 0.40), arrowprops=dict(arrowstyle="->", lw=1.6))
 ax0.set_title("mechanism", fontsize=9.5)
-# 1 sufficiency (CPT, bigger gap)
+# 1 grouped-transfer comparison (CPT, larger gap)
 a1 = fig.add_subplot(gs[0, 1])
 a1.bar([0, 1], [J["CPT/Geyin2021"]["A1_sufficiency"]["auc_full_feature_ML"], J["CPT/Geyin2021"]["A1_sufficiency"]["auc_margin_only_ML"]],
        color=[C_ML, C_PHYS], edgecolor="k", width=0.6)
 a1.set_xticks([0, 1]); a1.set_xticklabels(["full\nML", "margin"], fontsize=8.5); a1.set_ylim(0.5, 0.8); a1.set_ylabel("OOD AUC", fontsize=9)
-a1.set_title("① sufficiency\nmargin $\\geq$ ML", fontsize=9.5)
-# 2 irreducibility (SPT bands)
+a1.set_title("1) grouped transfer\nmargin >= ML", fontsize=9.5)
+# 2 ambiguity proxy (SPT bands)
 a2 = fig.add_subplot(gs[0, 2])
 bands = J["SPT/Cetin2018"]["A3_irreducible"]["bands"]
 a2.axvspan(0.3, 0.7, color=C_CRIT, alpha=0.2)
 a2.bar([b["p_mean"] for b in bands], [b["bayes_err"] for b in bands], width=0.08, color="#999", edgecolor="k")
-a2.set_xlim(0, 1); a2.set_ylim(0, 0.55); a2.set_xlabel("margin (P)", fontsize=9); a2.set_ylabel("Bayes error", fontsize=9)
-a2.set_title("② irreducible\npeaks at FS$\\approx$1", fontsize=9.5)
+a2.set_xlim(0, 1); a2.set_ylim(0, 0.55); a2.set_xlabel("margin (P)", fontsize=9); a2.set_ylabel("ambiguity proxy", fontsize=9)
+a2.set_title("2) ambiguity\npeaks at FS$\\approx$1", fontsize=9.5)
 # 3 reliability (SPT mid band plain vs mondrian)
 a3 = fig.add_subplot(gs[0, 3])
 pl = J["SPT/Cetin2018"]["A4_mondrian_band_coverage"]["plain"]
@@ -118,6 +118,6 @@ a3.bar(xb + w / 2, [mo[k] for k in bb], w, color=C_PHYS, edgecolor="k", label="M
 a3.axhline(0.9, color=C_ML, ls="--", lw=1.5, label="target")
 a3.set_xticks(xb); a3.set_xticklabels(["safe", "FS$\\approx$1", "liq."], fontsize=8)
 a3.set_ylim(0.8, 1.02); a3.set_ylabel("band coverage", fontsize=9)
-a3.legend(fontsize=6.3, loc="lower center", ncol=1); a3.set_title("③ reliability\nmade uniform", fontsize=9.5)
+a3.legend(fontsize=6.3, loc="lower center", ncol=1); a3.set_title("3) reliability\nmade uniform", fontsize=9.5)
 fig.savefig(os.path.join(FIG, "fig0_graphical_abstract.png"), dpi=300, bbox_inches="tight"); plt.close(fig)
 print("saved fig0_graphical_abstract.png, fig1_mechanism.png")

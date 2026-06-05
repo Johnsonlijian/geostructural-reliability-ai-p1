@@ -1,8 +1,9 @@
-"""T5 — Post-liquefaction reconsolidation settlement (Ishihara-Yoshimine framework).
+"""Non-evidentiary post-liquefaction reconsolidation settlement utility.
 
 WARNING: VERIFIED = False. The volumetric-strain magnitudes are a transparent,
-shape-correct PLACEHOLDER (monotone in FS and Dr), NOT authoritative. Replace with
-Yoshimine et al. (2006) / Idriss & Boulanger (2008) coefficients before any reporting.
+shape-correct screening curve (monotone in FS and Dr), NOT authoritative and
+not used for P1 manuscript conclusions. Replace with verified Yoshimine et al.
+(2006) / Idriss and Boulanger (2008) coefficients before any reporting.
 """
 import numpy as np
 
@@ -15,7 +16,7 @@ def dr_from_n1_60cs(N1_60cs):
 
 
 def volumetric_strain(fs_liq, Dr):
-    """PLACEHOLDER eps_v(FS, Dr): 0 at FS>=2, grows as FS->0, lower for denser soil."""
+    """Screening eps_v(FS, Dr): 0 at FS>=2, grows as FS->0, lower for denser soil."""
     fs = np.asarray(fs_liq, float)
     Dr = np.asarray(Dr, float)
     trig = np.clip(2.0 - fs, 0.0, None) / 2.0

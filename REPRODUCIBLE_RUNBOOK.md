@@ -10,6 +10,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+Conda alternative:
+
+```powershell
+conda env create -f environment.yml
+conda activate geostructural-reliability-ai-p1
+```
+
 ## Raw Data
 
 Raw third-party data are not included. Download the datasets listed in `DATASETS_AND_LINKS.csv` from
@@ -66,6 +73,22 @@ python figures\paper_figures\source_scripts\fig2_3_4_composites.py
 ```
 
 Outputs are written to `figures/paper_figures/output/svg/`, `pdf/`, and `png/`.
+
+## Package-Level Processed-Data Reproduction
+
+From the package root:
+
+```powershell
+.\run_all.ps1
+```
+
+This regenerates the key derived sensitivity audits, runs tests, regenerates figures, and writes
+`DERIVED_OUTPUT_CHECKSUMS.sha256`.
+If local PowerShell execution policy blocks scripts, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_all.ps1
+```
 
 ## Submission Boundary
 
