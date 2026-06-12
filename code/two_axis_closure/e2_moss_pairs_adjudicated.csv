@@ -1,0 +1,77 @@
+tier,year,vs_case,vs_site,moss_id,moss_site,moss_eq,reason
+A,1975,9016,"Paper Mill, Ying-Kou",10,Paper Mill,"1975 Haicheng, China",Ying-Kou Paper Mill
+A,1975,9018,"Construction Building, Ying-Kou",7,Const. Com. Building,"1975 Haicheng, China","Construction Building, Ying-Kou"
+A,1975,9020,"Middle School, Ying-Kou",9,17th Middle School,"1975 Haicheng, China","Middle School, Ying-Kou"
+A,1975,9021,"Chemical Fiber, Ying-Kou",6,Chemical Fiber Site,"1975 Haicheng, China","Chemical Fiber, Ying-Kou"
+A,1979,9022,Wildlife 1,30,Wildlife B,"1979 Imperial Valley, USA",Wildlife array
+A,1979,9023,Wildlife 2,30,Wildlife B,"1979 Imperial Valley, USA",Wildlife array
+A,1979,9024,Wildlife 3,30,Wildlife B,"1979 Imperial Valley, USA",Wildlife array
+A,1979,9025,Radio Tower,27,Radio Tower B1,"1979 Imperial Valley, USA",Radio Tower array
+A,1979,9026,McKim,28,McKim Ranch A,"1979 Imperial Valley, USA",McKim Ranch
+A,1979,9028,Kornbloom,29,Kornbloom B,"1979 Imperial Valley, USA",Kornbloom
+A,1981,9033,Wildlife 1,32,Wildlife B,"1981 Westmorland, USA",Wildlife array
+A,1981,9034,Wildlife 2,32,Wildlife B,"1981 Westmorland, USA",Wildlife array
+A,1981,9034B,Wildlife 3,32,Wildlife B,"1981 Westmorland, USA",Wildlife array
+A,1981,9035,Radio Tower,34,Radio Tower B1,"1981 Westmorland, USA",Radio Tower array
+A,1981,9036,McKim,35,McKim Ranch A,"1981 Westmorland, USA",McKim Ranch
+A,1981,9038,Kornbloom,33,Kornbloom B,"1981 Westmorland, USA",Kornbloom
+A,1983,9043,SA1 Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9044,SA2 Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9045,SA3 Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9046,SA4 Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9047,SA5 Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9048,SAA Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9049,SAB Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9050,SAC Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9051,SAD Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9052,SAE Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9053,XDXE Pense Ranch,40,Pence Ranch [1],"1983 Borah Peak, USA","Pense=Pence Ranch spelling variant, Borah Peak"
+A,1983,9061,WS1A Whiskey Springs,41,Whiskey Springs Site 1 [2],"1983 Borah Peak, USA","Whiskey Springs site, Borah Peak"
+A,1983,9062,SA5 Whiskey Springs,41,Whiskey Springs Site 1 [2],"1983 Borah Peak, USA","Whiskey Springs site, Borah Peak"
+A,1987,9093,Wildlife 1,61,Wildlife B,"1987 Elmore Ranch, USA",Wildlife; ER/SH via Mw
+A,1987,9094,Wildlife 2,61,Wildlife B,"1987 Elmore Ranch, USA",Wildlife; ER/SH via Mw
+A,1987,9095,Wildlife 3,61,Wildlife B,"1987 Elmore Ranch, USA",Wildlife; ER/SH via Mw
+A,1987,9104,Wildlife 1,62,Wildlife B,"1987 Superstition Hills, USA",Wildlife; ER/SH via Mw
+A,1987,9105,Wildlife 2,62,Wildlife B,"1987 Superstition Hills, USA",Wildlife; ER/SH via Mw
+A,1987,9106,Wildlife 3,62,Wildlife B,"1987 Superstition Hills, USA",Wildlife; ER/SH via Mw
+A,1989,509,LENARDINI FARM,92,Leonardini 39 [5],"1989 Loma Prieta, USA",Lenardini=Leonardini Farm
+A,1989,516,LEONARDINI FARM,92,Leonardini 39 [5],"1989 Loma Prieta, USA",Lenardini=Leonardini Farm
+A,1989,510,LEONARDINI FARM-LEN 53,94,Leonardini 53 [5],"1989 Loma Prieta, USA",boring LEN 53
+A,1989,511,MODEL AIRPORT-AIR 18,82,Model Airport 18 [5],"1989 Loma Prieta, USA",boring AIR 18
+A,1989,512,MODEL AIRPORT-Air 21,83,Model Airport 21 [5],"1989 Loma Prieta, USA",boring AIR 21
+A,1989,513,FARIS FARM-FAR 61,85,Farris 61 [5],"1989 Loma Prieta, USA",boring FAR 61
+A,1989,514,FARIS FARM-FAR 61,85,Farris 61 [5],"1989 Loma Prieta, USA",boring FAR 61
+A,1989,515,LEONARDINI,92,Leonardini 39 [5],"1989 Loma Prieta, USA",Leonardini Farm
+A,1989,521,Leonardini Farm-LEN 39,92,Leonardini 39 [5],"1989 Loma Prieta, USA",boring LEN 39
+A,1989,517,CLINT MILLER FARM,78,Miller Fam CMF 8 [5],"1989 Loma Prieta, USA",Clint Miller Farm
+A,1989,518,Clint Miller Farm,78,Miller Fam CMF 8 [5],"1989 Loma Prieta, USA",Clint Miller Farm
+A,1989,519,Clint Miller Farm-CMF10,79,Miller Farm CMF 10 [5],"1989 Loma Prieta, USA",boring CMF10
+A,1989,520,Clint Miller Farm-CMF 8,78,Miller Fam CMF 8 [5],"1989 Loma Prieta, USA",boring CMF8 (source typo 'Fam')
+A,1989,522,SEAMIST FARM 31,97,Sea Mist 31 [5],"1989 Loma Prieta, USA",SEAMIST FARM 31
+A,1989,524,524GRA - Near GRA 123,86,Granite Const. 123 [5],"1989 Loma Prieta, USA",GRA 123
+A,1989,525,525MRR - Near Marinovich Farm 65,95,Marinovich 65 [5],"1989 Loma Prieta, USA",MRR 65
+A,1989,526,526MRR - Near Marinovich Farm 67,112,Marinovich 67 [5],"1989 Loma Prieta, USA",MRR 67
+A,1989,527,"527RAD - Near Radovich Farm 98, 99",96,Radovich 99 [5],"1989 Loma Prieta, USA","Radovich Farm 98/99, lowest"
+A,1989,528,528MCG - Near McGowan Farm 136,111,McGowan Farm 136 [5],"1989 Loma Prieta, USA",MCG 136
+A,1989,530,Southern Pacific Bridge,99,SP Bridge 48 [5],"1989 Loma Prieta, USA",Southern Pacific Bridge
+A,1989,531,531KET - Kett Ranch,91,Kett 74 [5],"1989 Loma Prieta, USA",Kett Ranch
+A,1989,538,538ML - Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],"1989 Loma Prieta, USA",Moss Landing State Beach
+A,1989,539,Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],"1989 Loma Prieta, USA",Moss Landing State Beach
+A,1989,540,Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],"1989 Loma Prieta, USA",Moss Landing State Beach
+A,1989,9174,"UC15 Moss Landing, State Beach",73,Moss Landing S.B. UC-14 [2],"1989 Loma Prieta, USA",Moss Landing State Beach
+A,1989,9175,"UC16 Moss Landing, State Beach",73,Moss Landing S.B. UC-14 [2],"1989 Loma Prieta, USA",Moss Landing State Beach
+A,1989,9176,UC4 Sandholt Road,72,Sandholdt Rd. UC-4 [2],"1989 Loma Prieta, USA",Sandholdt Road
+A,1989,9178,UC6 Sandholt Road,72,Sandholdt Rd. UC-4 [2],"1989 Loma Prieta, USA",Sandholdt Road
+A,1989,9180,"UC9 Moss Landing, Woodward Marine",74,Woodward Marine UC-11 [2],"1989 Loma Prieta, USA",Woodward Marine facility
+A,1995,165,"NISHINOMIYA, IMAZU SHO GAKKU YARD",120,Imazu Elementary School,"1995 Hyogoken-Nanbu, Japan",Imazu Sho Gakku = Imazu Elementary School
+B,1989,9116,B2B3 Treasure Island Fire Station,76,T.I. Naval Station [3],"1989 Loma Prieta, USA",fire station within T.I. Naval Station
+B,1989,9117,B1B4 Treasure Island Fire Station,76,T.I. Naval Station [3],"1989 Loma Prieta, USA",fire station within T.I. Naval Station
+B,1989,9118,"B4,B5 Treasure Island Fire Station",76,T.I. Naval Station [3],"1989 Loma Prieta, USA",fire station within T.I. Naval Station
+B,1989,9119,B2B4 Treasure Island Fire Station,76,T.I. Naval Station [3],"1989 Loma Prieta, USA",fire station within T.I. Naval Station
+B,1989,9122,Treasure Island Fire Station,76,T.I. Naval Station [3],"1989 Loma Prieta, USA",fire station within T.I. Naval Station
+B,1989,9160V,Salinas River North,114,Salinas River Bridge 117 [5],"1989 Loma Prieta, USA",river reach vs bridge
+B,1989,529,529MCG - Near McGowan Farm 138,111,McGowan Farm 136 [5],"1989 Loma Prieta, USA",MCG 138 vs McGowan 136
+B,1995,176,"NISHINOMIYA, HAMA KOSHIEN SHO GAKKU",130,Hamakoshienn Housing Area,"1995 Hyogoken-Nanbu, Japan",Hama Koshien area
+B,1999,135,YUAN LIN,165,Yuanlini C-19,"1999 Chi-Chi, Taiwan",Yuanlin town-level
+B,1999,9188,"1-11 Adapazari, Turkey",149,Adapazari Site B [2],"1999 Kocaeli, Turkey",Adapazari site codes unmappable
+B,1999,9189,"1-24 Adapazari, Turkey",149,Adapazari Site B [2],"1999 Kocaeli, Turkey",Adapazari site codes unmappable

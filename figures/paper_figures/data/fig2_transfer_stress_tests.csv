@@ -1,0 +1,24 @@
+panel,item,dataset,metric,value,lo,hi,status_or_note
+b,grouped ML,SPT,AUC,0.865,,,grouped validation
+b,random ML,SPT,AUC,0.912,,,100-repeat median
+b,mechanism,SPT,AUC,0.923,,,margin baseline
+b,grouped ML,CPT,AUC,0.613,,,grouped validation
+b,random ML,CPT,AUC,0.73,,,100-repeat median
+b,mechanism,CPT,AUC,0.75,,,margin baseline
+c,logistic,SPT,NLL gain vs margin,-0.025,,,positive would favor candidate
+c,logistic,CPT,NLL gain vs margin,-0.133,,,positive would favor candidate
+c,random forest,SPT,NLL gain vs margin,-0.044,,,positive would favor candidate
+c,random forest,CPT,NLL gain vs margin,-0.101,,,positive would favor candidate
+c,gradient boost,SPT,NLL gain vs margin,-0.14,,,positive would favor candidate
+c,gradient boost,CPT,NLL gain vs margin,-0.254,,,positive would favor candidate
+c,hist. GBT,SPT,NLL gain vs margin,-0.047,,,positive would favor candidate
+c,hist. GBT,CPT,NLL gain vs margin,-0.465,,,positive would favor candidate
+c,neural network,SPT,NLL gain vs margin,-0.758,,,positive would favor candidate
+c,neural network,CPT,NLL gain vs margin,-1.649,,,positive would favor candidate
+d,CPT-2024 inverse,,"Delta AUC, non-margin learner minus margin",-0.071,-0.141,-0.009,gain excluded
+d,CPT-2024 measured,,"Delta AUC, non-margin learner minus margin",-0.051,-0.084,-0.009,gain excluded
+d,CPT-2021 event,,"Delta AUC, non-margin learner minus margin",-0.051,-0.128,-0.011,gain excluded
+d,Vs-2013 event,,"Delta AUC, non-margin learner minus margin",-0.029,-0.061,-0.002,gain excluded; same-population third instrument
+d,SPT source,,"Delta AUC, non-margin learner minus margin",0.041,0.004,0.069,caveat retained
+d,SPT source-event,,"Delta AUC, non-margin learner minus margin",0.035,-0.009,0.056,caveat retained
+d,Nisqually inverse,,"Delta AUC, non-margin learner minus margin",0.03,0.0,0.13,single-event caveat

@@ -1,0 +1,40 @@
+panel,dataset,metric,setting,value,note
+b,SPT,coverage,alpha=0.05,0.942,
+b,SPT,mean_set_size,alpha=0.05,1.664,
+b,SPT,two_label,alpha=0.05,0.674,
+b,SPT,critical_two_label,alpha=0.05,0.833,
+b,SPT,coverage,alpha=0.1,0.925,
+b,SPT,mean_set_size,alpha=0.1,1.535,
+b,SPT,two_label,alpha=0.1,0.542,
+b,SPT,critical_two_label,alpha=0.1,0.696,
+b,SPT,coverage,alpha=0.2,0.838,
+b,SPT,mean_set_size,alpha=0.2,1.32,
+b,SPT,two_label,alpha=0.2,0.341,
+b,SPT,critical_two_label,alpha=0.2,0.447,
+b,CPT,coverage,alpha=0.05,0.932,
+b,CPT,mean_set_size,alpha=0.05,1.806,
+b,CPT,two_label,alpha=0.05,0.809,
+b,CPT,critical_two_label,alpha=0.05,0.871,
+b,CPT,coverage,alpha=0.1,0.897,
+b,CPT,mean_set_size,alpha=0.1,1.691,
+b,CPT,two_label,alpha=0.1,0.693,
+b,CPT,critical_two_label,alpha=0.1,0.807,
+b,CPT,coverage,alpha=0.2,0.801,
+b,CPT,mean_set_size,alpha=0.2,1.418,
+b,CPT,two_label,alpha=0.2,0.432,
+b,CPT,critical_two_label,alpha=0.2,0.617,
+c,SPT,coverage,100 grouped split median,0.922,S18 split sensitivity
+c,SPT,two_label,100 grouped split median,0.515,S18 split sensitivity
+c,SPT,critical_two_label,100 grouped split median,0.79,S18 split sensitivity
+c,SPT,event_undercoverage,100 grouped split median,0.286,S18 split sensitivity
+c,CPT,coverage,100 grouped split median,0.913,S18 split sensitivity
+c,CPT,two_label,100 grouped split median,0.728,S18 split sensitivity
+c,CPT,critical_two_label,100 grouped split median,0.879,S18 split sensitivity
+c,CPT,event_undercoverage,100 grouped split median,0.25,S18 split sensitivity
+d,SPT,expected_cost_reduction,false_negative_cost=5;review_cost=0.25,0.469,S17 exact point
+d,SPT,expected_cost_reduction,false_negative_cost=5;review_cost=0.5,0.338,S17 exact point
+d,CPT,expected_cost_reduction,false_negative_cost=5;review_cost=0.25,0.699,S17 exact point
+d,CPT,expected_cost_reduction,false_negative_cost=5;review_cost=0.5,0.512,S17 exact point
+d,SPT,expected_cost_reduction,false_negative_cost=10;review_cost=0.5,0.8,S17 exact point
+d,CPT,expected_cost_reduction,false_negative_cost=10;review_cost=0.5,1.244,S17 exact point
+a,,schematic,"critical band [0.3,0.7]",,"author-defined schematic, not a data panel"

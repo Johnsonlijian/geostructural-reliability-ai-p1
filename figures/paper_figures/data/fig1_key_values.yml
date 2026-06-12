@@ -1,0 +1,164 @@
+random_optimism:
+  SPT: 0.047
+  CPT: 0.117
+cpt2024:
+  inverse:
+    d_auc: -0.071
+    auc_lo: -0.141
+    auc_hi: -0.009
+    d_nll: -0.092
+    nll_lo: -0.13
+    nll_hi: -0.051
+  measured:
+    d_auc: -0.051
+    auc_lo: -0.084
+    auc_hi: -0.009
+    d_nll: -0.116
+    nll_lo: -0.163
+    nll_hi: -0.055
+spt_caveats:
+  source:
+    d_auc: 0.041
+    lo: 0.004
+    hi: 0.069
+  source_event:
+    d_auc: 0.035
+    lo: -0.009
+    hi: 0.056
+conformal:
+  SPT:
+    coverage: 0.925
+    set: 1.535
+    two_label: 0.542
+    critical_two: 0.696
+  CPT:
+    coverage: 0.897
+    set: 1.691
+    two_label: 0.693
+    critical_two: 0.807
+alpha:
+  SPT:
+  - - 0.05
+    - 0.942
+    - 1.664
+    - 0.674
+    - 0.833
+  - - 0.1
+    - 0.925
+    - 1.535
+    - 0.542
+    - 0.696
+  - - 0.2
+    - 0.838
+    - 1.32
+    - 0.341
+    - 0.447
+  CPT:
+  - - 0.05
+    - 0.932
+    - 1.806
+    - 0.809
+    - 0.871
+  - - 0.1
+    - 0.897
+    - 1.691
+    - 0.693
+    - 0.807
+  - - 0.2
+    - 0.801
+    - 1.418
+    - 0.432
+    - 0.617
+groundwater:
+  label:
+  - surface
+  - actual
+  - deep/dry
+  fs:
+  - 0.64
+  - 0.9
+  - 1.25
+  risk:
+  - 0.73
+  - 0.57
+  - 0.3
+groundwater_residuals:
+  bins:
+  - <=2 m
+  - 2-5 m
+  - 5-10 m
+  SPT:
+    mean:
+    - -0.00246
+    - -0.01803
+    - 0.05729
+    lo:
+    - -0.12213
+    - -0.16396
+    - -0.31517
+    hi:
+    - 0.08725
+    - 0.12135
+    - 0.43102
+    n:
+    - 122
+    - 81
+    - 5
+  CPT:
+    mean:
+    - -0.03632
+    - 0.03756
+    - 0.08149
+    lo:
+    - -0.16153
+    - -0.12534
+    - -0.14409
+    hi:
+    - 0.0878
+    - 0.21432
+    - 0.39698
+    n:
+    - 131
+    - 130
+    - 14
+slope:
+  auc: 0.895
+  dummy_delta_auc: -0.012
+  mid_below_anchor: 0.953
+  mid_q:
+  - 0.763
+  - 0.879
+  - 0.998
+  points:
+  - - CB1 fail
+    - 0.908
+    - 1
+    - CB1
+  - - CB1 stable
+    - 0.639
+    - 0
+    - CB1
+  - - Flume 1 fail
+    - 0.992
+    - 1
+    - USGS flume
+  - - Flume 2 fail
+    - 1.047
+    - 1
+    - USGS flume
+  - - Flume 3 control
+    - 0.852
+    - 1
+    - domain control
+  - - BALT1 stable
+    - 0.805
+    - 0
+    - BALT
+  - - BALT2 stable
+    - 0.17
+    - 0
+    - BALT
+  - - BALT3 stable
+    - 0.799
+    - 0
+    - BALT

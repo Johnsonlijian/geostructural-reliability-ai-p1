@@ -1,0 +1,543 @@
+year,vs_case,vs_site,cet_case,cet_site,sim,shared_tokens
+1948,116,"TAKAYA-BASHI KUZURYU GAW, SOUTH BANK",5.0,Takaya 45,0.316,1
+1948,114,"TAKAYA-BASHI KUZURYU GAWA, SOUTH BANK Rice Fields",5.0,Takaya 45,0.245,1
+1948,115,"TAKAYA-CHO KUZURYU GAWA, East BANK",5.0,Takaya 45,0.333,1
+1964,9014,C1,7.0,Cc17-1,0.571,0
+1964,9014,C1,8.0,Cc17-2,0.571,0
+1964,9015,C2,8.0,Cc17-2,0.571,0
+1964,95,"SOUTH BANK SHINANO RIVER, SHOWA BRIDGE",13.0,River Site,0.39,1
+1964,95,"SOUTH BANK SHINANO RIVER, SHOWA BRIDGE",15.0,Showa Br 2,0.35,1
+1964,95,"SOUTH BANK SHINANO RIVER, SHOWA BRIDGE",16.0,Showa Br 4,0.35,1
+1968,64B,AOMORI STATION,21.0,Aomori Station,1.0,2
+1968,65B,AOMORI STATION,21.0,Aomori Station,1.0,2
+1968,56A,NANAEHAMA BEACH,20.0,Nanaehama1-2-3,0.692,0
+1975,9021,"Chemical Fiber, Ying-Kou",26.0,Ying Kou P. P.,0.483,1
+1975,9021,"Chemical Fiber, Ying-Kou",25.0,Ying Kou G. F. P.,0.467,1
+1975,9018,"Construction Building, Ying-Kou",26.0,Ying Kou P. P.,0.389,1
+1975,9018,"Construction Building, Ying-Kou",25.0,Ying Kou G. F. P.,0.378,1
+1975,9019,"Fisheries & Shipbuilding, Ying-Kou",26.0,Ying Kou P. P.,0.378,1
+1975,9019,"Fisheries & Shipbuilding, Ying-Kou",25.0,Ying Kou G. F. P.,0.368,1
+1975,9017,"Glass Fiber, Ying-Kou",26.0,Ying Kou P. P.,0.538,1
+1975,9017,"Glass Fiber, Ying-Kou",25.0,Ying Kou G. F. P.,0.519,1
+1975,9020,"Middle School, Ying-Kou",26.0,Ying Kou P. P.,0.5,1
+1975,9020,"Middle School, Ying-Kou",25.0,Ying Kou G. F. P.,0.483,1
+1975,9016,"Paper Mill, Ying-Kou",26.0,Ying Kou P. P.,0.56,1
+1975,9016,"Paper Mill, Ying-Kou",25.0,Ying Kou G. F. P.,0.538,1
+1976,207,"CAO GE VILLAGE, FENGNAN TOWN",36.0,Yao Yuan Village,0.486,1
+1976,186,CEMENT FACTORY AT MA LU VILLAGE,36.0,Yao Yuan Village,0.5,1
+1976,198,"DAO DI VILLAGE RIVER BANK, FENGNAN",36.0,Yao Yuan Village,0.429,1
+1976,196,"DAO DI VILLAGE, FENGNAN",36.0,Yao Yuan Village,0.545,1
+1976,200,"DONG TUO ZI TOU, LUAN TOWN",33.0,Luan Nan-L2,0.345,1
+1976,200,"DONG TUO ZI TOU, LUAN TOWN",32.0,Luan Nan-L1,0.345,1
+1976,197,"JING VILLAGE, FENGNAN",36.0,Yao Yuan Village,0.5,1
+1976,195,LAO BIAN VILLAGE,36.0,Yao Yuan Village,0.786,1
+1976,194,LIANG ZHANG,35.0,Tangshan City,0.545,0
+1976,194,LIANG ZHANG,33.0,Luan Nan-L2,0.526,0
+1976,194,LIANG ZHANG,32.0,Luan Nan-L1,0.526,0
+1976,203,LUANNAN,33.0,Luan Nan-L2,0.875,0
+1976,203,LUANNAN,32.0,Luan Nan-L1,0.875,0
+1976,205,LUANNAN,33.0,Luan Nan-L2,0.875,0
+1976,205,LUANNAN,32.0,Luan Nan-L1,0.875,0
+1976,199,"SHE VILLAGE, LUAN TOWN",36.0,Yao Yuan Village,0.438,1
+1976,199,"SHE VILLAGE, LUAN TOWN",33.0,Luan Nan-L2,0.37,1
+1976,199,"SHE VILLAGE, LUAN TOWN",32.0,Luan Nan-L1,0.37,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",35.0,Tangshan City,0.471,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",36.0,Yao Yuan Village,0.444,1
+1976,208,"XUAN VILLAGE, FENGNAN",36.0,Yao Yuan Village,0.625,1
+1976,192,"XUGE VILLAGE, FENGNAN",36.0,Yao Yuan Village,0.5,1
+1976,206,"YAN ZHUANG VILLAGE, Fengnan",36.0,Yao Yuan Village,0.649,1
+1978,81B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",61.0,Kitawabuchi-2,0.537,1
+1978,81B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",45.0,Kitawabuchi-2,0.537,1
+1978,81B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",62.0,Kitawabuchi-3,0.537,1
+1978,82B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",61.0,Kitawabuchi-2,0.537,1
+1978,82B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",45.0,Kitawabuchi-2,0.537,1
+1978,82B,"KITAWABUCHI, EAI RIVER, OLD MEANDER",62.0,Kitawabuchi-3,0.537,1
+1978,79B,NAKAJIMA WHARF,63.0,Nakajima-2,0.727,1
+1978,79B,NAKAJIMA WHARF,56.0,Nakajima-18,0.696,1
+1978,79B,NAKAJIMA WHARF,46.0,Nakajima-18,0.696,1
+1978,79B,NAKAJIMA WHARF,47.0,Nakamura 4,0.545,0
+1978,79B,NAKAJIMA WHARF,65.0,Nakamura 4,0.545,0
+1978,79B,NAKAJIMA WHARF,66.0,Nakamura 5,0.545,0
+1978,79B,NAKAJIMA WHARF,48.0,Nakamura 5,0.545,0
+1978,79B,NAKAJIMA WHARF,64.0,Nakamura 1,0.545,0
+1978,77B,NAKAMURA DIKE,47.0,Nakamura 4,0.762,1
+1978,77B,NAKAMURA DIKE,65.0,Nakamura 4,0.762,1
+1978,77B,NAKAMURA DIKE,66.0,Nakamura 5,0.762,1
+1978,77B,NAKAMURA DIKE,48.0,Nakamura 5,0.762,1
+1978,77B,NAKAMURA DIKE,64.0,Nakamura 1,0.762,1
+1978,77B,NAKAMURA DIKE,63.0,Nakajima-2,0.571,0
+1978,77B,NAKAMURA DIKE,56.0,Nakajima-18,0.545,0
+1978,77B,NAKAMURA DIKE,46.0,Nakajima-18,0.545,0
+1978,78B,SHIOMI-MINAMI WHARF,68.0,Shiomi-6,0.5,1
+1978,78B,SHIOMI-MINAMI WHARF,50.0,Shiomi-6,0.5,1
+1978,75B,YURIAGE KAMI-2,74.0,Yuriagekami-2,1.0,0
+1978,75B,YURIAGE KAMI-2,55.0,Yuriagekami-2,1.0,0
+1978,75B,YURIAGE KAMI-2,73.0,Yuriagekami-1,0.917,0
+1978,75B,YURIAGE KAMI-2,54.0,Yuriagekami-1,0.917,0
+1978,75B,YURIAGE KAMI-2,75.0,Yuriagekami-3,0.917,0
+1978,75B,YURIAGE KAMI-2,70.0,Yuriage Br-2,0.727,1
+1978,75B,YURIAGE KAMI-2,52.0,Yuriage Br-2,0.727,1
+1978,75B,YURIAGE KAMI-2,69.0,Yuriage Br-1,0.636,1
+1978,75B,YURIAGE KAMI-2,71.0,Yuriage Br-3,0.636,1
+1978,75B,YURIAGE KAMI-2,51.0,Yuriage Br-1,0.636,1
+1978,75B,YURIAGE KAMI-2,53.0,Yuriage Br-3,0.636,1
+1978,75B,YURIAGE KAMI-2,72.0,Yuriage Br-5,0.636,1
+1978,76B,YURIAGE-OHASHI,73.0,Yuriagekami-1,0.72,0
+1978,76B,YURIAGE-OHASHI,74.0,Yuriagekami-2,0.72,0
+1978,76B,YURIAGE-OHASHI,54.0,Yuriagekami-1,0.72,0
+1978,76B,YURIAGE-OHASHI,55.0,Yuriagekami-2,0.72,0
+1978,76B,YURIAGE-OHASHI,75.0,Yuriagekami-3,0.72,0
+1978,76B,YURIAGE-OHASHI,69.0,Yuriage Br-1,0.609,1
+1978,76B,YURIAGE-OHASHI,70.0,Yuriage Br-2,0.609,1
+1978,76B,YURIAGE-OHASHI,71.0,Yuriage Br-3,0.609,1
+1978,76B,YURIAGE-OHASHI,51.0,Yuriage Br-1,0.609,1
+1978,76B,YURIAGE-OHASHI,52.0,Yuriage Br-2,0.609,1
+1978,76B,YURIAGE-OHASHI,53.0,Yuriage Br-3,0.609,1
+1978,76B,YURIAGE-OHASHI,72.0,Yuriage Br-5,0.609,1
+1979,9032,"Heber Road, Point Bar, R1R2",77.0,Heber Road A2,0.688,2
+1979,9032,"Heber Road, Point Bar, R1R2",76.0,Heber Road A1,0.688,2
+1979,9032,"Heber Road, Point Bar, R1R2",78.0,Heber Road A3,0.625,2
+1979,9030,"Heber Road, channel fill, R1R2",77.0,Heber Road A2,0.629,2
+1979,9030,"Heber Road, channel fill, R1R2",76.0,Heber Road A1,0.629,2
+1979,9030,"Heber Road, channel fill, R1R2",78.0,Heber Road A3,0.571,2
+1979,9029,"Heber Road, channel fill, SR1",76.0,Heber Road A1,0.647,2
+1979,9029,"Heber Road, channel fill, SR1",77.0,Heber Road A2,0.588,2
+1979,9029,"Heber Road, channel fill, SR1",78.0,Heber Road A3,0.588,2
+1979,9031,"Heber Road, point bar, SR1",76.0,Heber Road A1,0.71,2
+1979,9031,"Heber Road, point bar, SR1",77.0,Heber Road A2,0.645,2
+1979,9031,"Heber Road, point bar, SR1",78.0,Heber Road A3,0.645,2
+1979,9028,Kornbloom,79.0,Kornbloom B,0.947,1
+1979,9026,McKim,80.0,McKim Ranch A,0.625,1
+1979,9025,Radio Tower,81.0,Radio Tower B1,0.909,2
+1979,9025,Radio Tower,82.0,Radio Tower B2,0.909,2
+1981,9038,Kornbloom,86.0,Kornbloom B,0.947,1
+1981,9036,McKim,92.0,McKim Ranch A,0.625,1
+1981,9035,Radio Tower,87.0,Radio Tower B1,0.909,2
+1981,9035,Radio Tower,88.0,Radio Tower B2,0.909,2
+1981,9033,Wildlife 1,91.0,Wildlife B,0.889,1
+1981,9034,Wildlife 2,91.0,Wildlife B,0.889,1
+1981,9034B,Wildlife 3,91.0,Wildlife B,0.889,1
+1983,64A,AOMORI STATION,97.0,Aomori Station,1.0,2
+1983,64C,AOMORI STATION,97.0,Aomori Station,1.0,2
+1983,64A,AOMORI STATION,96.0,Akita Station,0.72,1
+1983,64C,AOMORI STATION,96.0,Akita Station,0.72,1
+1983,73,ARAYA-MOTOMACHI,98.0,Arayamotomachi,1.0,0
+1983,73,ARAYA-MOTOMACHI,93.0,Arayamotomachi,1.0,0
+1983,73,ARAYA-MOTOMACHI,94.0,Arayamotomachi Coarse Sand,0.737,0
+1983,72,GAIKO WHARF,100.0,Gaiko Wharf B-2,0.909,2
+1983,72,GAIKO WHARF,99.0,Gaiko 1&2,0.588,1
+1983,69,MAEYAMA HILL,98.0,Arayamotomachi,0.56,0
+1983,69,MAEYAMA HILL,93.0,Arayamotomachi,0.56,0
+1983,67B,TAKEDA ELEM. SCH.,95.0,Takeda Elementary Sch.,0.812,1
+1983,67B,TAKEDA ELEM. SCH.,110.0,Takeda Elementary Sch.,0.812,1
+1983,67A,TAKEDA ELEM. SCH.,95.0,Takeda Elementary Sch.,0.812,1
+1983,67A,TAKEDA ELEM. SCH.,110.0,Takeda Elementary Sch.,0.812,1
+1987,9114,"Heber Road, Point Bar, R1R2",113.0,Heber Road A1,0.688,2
+1987,9114,"Heber Road, Point Bar, R1R2",114.0,Heber Road A2,0.688,2
+1987,9103,"Heber Road, Point Bar, R1R2",113.0,Heber Road A1,0.688,2
+1987,9103,"Heber Road, Point Bar, R1R2",114.0,Heber Road A2,0.688,2
+1987,9114,"Heber Road, Point Bar, R1R2",115.0,Heber Road A3,0.625,2
+1987,9103,"Heber Road, Point Bar, R1R2",115.0,Heber Road A3,0.625,2
+1987,9112,"Heber Road, channel fill, R1R2",113.0,Heber Road A1,0.629,2
+1987,9112,"Heber Road, channel fill, R1R2",114.0,Heber Road A2,0.629,2
+1987,9101,"Heber Road, channel fill, R1R2",113.0,Heber Road A1,0.629,2
+1987,9101,"Heber Road, channel fill, R1R2",114.0,Heber Road A2,0.629,2
+1987,9112,"Heber Road, channel fill, R1R2",115.0,Heber Road A3,0.571,2
+1987,9101,"Heber Road, channel fill, R1R2",115.0,Heber Road A3,0.571,2
+1987,9111,"Heber Road, channel fill, SR1",113.0,Heber Road A1,0.647,2
+1987,9100,"Heber Road, channel fill, SR1",113.0,Heber Road A1,0.647,2
+1987,9111,"Heber Road, channel fill, SR1",114.0,Heber Road A2,0.588,2
+1987,9111,"Heber Road, channel fill, SR1",115.0,Heber Road A3,0.588,2
+1987,9100,"Heber Road, channel fill, SR1",114.0,Heber Road A2,0.588,2
+1987,9100,"Heber Road, channel fill, SR1",115.0,Heber Road A3,0.588,2
+1987,9113,"Heber Road, point bar, SR1",113.0,Heber Road A1,0.71,2
+1987,9102,"Heber Road, point bar, SR1",113.0,Heber Road A1,0.71,2
+1987,9113,"Heber Road, point bar, SR1",114.0,Heber Road A2,0.645,2
+1987,9113,"Heber Road, point bar, SR1",115.0,Heber Road A3,0.645,2
+1987,9102,"Heber Road, point bar, SR1",114.0,Heber Road A2,0.645,2
+1987,9102,"Heber Road, point bar, SR1",115.0,Heber Road A3,0.645,2
+1987,9110,Kornbloom,116.0,Kornbloom B,0.947,1
+1987,9099,Kornbloom,116.0,Kornbloom B,0.947,1
+1987,9108,McKim,117.0,McKim Ranch A,0.625,1
+1987,9097,McKim,117.0,McKim Ranch A,0.625,1
+1987,9107,Radio Tower,111.0,Radio Tower B1,0.909,2
+1987,9107,Radio Tower,118.0,Radio Tower B1,0.909,2
+1987,9107,Radio Tower,119.0,Radio Tower B2,0.909,2
+1987,9096,Radio Tower,111.0,Radio Tower B1,0.909,2
+1987,9096,Radio Tower,118.0,Radio Tower B1,0.909,2
+1987,9096,Radio Tower,119.0,Radio Tower B2,0.909,2
+1987,9104,Wildlife 1,122.0,Wildlife B,0.889,1
+1987,9104,Wildlife 1,112.0,Wildlife B,0.889,1
+1987,9093,Wildlife 1,122.0,Wildlife B,0.889,1
+1987,9093,Wildlife 1,112.0,Wildlife B,0.889,1
+1987,9105,Wildlife 2,122.0,Wildlife B,0.889,1
+1987,9105,Wildlife 2,112.0,Wildlife B,0.889,1
+1987,9094,Wildlife 2,122.0,Wildlife B,0.889,1
+1987,9094,Wildlife 2,112.0,Wildlife B,0.889,1
+1987,9106,Wildlife 3,122.0,Wildlife B,0.889,1
+1987,9106,Wildlife 3,112.0,Wildlife B,0.889,1
+1987,9095,Wildlife 3,122.0,Wildlife B,0.889,1
+1987,9095,Wildlife 3,112.0,Wildlife B,0.889,1
+1989,525,525MRR - Near Marinovich Farm 65,124.0,Farris Farm ,0.389,1
+1989,525,525MRR - Near Marinovich Farm 65,130.0,Miller Farm CMF5,0.35,1
+1989,525,525MRR - Near Marinovich Farm 65,146.0,Miller Farm ,0.333,1
+1989,525,525MRR - Near Marinovich Farm 65,129.0,Miller Farm CMF3,0.3,1
+1989,525,525MRR - Near Marinovich Farm 65,131.0,Miller Farm CMF8,0.3,1
+1989,525,525MRR - Near Marinovich Farm 65,128.0,Miller Farm CMF10,0.293,1
+1989,526,526MRR - Near Marinovich Farm 67,124.0,Farris Farm ,0.389,1
+1989,526,526MRR - Near Marinovich Farm 67,146.0,Miller Farm ,0.333,1
+1989,526,526MRR - Near Marinovich Farm 67,129.0,Miller Farm CMF3,0.3,1
+1989,526,526MRR - Near Marinovich Farm 67,130.0,Miller Farm CMF5,0.3,1
+1989,526,526MRR - Near Marinovich Farm 67,131.0,Miller Farm CMF8,0.3,1
+1989,526,526MRR - Near Marinovich Farm 67,128.0,Miller Farm CMF10,0.293,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",124.0,Farris Farm ,0.444,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",131.0,Miller Farm CMF8,0.3,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",146.0,Miller Farm ,0.278,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",129.0,Miller Farm CMF3,0.25,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",130.0,Miller Farm CMF5,0.25,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",128.0,Miller Farm CMF10,0.244,1
+1989,528,528MCG - Near McGowan Farm 136,129.0,Miller Farm CMF3,0.421,1
+1989,528,528MCG - Near McGowan Farm 136,146.0,Miller Farm ,0.412,1
+1989,528,528MCG - Near McGowan Farm 136,128.0,Miller Farm CMF10,0.41,1
+1989,528,528MCG - Near McGowan Farm 136,130.0,Miller Farm CMF5,0.368,1
+1989,528,528MCG - Near McGowan Farm 136,131.0,Miller Farm CMF8,0.368,1
+1989,528,528MCG - Near McGowan Farm 136,124.0,Farris Farm ,0.353,1
+1989,529,529MCG - Near McGowan Farm 138,129.0,Miller Farm CMF3,0.421,1
+1989,529,529MCG - Near McGowan Farm 138,131.0,Miller Farm CMF8,0.421,1
+1989,529,529MCG - Near McGowan Farm 138,146.0,Miller Farm ,0.412,1
+1989,529,529MCG - Near McGowan Farm 138,128.0,Miller Farm CMF10,0.41,1
+1989,529,529MCG - Near McGowan Farm 138,130.0,Miller Farm CMF5,0.368,1
+1989,529,529MCG - Near McGowan Farm 138,124.0,Farris Farm ,0.353,1
+1989,538,538ML - Moss Landing State Beach,137.0,State Beach UC-B1,0.5,2
+1989,538,538ML - Moss Landing State Beach,138.0,State Beach UC-B2,0.5,2
+1989,9117,B1B4 Treasure Island Fire Station,139.0,Treasure Island,0.651,2
+1989,9116,B2B3 Treasure Island Fire Station,139.0,Treasure Island,0.651,2
+1989,9119,B2B4 Treasure Island Fire Station,139.0,Treasure Island,0.651,2
+1989,9118,"B4,B5 Treasure Island Fire Station",139.0,Treasure Island,0.651,2
+1989,517,CLINT MILLER FARM,146.0,Miller Farm ,0.8,2
+1989,517,CLINT MILLER FARM,129.0,Miller Farm CMF3,0.69,2
+1989,517,CLINT MILLER FARM,130.0,Miller Farm CMF5,0.69,2
+1989,517,CLINT MILLER FARM,131.0,Miller Farm CMF8,0.69,2
+1989,517,CLINT MILLER FARM,128.0,Miller Farm CMF10,0.667,2
+1989,517,CLINT MILLER FARM,124.0,Farris Farm ,0.4,1
+1989,518,Clint Miller Farm,146.0,Miller Farm ,0.8,2
+1989,518,Clint Miller Farm,129.0,Miller Farm CMF3,0.69,2
+1989,518,Clint Miller Farm,130.0,Miller Farm CMF5,0.69,2
+1989,518,Clint Miller Farm,131.0,Miller Farm CMF8,0.69,2
+1989,518,Clint Miller Farm,128.0,Miller Farm CMF10,0.667,2
+1989,518,Clint Miller Farm,124.0,Farris Farm ,0.4,1
+1989,520,Clint Miller Farm-CMF 8,131.0,Miller Farm CMF8,0.848,2
+1989,520,Clint Miller Farm-CMF 8,129.0,Miller Farm CMF3,0.788,2
+1989,520,Clint Miller Farm-CMF 8,130.0,Miller Farm CMF5,0.788,2
+1989,520,Clint Miller Farm-CMF 8,128.0,Miller Farm CMF10,0.765,2
+1989,520,Clint Miller Farm-CMF 8,146.0,Miller Farm ,0.69,2
+1989,520,Clint Miller Farm-CMF 8,124.0,Farris Farm ,0.345,1
+1989,519,Clint Miller Farm-CMF10,128.0,Miller Farm CMF10,0.857,3
+1989,519,Clint Miller Farm-CMF10,129.0,Miller Farm CMF3,0.765,2
+1989,519,Clint Miller Farm-CMF10,130.0,Miller Farm CMF5,0.765,2
+1989,519,Clint Miller Farm-CMF10,131.0,Miller Farm CMF8,0.765,2
+1989,519,Clint Miller Farm-CMF10,146.0,Miller Farm ,0.667,2
+1989,519,Clint Miller Farm-CMF10,124.0,Farris Farm ,0.333,1
+1989,513,FARIS FARM-FAR 61,124.0,Farris Farm ,0.75,1
+1989,514,FARIS FARM-FAR 61,124.0,Farris Farm ,0.75,1
+1989,513,FARIS FARM-FAR 61,128.0,Miller Farm CMF10,0.483,1
+1989,514,FARIS FARM-FAR 61,128.0,Miller Farm CMF10,0.483,1
+1989,513,FARIS FARM-FAR 61,129.0,Miller Farm CMF3,0.429,1
+1989,513,FARIS FARM-FAR 61,130.0,Miller Farm CMF5,0.429,1
+1989,513,FARIS FARM-FAR 61,131.0,Miller Farm CMF8,0.429,1
+1989,514,FARIS FARM-FAR 61,129.0,Miller Farm CMF3,0.429,1
+1989,514,FARIS FARM-FAR 61,130.0,Miller Farm CMF5,0.429,1
+1989,514,FARIS FARM-FAR 61,131.0,Miller Farm CMF8,0.429,1
+1989,513,FARIS FARM-FAR 61,146.0,Miller Farm ,0.417,1
+1989,514,FARIS FARM-FAR 61,146.0,Miller Farm ,0.417,1
+1989,509,LENARDINI FARM,124.0,Farris Farm ,0.609,1
+1989,509,LENARDINI FARM,146.0,Miller Farm ,0.609,1
+1989,509,LENARDINI FARM,129.0,Miller Farm CMF3,0.519,1
+1989,509,LENARDINI FARM,130.0,Miller Farm CMF5,0.519,1
+1989,509,LENARDINI FARM,131.0,Miller Farm CMF8,0.519,1
+1989,509,LENARDINI FARM,128.0,Miller Farm CMF10,0.5,1
+1989,516,LEONARDINI FARM,124.0,Farris Farm ,0.583,1
+1989,516,LEONARDINI FARM,146.0,Miller Farm ,0.583,1
+1989,516,LEONARDINI FARM,129.0,Miller Farm CMF3,0.5,1
+1989,516,LEONARDINI FARM,130.0,Miller Farm CMF5,0.5,1
+1989,516,LEONARDINI FARM,131.0,Miller Farm CMF8,0.5,1
+1989,516,LEONARDINI FARM,128.0,Miller Farm CMF10,0.483,1
+1989,510,LEONARDINI FARM-LEN 53,129.0,Miller Farm CMF3,0.485,1
+1989,510,LEONARDINI FARM-LEN 53,130.0,Miller Farm CMF5,0.485,1
+1989,510,LEONARDINI FARM-LEN 53,124.0,Farris Farm ,0.483,1
+1989,510,LEONARDINI FARM-LEN 53,146.0,Miller Farm ,0.483,1
+1989,510,LEONARDINI FARM-LEN 53,131.0,Miller Farm CMF8,0.424,1
+1989,510,LEONARDINI FARM-LEN 53,128.0,Miller Farm CMF10,0.412,1
+1989,521,Leonardini Farm-LEN 39,129.0,Miller Farm CMF3,0.485,1
+1989,521,Leonardini Farm-LEN 39,124.0,Farris Farm ,0.483,1
+1989,521,Leonardini Farm-LEN 39,146.0,Miller Farm ,0.483,1
+1989,521,Leonardini Farm-LEN 39,130.0,Miller Farm CMF5,0.424,1
+1989,521,Leonardini Farm-LEN 39,131.0,Miller Farm CMF8,0.424,1
+1989,521,Leonardini Farm-LEN 39,128.0,Miller Farm CMF10,0.412,1
+1989,539,Moss Landing State Beach,137.0,State Beach UC-B1,0.571,2
+1989,539,Moss Landing State Beach,138.0,State Beach UC-B2,0.571,2
+1989,540,Moss Landing State Beach,137.0,State Beach UC-B1,0.571,2
+1989,540,Moss Landing State Beach,138.0,State Beach UC-B2,0.571,2
+1989,9115,SCPT Treasure Island,139.0,Treasure Island,0.875,2
+1989,522,SEAMIST FARM 31,124.0,Farris Farm ,0.609,1
+1989,522,SEAMIST FARM 31,146.0,Miller Farm ,0.522,1
+1989,522,SEAMIST FARM 31,129.0,Miller Farm CMF3,0.519,1
+1989,522,SEAMIST FARM 31,128.0,Miller Farm CMF10,0.5,1
+1989,522,SEAMIST FARM 31,130.0,Miller Farm CMF5,0.444,1
+1989,522,SEAMIST FARM 31,131.0,Miller Farm CMF8,0.444,1
+1989,9122,Treasure Island Fire Station,139.0,Treasure Island,0.718,2
+1989,9174,"UC15 Moss Landing, State Beach",137.0,State Beach UC-B1,0.513,2
+1989,9174,"UC15 Moss Landing, State Beach",138.0,State Beach UC-B2,0.513,2
+1989,9175,"UC16 Moss Landing, State Beach",137.0,State Beach UC-B1,0.513,2
+1989,9175,"UC16 Moss Landing, State Beach",138.0,State Beach UC-B2,0.513,2
+1989,9176,UC4 Sandholt Road,135.0,Sandholdt UC-B10,0.552,0
+1989,9178,UC6 Sandholt Road,135.0,Sandholdt UC-B10,0.552,0
+1989,9180,"UC9 Moss Landing, Woodward Marine",142.0,Marine Laboratory UC-B1,0.25,1
+1989,9180,"UC9 Moss Landing, Woodward Marine",143.0,Marine Laboratory UC-B2,0.25,1
+1989,9180,"UC9 Moss Landing, Woodward Marine",144.0,Marine Laboratory_F1-F7,0.25,1
+1989,9128,"UM011 Treasure Island, perimeter",139.0,Treasure Island,0.667,2
+1989,9124,"UM03 Treasure Island, perimeter",139.0,Treasure Island,0.683,2
+1989,9125,"UM05 Treasure Island, perimeter",139.0,Treasure Island,0.683,2
+1989,9126,"UM06 Treasure Island, perimeter",139.0,Treasure Island,0.683,2
+1989,9127,"UM09 Treasure Island, perimeter",139.0,Treasure Island,0.683,2
+1993,48,"CHUO PIER, PORT OFFICE",150.0,Kushiro Port Site A,0.471,1
+1993,48,"CHUO PIER, PORT OFFICE",151.0,Kushiro Port Site D,0.471,1
+1993,48,"CHUO PIER, PORT OFFICE",149.0,Kushiro Port Seismo St.,0.378,1
+1993,30,HIGASHI FISHERMANS PORT-North,149.0,Kushiro Port Seismo St.,0.444,1
+1993,30,HIGASHI FISHERMANS PORT-North,150.0,Kushiro Port Site A,0.429,1
+1993,30,HIGASHI FISHERMANS PORT-North,151.0,Kushiro Port Site D,0.429,1
+1993,34,"KUSHIRO PORT OFFICE, SOUTH END OF PORT",151.0,Kushiro Port Site D,0.596,2
+1993,34,"KUSHIRO PORT OFFICE, SOUTH END OF PORT",149.0,Kushiro Port Seismo St.,0.56,2
+1993,34,"KUSHIRO PORT OFFICE, SOUTH END OF PORT",150.0,Kushiro Port Site A,0.553,2
+1993,28,"KUSHIRO PORT OFFICE, Seismometer Station",149.0,Kushiro Port Seismo St.,0.704,2
+1993,28,"KUSHIRO PORT OFFICE, Seismometer Station",150.0,Kushiro Port Site A,0.588,2
+1993,28,"KUSHIRO PORT OFFICE, Seismometer Station",151.0,Kushiro Port Site D,0.549,2
+1993,50,PROPRIETARY,150.0,Kushiro Port Site A,0.519,0
+1995,158,"ASHIYA GAWA KOEN, EAST SIDE",155.0,Ashiyama A (Mountain Sand 1),0.591,0
+1995,158,"ASHIYA GAWA KOEN, EAST SIDE",156.0,Ashiyama A (Marine Sand),0.585,0
+1995,158,"ASHIYA GAWA KOEN, EAST SIDE",158.0,Ashiyama C-D-E (Marine Sand),0.558,0
+1995,144,"ISHIYA GAWA KOEN, WEST SIDE",156.0,Ashiyama A (Marine Sand),0.537,0
+1995,144,"ISHIYA GAWA KOEN, WEST SIDE",158.0,Ashiyama C-D-E (Marine Sand),0.512,0
+1995,144,"ISHIYA GAWA KOEN, WEST SIDE",155.0,Ashiyama A (Mountain Sand 1),0.5,0
+1995,146,ISOGAMI KOEN,210.0,Torishima Dike,0.5,0
+1995,147,IWAYA KOEN,163.0,Kobe No 5,0.5,0
+1995,147,IWAYA KOEN,165.0,Kobe No 7,0.5,0
+1995,147,IWAYA KOEN,166.0,Kobe No 8,0.5,0
+1995,147,IWAYA KOEN,167.0,Kobe No 9,0.5,0
+1995,147,IWAYA KOEN,159.0,Kobe No 1,0.5,0
+1995,147,IWAYA KOEN,160.0,Kobe No 2,0.5,0
+1995,147,IWAYA KOEN,161.0,Kobe No 3,0.5,0
+1995,147,IWAYA KOEN,162.0,Kobe No 4,0.5,0
+1995,147,IWAYA KOEN,164.0,Kobe No 6,0.5,0
+1995,106,"JR WADAMASAKI LINE STATION,",156.0,Ashiyama A (Marine Sand),0.524,0
+1995,106,"JR WADAMASAKI LINE STATION,",158.0,Ashiyama C-D-E (Marine Sand),0.5,0
+1995,106,"JR WADAMASAKI LINE STATION,",203.0,Port Island Borehole Array Station,0.453,1
+1995,88,"KITA KOEN NE, Port Island",207.0,Port Island Site I,0.571,2
+1995,88,"KITA KOEN NE, Port Island",209.0,Rokko Island Site G,0.5,1
+1995,88,"KITA KOEN NE, Port Island",208.0,Rokko Island Building D,0.45,1
+1995,88,"KITA KOEN NE, Port Island",204.0,Port Island Improved Site (Ikegaya),0.408,2
+1995,88,"KITA KOEN NE, Port Island",203.0,Port Island Borehole Array Station,0.4,2
+1995,88,"KITA KOEN NE, Port Island",206.0,Port Island Improved Site (Watanabe),0.4,2
+1995,88,"KITA KOEN NE, Port Island",205.0,Port Island Improved Site (Tanahashi),0.392,2
+1995,90,"KITA KOEN SW, Port Island",207.0,Port Island Site I,0.571,2
+1995,90,"KITA KOEN SW, Port Island",209.0,Rokko Island Site G,0.5,1
+1995,90,"KITA KOEN SW, Port Island",208.0,Rokko Island Building D,0.45,1
+1995,90,"KITA KOEN SW, Port Island",204.0,Port Island Improved Site (Ikegaya),0.408,2
+1995,90,"KITA KOEN SW, Port Island",203.0,Port Island Borehole Array Station,0.4,2
+1995,90,"KITA KOEN SW, Port Island",206.0,Port Island Improved Site (Watanabe),0.4,2
+1995,90,"KITA KOEN SW, Port Island",205.0,Port Island Improved Site (Tanahashi),0.392,2
+1995,9187,KNK(KPS) Kainan Port Sub-station,203.0,Port Island Borehole Array Station,0.464,2
+1995,9187,KNK(KPS) Kainan Port Sub-station,207.0,Port Island Site I,0.39,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,206.0,Port Island Improved Site (Watanabe),0.321,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,205.0,Port Island Improved Site (Tanahashi),0.316,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,204.0,Port Island Improved Site (Ikegaya),0.291,1
+1995,167,"NISHINOMIYA, TATSUMI KOEN",210.0,Torishima Dike,0.514,0
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",207.0,Port Island Site I,0.522,2
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",205.0,Port Island Improved Site (Tanahashi),0.516,2
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",204.0,Port Island Improved Site (Ikegaya),0.5,2
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",206.0,Port Island Improved Site (Watanabe),0.492,2
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",203.0,Port Island Borehole Array Station,0.426,2
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",209.0,Rokko Island Site G,0.383,1
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",208.0,Rokko Island Building D,0.314,1
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",207.0,Port Island Site I,0.522,2
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",205.0,Port Island Improved Site (Tanahashi),0.516,2
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",204.0,Port Island Improved Site (Ikegaya),0.5,2
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",206.0,Port Island Improved Site (Watanabe),0.492,2
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",203.0,Port Island Borehole Array Station,0.426,2
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",209.0,Rokko Island Site G,0.383,1
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",208.0,Rokko Island Building D,0.353,1
+1995,11,PORT ISLAND MINAMI KOEN,207.0,Port Island Site I,0.686,2
+1995,11,PORT ISLAND MINAMI KOEN,204.0,Port Island Improved Site (Ikegaya),0.612,2
+1995,11,PORT ISLAND MINAMI KOEN,206.0,Port Island Improved Site (Watanabe),0.6,2
+1995,11,PORT ISLAND MINAMI KOEN,205.0,Port Island Improved Site (Tanahashi),0.588,2
+1995,11,PORT ISLAND MINAMI KOEN,210.0,Torishima Dike,0.545,0
+1995,11,PORT ISLAND MINAMI KOEN,209.0,Rokko Island Site G,0.5,1
+1995,11,PORT ISLAND MINAMI KOEN,203.0,Port Island Borehole Array Station,0.48,2
+1995,11,PORT ISLAND MINAMI KOEN,208.0,Rokko Island Building D,0.45,1
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",203.0,Port Island Borehole Array Station,0.529,2
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",207.0,Port Island Site I,0.528,2
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",206.0,Port Island Improved Site (Watanabe),0.5,2
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",205.0,Port Island Improved Site (Tanahashi),0.493,2
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",204.0,Port Island Improved Site (Ikegaya),0.448,2
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",209.0,Rokko Island Site G,0.37,1
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",208.0,Rokko Island Building D,0.31,1
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",203.0,Port Island Borehole Array Station,0.515,2
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",206.0,Port Island Improved Site (Watanabe),0.515,2
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",207.0,Port Island Site I,0.51,2
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",204.0,Port Island Improved Site (Ikegaya),0.462,2
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",205.0,Port Island Improved Site (Tanahashi),0.448,2
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",209.0,Rokko Island Site G,0.385,1
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",208.0,Rokko Island Building D,0.286,1
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",204.0,Port Island Improved Site (Ikegaya),0.5,2
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",205.0,Port Island Improved Site (Tanahashi),0.486,2
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",207.0,Port Island Site I,0.483,2
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",203.0,Port Island Borehole Array Station,0.411,2
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",206.0,Port Island Improved Site (Watanabe),0.384,2
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",208.0,Rokko Island Building D,0.349,1
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",209.0,Rokko Island Site G,0.339,1
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",207.0,Port Island Site I,0.519,2
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",205.0,Port Island Improved Site (Tanahashi),0.457,2
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",204.0,Port Island Improved Site (Ikegaya),0.441,2
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",203.0,Port Island Borehole Array Station,0.435,2
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",206.0,Port Island Improved Site (Watanabe),0.406,2
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",208.0,Rokko Island Building D,0.373,1
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",209.0,Rokko Island Site G,0.364,1
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",207.0,Port Island Site I,0.56,2
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",205.0,Port Island Improved Site (Tanahashi),0.515,2
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",204.0,Port Island Improved Site (Ikegaya),0.5,2
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",203.0,Port Island Borehole Array Station,0.462,2
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",206.0,Port Island Improved Site (Watanabe),0.431,2
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",209.0,Rokko Island Site G,0.392,1
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",208.0,Rokko Island Building D,0.327,1
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",207.0,Port Island Site I,0.56,2
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",204.0,Port Island Improved Site (Ikegaya),0.5,2
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",205.0,Port Island Improved Site (Tanahashi),0.485,2
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",203.0,Port Island Borehole Array Station,0.462,2
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",206.0,Port Island Improved Site (Watanabe),0.431,2
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",209.0,Rokko Island Site G,0.392,1
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",208.0,Rokko Island Building D,0.327,1
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",207.0,Port Island Site I,0.683,2
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",205.0,Port Island Improved Site (Tanahashi),0.561,2
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",203.0,Port Island Borehole Array Station,0.5,2
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",206.0,Port Island Improved Site (Watanabe),0.5,2
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",209.0,Rokko Island Site G,0.476,1
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",204.0,Port Island Improved Site (Ikegaya),0.473,2
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",208.0,Rokko Island Building D,0.435,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",207.0,Port Island Site I,0.615,2
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",203.0,Port Island Borehole Array Station,0.519,2
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",206.0,Port Island Improved Site (Watanabe),0.519,2
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",205.0,Port Island Improved Site (Tanahashi),0.509,2
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",204.0,Port Island Improved Site (Ikegaya),0.491,2
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",209.0,Rokko Island Site G,0.45,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",208.0,Rokko Island Building D,0.364,1
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",207.0,Port Island Site I,0.757,2
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",204.0,Port Island Improved Site (Ikegaya),0.627,2
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",206.0,Port Island Improved Site (Watanabe),0.615,2
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",205.0,Port Island Improved Site (Tanahashi),0.604,2
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",209.0,Rokko Island Site G,0.579,1
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",203.0,Port Island Borehole Array Station,0.538,2
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",208.0,Rokko Island Building D,0.381,1
+1995,9183,"Port Island Instrument Array, 1991",207.0,Port Island Site I,0.591,2
+1995,9183,"Port Island Instrument Array, 1991",203.0,Port Island Borehole Array Station,0.576,3
+1995,9183,"Port Island Instrument Array, 1991",206.0,Port Island Improved Site (Watanabe),0.576,2
+1995,9183,"Port Island Instrument Array, 1991",205.0,Port Island Improved Site (Tanahashi),0.567,2
+1995,9183,"Port Island Instrument Array, 1991",204.0,Port Island Improved Site (Ikegaya),0.552,2
+1995,9183,"Port Island Instrument Array, 1991",209.0,Rokko Island Site G,0.444,1
+1995,9183,"Port Island Instrument Array, 1991",208.0,Rokko Island Building D,0.367,1
+1995,9184,"Port Island Instrument Array, 1995",207.0,Port Island Site I,0.591,2
+1995,9184,"Port Island Instrument Array, 1995",203.0,Port Island Borehole Array Station,0.576,3
+1995,9184,"Port Island Instrument Array, 1995",206.0,Port Island Improved Site (Watanabe),0.576,2
+1995,9184,"Port Island Instrument Array, 1995",205.0,Port Island Improved Site (Tanahashi),0.567,2
+1995,9184,"Port Island Instrument Array, 1995",204.0,Port Island Improved Site (Ikegaya),0.552,2
+1995,9184,"Port Island Instrument Array, 1995",209.0,Rokko Island Site G,0.444,1
+1995,9184,"Port Island Instrument Array, 1995",208.0,Rokko Island Building D,0.367,1
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",209.0,Rokko Island Site G,0.667,2
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",208.0,Rokko Island Building D,0.605,2
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",207.0,Port Island Site I,0.474,1
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",205.0,Port Island Improved Site (Tanahashi),0.444,1
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",203.0,Port Island Borehole Array Station,0.415,1
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",204.0,Port Island Improved Site (Ikegaya),0.385,1
+1995,4,"ROKKO ISLAND, HIGASHI KOEN -1",206.0,Port Island Improved Site (Watanabe),0.377,1
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",209.0,Rokko Island Site G,0.667,2
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",208.0,Rokko Island Building D,0.605,2
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",207.0,Port Island Site I,0.474,1
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",205.0,Port Island Improved Site (Tanahashi),0.444,1
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",203.0,Port Island Borehole Array Station,0.415,1
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",204.0,Port Island Improved Site (Ikegaya),0.385,1
+1995,5,"ROKKO ISLAND, HIGASHI KOEN -2",206.0,Port Island Improved Site (Watanabe),0.377,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",209.0,Rokko Island Site G,0.553,2
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",208.0,Rokko Island Building D,0.51,2
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",204.0,Port Island Improved Site (Ikegaya),0.467,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",207.0,Port Island Site I,0.435,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",206.0,Port Island Improved Site (Watanabe),0.426,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",158.0,Ashiyama C-D-E (Marine Sand),0.423,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",156.0,Ashiyama A (Marine Sand),0.4,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",205.0,Port Island Improved Site (Tanahashi),0.387,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",203.0,Port Island Borehole Array Station,0.361,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",209.0,Rokko Island Site G,0.549,2
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",208.0,Rokko Island Building D,0.545,2
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",203.0,Port Island Borehole Array Station,0.431,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",204.0,Port Island Improved Site (Ikegaya),0.406,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",207.0,Port Island Site I,0.4,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",206.0,Port Island Improved Site (Watanabe),0.4,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",205.0,Port Island Improved Site (Tanahashi),0.394,1
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,209.0,Rokko Island Site G,0.583,2
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,208.0,Rokko Island Building D,0.577,2
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,203.0,Port Island Borehole Array Station,0.452,1
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,207.0,Port Island Site I,0.426,1
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,205.0,Port Island Improved Site (Tanahashi),0.413,1
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,204.0,Port Island Improved Site (Ikegaya),0.361,1
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,206.0,Port Island Improved Site (Watanabe),0.355,1
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",209.0,Rokko Island Site G,0.519,2
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",208.0,Rokko Island Building D,0.517,2
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",203.0,Port Island Borehole Array Station,0.412,1
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",205.0,Port Island Improved Site (Tanahashi),0.406,1
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",206.0,Port Island Improved Site (Watanabe),0.382,1
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",207.0,Port Island Site I,0.377,1
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",204.0,Port Island Improved Site (Ikegaya),0.358,1
+1995,94,SETO KOEN,163.0,Kobe No 5,0.533,0
+1995,94,SETO KOEN,165.0,Kobe No 7,0.533,0
+1995,94,SETO KOEN,166.0,Kobe No 8,0.533,0
+1995,94,SETO KOEN,167.0,Kobe No 9,0.533,0
+1995,94,SETO KOEN,159.0,Kobe No 1,0.533,0
+1995,94,SETO KOEN,160.0,Kobe No 2,0.533,0
+1995,94,SETO KOEN,161.0,Kobe No 3,0.533,0
+1995,94,SETO KOEN,162.0,Kobe No 4,0.533,0
+1995,94,SETO KOEN,164.0,Kobe No 6,0.533,0
+1995,94,SETO KOEN,169.0,Kobe No 11,0.5,0
+1995,94,SETO KOEN,171.0,Kobe No 13,0.5,0
+1995,94,SETO KOEN,173.0,Kobe No 15,0.5,0
+1995,94,SETO KOEN,175.0,Kobe No 17,0.5,0
+1995,94,SETO KOEN,182.0,Kobe No 24,0.5,0
+1995,94,SETO KOEN,186.0,Kobe No 28,0.5,0
+1995,94,SETO KOEN,187.0,Kobe No 29,0.5,0
+1995,94,SETO KOEN,192.0,Kobe No 34,0.5,0
+1995,94,SETO KOEN,193.0,Kobe No 35,0.5,0
+1995,94,SETO KOEN,195.0,Kobe No 37,0.5,0
+1995,94,SETO KOEN,196.0,Kobe No 38,0.5,0
+1995,94,SETO KOEN,199.0,Kobe No 41,0.5,0
+1995,94,SETO KOEN,200.0,Kobe No 42,0.5,0
+1995,94,SETO KOEN,201.0,Kobe No 43,0.5,0
+1995,94,SETO KOEN,202.0,Kobe No 44,0.5,0
+1995,94,SETO KOEN,168.0,Kobe No 10,0.5,0
+1995,94,SETO KOEN,170.0,Kobe No 12,0.5,0
+1995,94,SETO KOEN,172.0,Kobe No 14,0.5,0
+1995,94,SETO KOEN,174.0,Kobe No 16,0.5,0
+1995,94,SETO KOEN,176.0,Kobe No 18,0.5,0
+1995,94,SETO KOEN,177.0,Kobe No 19,0.5,0
+1995,94,SETO KOEN,178.0,Kobe No 20,0.5,0
+1995,94,SETO KOEN,179.0,Kobe No 21,0.5,0
+1995,94,SETO KOEN,180.0,Kobe No 22,0.5,0
+1995,94,SETO KOEN,181.0,Kobe No 23,0.5,0
+1995,94,SETO KOEN,183.0,Kobe No 25,0.5,0
+1995,94,SETO KOEN,184.0,Kobe No 26,0.5,0
+1995,94,SETO KOEN,185.0,Kobe No 27,0.5,0
+1995,94,SETO KOEN,188.0,Kobe No 30,0.5,0
+1995,94,SETO KOEN,189.0,Kobe No 31,0.5,0
+1995,94,SETO KOEN,190.0,Kobe No 32,0.5,0
+1995,94,SETO KOEN,191.0,Kobe No 33,0.5,0
+1995,94,SETO KOEN,194.0,Kobe No 36,0.5,0
+1995,94,SETO KOEN,197.0,Kobe No 39,0.5,0
+1995,94,SETO KOEN,198.0,Kobe No 40,0.5,0
+1995,9186,TKS(TPS) Takasago Power Station,203.0,Port Island Borehole Array Station,0.393,1
+1995,93,UOZAKIHAMA KOEN,210.0,Torishima Dike,0.519,0

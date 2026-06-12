@@ -2,8 +2,10 @@
 
 Repeats earthquake/event-grouped train/calibration/test splits and reports the
 distribution of mechanism-band conformal coverage, efficiency, ambiguity, and
-per-event undercoverage. This is a robustness companion to
-run_conformal_decision_metrics.py; it does not touch manuscript or figure files.
+per-event undercoverage. Mechanism bands are defined from train-only logistic
+calibration of the published margin coordinate, not from the full ML score.
+This is a robustness companion to run_conformal_decision_metrics.py; it does
+not touch manuscript or figure files.
 """
 
 from __future__ import annotations
@@ -16,6 +18,9 @@ from typing import Any
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 from geoliq.reliability import split_conformal_sets
 
@@ -59,6 +64,7 @@ def load_spt() -> dict[str, Any]:
         "X": df[SPT_FEATURES].to_numpy(float),
         "y": df["y"].astype(int).to_numpy(),
         "groups": df["earthquake"].astype(str).to_numpy(),
+        "margin": np.log((df["CSR_cetin"] / df["CRR_BI2014"]).to_numpy(float)),
     }
 
 
@@ -71,11 +77,18 @@ def load_cpt() -> dict[str, Any]:
         "X": df[CPT_FEATURES].to_numpy(float),
         "y": df["y"].astype(int).to_numpy(),
         "groups": df["event"].astype(str).to_numpy(),
+        "margin": np.log1p(np.clip(df["LPI"].to_numpy(float), 0, None)),
     }
 
 
-def band_of(prob: np.ndarray) -> np.ndarray:
+def band_of_margin_probability(prob: np.ndarray) -> np.ndarray:
     return np.clip((np.asarray(prob, float) * 3).astype(int), 0, 2)
+
+
+def fit_margin_probability(margin, y, train_idx, eval_idx) -> np.ndarray:
+    model = make_pipeline(StandardScaler(), LogisticRegression(max_iter=5000))
+    model.fit(np.asarray(margin[train_idx], float).reshape(-1, 1), y[train_idx])
+    return model.predict_proba(np.asarray(margin[eval_idx], float).reshape(-1, 1))[:, 1]
 
 
 def finite(values: list[float | int | None]) -> np.ndarray:
@@ -147,6 +160,7 @@ def evaluate_split(
     X = np.asarray(D["X"], float)
     y = np.asarray(D["y"], int)
     groups = np.asarray(D["groups"])
+    margin = np.asarray(D["margin"], float)
     tr, ca, te = grouped_indices(groups, train_groups, calib_groups, test_groups)
     if len(np.unique(y[tr])) < 2 or len(ca) < 8 or len(te) < 8:
         return None
@@ -154,13 +168,15 @@ def evaluate_split(
     model = hgb().fit(X[tr], y[tr])
     p_cal = model.predict_proba(X[ca])[:, 1]
     p_test = model.predict_proba(X[te])[:, 1]
+    pm_cal = fit_margin_probability(margin, y, tr, ca)
+    pm_test = fit_margin_probability(margin, y, tr, te)
 
     plain0, plain1 = split_conformal_sets(p_cal, y[ca], p_test, alpha=alpha)
     plain_sizes = plain0.astype(int) + plain1.astype(int)
     plain_covered = np.where(y[te] == 1, plain1, plain0)
 
-    cal_bands = band_of(p_cal)
-    test_bands = band_of(p_test)
+    cal_bands = band_of_margin_probability(pm_cal)
+    test_bands = band_of_margin_probability(pm_test)
     band0 = np.zeros(len(te), dtype=bool)
     band1 = np.zeros(len(te), dtype=bool)
     fallback_predictions = 0
@@ -362,7 +378,11 @@ def main() -> None:
             "n_rep": int(args.n_rep),
             "seed": int(args.seed),
             "split_group_fractions": {"train": 0.4, "calibration": 0.3, "test": 0.3},
-            "mechanism_band_rule": "band = clip(int(predicted_probability * 3), 0, 2)",
+            "mechanism_band_rule": "train-only margin probability band = clip(int(p_margin * 3), 0, 2)",
+            "margin_coordinates": {
+                "SPT_Cetin2018": "log(CSR/CRR_BI2014)",
+                "CPT_Geyin2021": "log(1+LPI)",
+            },
             "critical_band": {"band": 1, "probability_range": [1.0 / 3.0, 2.0 / 3.0]},
             "min_band_calibration_cases": int(args.min_band_calib),
             "min_event_cases": int(args.min_event_cases),

@@ -1,0 +1,114 @@
+Fig1_hero_mechanism:
+  title: Mechanism-anchored validation protocol (single schematic figure)
+  data_sources:
+  - data/fig1_key_values.yml
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig1_hero_mechanism.svg
+  - output/pdf/Fig1_hero_mechanism.pdf
+  - output/pptx/Fig1_hero_mechanism_preview.pptx
+  - output/png/Fig1_hero_mechanism.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.
+Fig2_transfer_evidence_map:
+  title: Validation stress-test evidence
+  data_sources:
+  - data/fig2_transfer_stress_tests.csv
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig2_transfer_evidence_map.svg
+  - output/pdf/Fig2_transfer_evidence_map.pdf
+  - output/pptx/Fig2_transfer_evidence_map_preview.pptx
+  - output/png/Fig2_transfer_evidence_map.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.
+Fig3_conformal_cockpit:
+  title: Conformal review reliability
+  data_sources:
+  - data/fig3_conformal_metrics.csv
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig3_conformal_cockpit.svg
+  - output/pdf/Fig3_conformal_cockpit.pdf
+  - output/pptx/Fig3_conformal_cockpit_preview.pptx
+  - output/png/Fig3_conformal_cockpit.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.
+Fig4_groundwater_cutaway:
+  title: Groundwater mechanism and residual boundary
+  data_sources:
+  - data/fig4_groundwater_residuals.csv
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig4_groundwater_cutaway.svg
+  - output/pdf/Fig4_groundwater_cutaway.pdf
+  - output/pptx/Fig4_groundwater_cutaway_preview.pptx
+  - output/png/Fig4_groundwater_cutaway.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.
+Fig5_cross_hazard_vignette:
+  title: Cross-hazard extension vignette
+  data_sources:
+  - data/fig5_slope_vignette.csv
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig5_cross_hazard_vignette.svg
+  - output/pdf/Fig5_cross_hazard_vignette.pdf
+  - output/pptx/Fig5_cross_hazard_vignette_preview.pptx
+  - output/png/Fig5_cross_hazard_vignette.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.
+Fig6_critical_band_closure:
+  title: R16/R20 candidate site-paired Vs critical-band closure
+  data_sources:
+  - data/fig6_case_level.csv
+  scripts:
+  - src/build_manuscript_figures.py
+  outputs:
+  - output/svg/Fig6_critical_band_closure.svg
+  - output/pdf/Fig6_critical_band_closure.pdf
+  - output/pptx/Fig6_critical_band_closure_preview.pptx
+  - output/png/Fig6_critical_band_closure.png
+  generated_by: deterministic Python scripts
+  generative_ai_image: false
+  machine_checked: true
+  style: publication (white background, thin axes, no card/poster elements); Fig.
+    1 is the single schematic figure
+  author_signoff: pending before submission
+  notes: PPTX is a PNG preview slide, not a fully editable vector source. SVG/PDF
+    plus scripts and source data are canonical.

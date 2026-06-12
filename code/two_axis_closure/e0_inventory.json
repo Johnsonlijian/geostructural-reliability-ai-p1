@@ -1,0 +1,24 @@
+{
+  "source_file": "kayen2013_table_s1.csv",
+  "n_rows_raw": 415,
+  "columns_found": {
+    "vs1": "vs1_ms",
+    "csr": "csr",
+    "mw": "mw",
+    "sigma_eff": "sigma_eff_kpa",
+    "label": "liquefied",
+    "earthquake": "earthquake",
+    "site": "site",
+    "amax": "amax_g",
+    "gwt": "gwt_m",
+    "depth": "crit_depth_lo_m"
+  },
+  "columns_missing": [],
+  "n_marginal_excluded": 4,
+  "n_usable": 411,
+  "n_events": 35,
+  "n_liq": 287,
+  "n_noliq": 124,
+  "fc_coverage": 0.0,
+  "status": "PASS"
+}

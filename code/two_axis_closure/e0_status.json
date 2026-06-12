@@ -1,0 +1,4 @@
+{
+  "status": "blocked",
+  "reason": "KEA2013 Table S1 not found in incoming/ (need *.xlsx/*.xls/*.csv with 'table_s1' or 'supplemental' in name)"
+}

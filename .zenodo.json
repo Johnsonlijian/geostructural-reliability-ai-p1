@@ -1,22 +1,27 @@
 {
-  "title": "Effective-stress coordinates bound transferable machine-learning gains in liquefaction prediction",
+  "title": "Physics-anchored validation reveals limits of infrastructure hazard machine learning",
   "upload_type": "software",
-  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of effective-stress coordinate bounds and conformal decision reliability in machine-learning liquefaction prediction.",
+  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of physics-anchored grouped validation and conformal decision reliability in infrastructure hazard machine learning.",
   "creators": [
     {
-      "name": "[Family name], [Given name]",
-      "affiliation": "Inner Mongolia University of Technology"
+      "name": "REN, Lijian",
+      "affiliation": "School of Civil Engineering, Inner Mongolia University of Technology; Inner Mongolia Autonomous Region Key Laboratory of Green Construction and Intelligent Operation and Maintenance of Civil Engineering; College of Civil and Transportation Engineering, Hohai University",
+      "orcid": "0000-0003-1629-4368"
     }
   ],
+  "version": "0.1.0-submission",
   "license": "MIT",
   "keywords": [
     "soil liquefaction",
-    "geotechnical AI",
+    "infrastructure hazard",
+    "earthquake engineering",
     "physics-informed machine learning",
-    "measured improvement bound",
+    "effective stress",
     "grouped validation",
     "conformal prediction",
-    "operational non-inferiority"
+    "decision reliability",
+    "CPT 2024",
+    "trustworthy machine learning"
   ],
   "related_identifiers": [
     {

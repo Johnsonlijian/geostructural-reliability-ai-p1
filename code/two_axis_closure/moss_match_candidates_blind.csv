@@ -1,0 +1,374 @@
+year,vs_case,vs_site,moss_id,moss_site,sim,tok
+1975,9016,"Paper Mill, Ying-Kou",10,Paper Mill,0.72,2
+1975,9017,"Glass Fiber, Ying-Kou",6,Chemical Fiber Site,0.412,1
+1975,9018,"Construction Building, Ying-Kou",7,Const. Com. Building,0.698,1
+1975,9020,"Middle School, Ying-Kou",9,17th Middle School,0.686,2
+1975,9021,"Chemical Fiber, Ying-Kou",6,Chemical Fiber Site,0.757,2
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",15,T1 Tangshan District [2],0.39,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",16,T2 Tangshan District [2],0.39,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",17,T8 Tangshan District [2],0.39,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",18,T10 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",19,T19 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",20,T22 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",21,T32 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",23,T21 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",24,T30 Tangshan District [2],0.381,1
+1976,201,"WA LI VILLAGE, E. OF TANGSHAN",25,T36 Tangshan District [2],0.381,1
+1979,9022,Wildlife 1,30,Wildlife B,0.889,1
+1979,9023,Wildlife 2,30,Wildlife B,0.889,1
+1979,9024,Wildlife 3,30,Wildlife B,0.889,1
+1979,9025,Radio Tower,27,Radio Tower B1,0.909,2
+1979,9025,Radio Tower,31,Radio Tower B2,0.909,2
+1979,9026,McKim,28,McKim Ranch A,0.625,1
+1979,9028,Kornbloom,29,Kornbloom B,0.947,1
+1981,9033,Wildlife 1,32,Wildlife B,0.889,1
+1981,9034,Wildlife 2,32,Wildlife B,0.889,1
+1981,9034B,Wildlife 3,32,Wildlife B,0.889,1
+1981,9035,Radio Tower,34,Radio Tower B1,0.909,2
+1981,9035,Radio Tower,36,Radio Tower B2,0.909,2
+1981,9036,McKim,35,McKim Ranch A,0.625,1
+1981,9038,Kornbloom,33,Kornbloom B,0.947,1
+1983,9043,SA1 Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9044,SA2 Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9045,SA3 Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9046,SA4 Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9047,SA5 Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9048,SAA Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9049,SAB Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9050,SAC Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9051,SAD Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9052,SAE Pense Ranch,40,Pence Ranch [1],0.75,1
+1983,9053,XDXE Pense Ranch,40,Pence Ranch [1],0.72,1
+1983,9054,SA2 Goddard Ranch,40,Pence Ranch [1],0.385,1
+1983,9055,SA4 Goddard Ranch,40,Pence Ranch [1],0.385,1
+1983,9058,X3X4 Larter Ranch,40,Pence Ranch [1],0.462,1
+1983,9059A,"SA1,85 Larter Ranch",40,Pence Ranch [1],0.444,1
+1983,9059B,Larter Ranch,40,Pence Ranch [1],0.545,1
+1983,9060,"SA1,90 Larter Ranch",40,Pence Ranch [1],0.444,1
+1983,9061,WS1A Whiskey Springs,41,Whiskey Springs Site 1 [2],0.737,2
+1983,9061,WS1A Whiskey Springs,42,Whiskey Springs Site 2 [2],0.737,2
+1983,9061,WS1A Whiskey Springs,43,Whiskey Springs Site 3 [2],0.737,2
+1983,9062,SA5 Whiskey Springs,41,Whiskey Springs Site 1 [2],0.757,2
+1983,9062,SA5 Whiskey Springs,42,Whiskey Springs Site 2 [2],0.757,2
+1983,9062,SA5 Whiskey Springs,43,Whiskey Springs Site 3 [2],0.757,2
+1987,9093,Wildlife 1,61,Wildlife B,0.889,1
+1987,9093,Wildlife 1,62,Wildlife B,0.889,1
+1987,9094,Wildlife 2,61,Wildlife B,0.889,1
+1987,9094,Wildlife 2,62,Wildlife B,0.889,1
+1987,9095,Wildlife 3,61,Wildlife B,0.889,1
+1987,9095,Wildlife 3,62,Wildlife B,0.889,1
+1987,9104,Wildlife 1,61,Wildlife B,0.889,1
+1987,9104,Wildlife 1,62,Wildlife B,0.889,1
+1987,9105,Wildlife 2,61,Wildlife B,0.889,1
+1987,9105,Wildlife 2,62,Wildlife B,0.889,1
+1987,9106,Wildlife 3,61,Wildlife B,0.889,1
+1987,9106,Wildlife 3,62,Wildlife B,0.889,1
+1989,509,LENARDINI FARM,109,Leonardini 52a [5],0.741,0
+1989,509,LENARDINI FARM,92,Leonardini 39 [5],0.692,0
+1989,509,LENARDINI FARM,93,Leonardini 51 [5],0.692,0
+1989,509,LENARDINI FARM,94,Leonardini 53 [5],0.692,0
+1989,509,LENARDINI FARM,108,Leonardini 37 [5],0.692,0
+1989,509,LENARDINI FARM,77,Farris Farm Site [4],0.5,1
+1989,509,LENARDINI FARM,80,Miller Farm CMF 5 [5],0.5,1
+1989,509,LENARDINI FARM,81,Miller Farm CMF 3 [5],0.5,1
+1989,509,LENARDINI FARM,79,Miller Farm CMF 10 [5],0.483,1
+1989,509,LENARDINI FARM,100,Alameda Bay Farm Is. [1],0.467,1
+1989,509,LENARDINI FARM,111,McGowan Farm 136 [5],0.357,1
+1989,510,LEONARDINI FARM-LEN 53,94,Leonardini 53 [5],0.75,1
+1989,510,LEONARDINI FARM-LEN 53,109,Leonardini 52a [5],0.727,1
+1989,510,LEONARDINI FARM-LEN 53,92,Leonardini 39 [5],0.688,1
+1989,510,LEONARDINI FARM-LEN 53,93,Leonardini 51 [5],0.688,1
+1989,510,LEONARDINI FARM-LEN 53,108,Leonardini 37 [5],0.688,1
+1989,510,LEONARDINI FARM-LEN 53,77,Farris Farm Site [4],0.471,1
+1989,510,LEONARDINI FARM-LEN 53,80,Miller Farm CMF 5 [5],0.471,1
+1989,510,LEONARDINI FARM-LEN 53,81,Miller Farm CMF 3 [5],0.471,1
+1989,510,LEONARDINI FARM-LEN 53,79,Miller Farm CMF 10 [5],0.457,1
+1989,510,LEONARDINI FARM-LEN 53,111,McGowan Farm 136 [5],0.412,1
+1989,510,LEONARDINI FARM-LEN 53,100,Alameda Bay Farm Is. [1],0.389,1
+1989,511,MODEL AIRPORT-AIR 18,82,Model Airport 18 [5],0.875,2
+1989,511,MODEL AIRPORT-AIR 18,83,Model Airport 21 [5],0.812,2
+1989,512,MODEL AIRPORT-Air 21,83,Model Airport 21 [5],0.875,2
+1989,512,MODEL AIRPORT-Air 21,82,Model Airport 18 [5],0.812,2
+1989,513,FARIS FARM-FAR 61,77,Farris Farm Site [4],0.621,1
+1989,513,FARIS FARM-FAR 61,85,Farris 61 [5],0.609,0
+1989,513,FARIS FARM-FAR 61,79,Miller Farm CMF 10 [5],0.467,1
+1989,513,FARIS FARM-FAR 61,80,Miller Farm CMF 5 [5],0.414,1
+1989,513,FARIS FARM-FAR 61,81,Miller Farm CMF 3 [5],0.414,1
+1989,513,FARIS FARM-FAR 61,111,McGowan Farm 136 [5],0.414,1
+1989,513,FARIS FARM-FAR 61,100,Alameda Bay Farm Is. [1],0.387,1
+1989,514,FARIS FARM-FAR 61,77,Farris Farm Site [4],0.621,1
+1989,514,FARIS FARM-FAR 61,85,Farris 61 [5],0.609,0
+1989,514,FARIS FARM-FAR 61,79,Miller Farm CMF 10 [5],0.467,1
+1989,514,FARIS FARM-FAR 61,80,Miller Farm CMF 5 [5],0.414,1
+1989,514,FARIS FARM-FAR 61,81,Miller Farm CMF 3 [5],0.414,1
+1989,514,FARIS FARM-FAR 61,111,McGowan Farm 136 [5],0.414,1
+1989,514,FARIS FARM-FAR 61,100,Alameda Bay Farm Is. [1],0.387,1
+1989,515,LEONARDINI,92,Leonardini 39 [5],0.87,1
+1989,515,LEONARDINI,93,Leonardini 51 [5],0.87,1
+1989,515,LEONARDINI,94,Leonardini 53 [5],0.87,1
+1989,515,LEONARDINI,108,Leonardini 37 [5],0.87,1
+1989,515,LEONARDINI,109,Leonardini 52a [5],0.833,1
+1989,516,LEONARDINI FARM,109,Leonardini 52a [5],0.786,1
+1989,516,LEONARDINI FARM,92,Leonardini 39 [5],0.741,1
+1989,516,LEONARDINI FARM,93,Leonardini 51 [5],0.741,1
+1989,516,LEONARDINI FARM,94,Leonardini 53 [5],0.741,1
+1989,516,LEONARDINI FARM,108,Leonardini 37 [5],0.741,1
+1989,516,LEONARDINI FARM,77,Farris Farm Site [4],0.483,1
+1989,516,LEONARDINI FARM,80,Miller Farm CMF 5 [5],0.483,1
+1989,516,LEONARDINI FARM,81,Miller Farm CMF 3 [5],0.483,1
+1989,516,LEONARDINI FARM,79,Miller Farm CMF 10 [5],0.467,1
+1989,516,LEONARDINI FARM,100,Alameda Bay Farm Is. [1],0.452,1
+1989,516,LEONARDINI FARM,111,McGowan Farm 136 [5],0.414,1
+1989,517,CLINT MILLER FARM,80,Miller Farm CMF 5 [5],0.667,2
+1989,517,CLINT MILLER FARM,81,Miller Farm CMF 3 [5],0.667,2
+1989,517,CLINT MILLER FARM,79,Miller Farm CMF 10 [5],0.645,2
+1989,517,CLINT MILLER FARM,78,Miller Fam CMF 8 [5],0.621,1
+1989,517,CLINT MILLER FARM,100,Alameda Bay Farm Is. [1],0.438,1
+1989,517,CLINT MILLER FARM,111,McGowan Farm 136 [5],0.4,1
+1989,517,CLINT MILLER FARM,77,Farris Farm Site [4],0.333,1
+1989,518,Clint Miller Farm,80,Miller Farm CMF 5 [5],0.667,2
+1989,518,Clint Miller Farm,81,Miller Farm CMF 3 [5],0.667,2
+1989,518,Clint Miller Farm,79,Miller Farm CMF 10 [5],0.645,2
+1989,518,Clint Miller Farm,78,Miller Fam CMF 8 [5],0.621,1
+1989,518,Clint Miller Farm,100,Alameda Bay Farm Is. [1],0.438,1
+1989,518,Clint Miller Farm,111,McGowan Farm 136 [5],0.4,1
+1989,518,Clint Miller Farm,77,Farris Farm Site [4],0.333,1
+1989,519,Clint Miller Farm-CMF10,79,Miller Farm CMF 10 [5],0.833,2
+1989,519,Clint Miller Farm-CMF10,80,Miller Farm CMF 5 [5],0.743,2
+1989,519,Clint Miller Farm-CMF10,81,Miller Farm CMF 3 [5],0.743,2
+1989,519,Clint Miller Farm-CMF10,78,Miller Fam CMF 8 [5],0.706,1
+1989,519,Clint Miller Farm-CMF10,100,Alameda Bay Farm Is. [1],0.432,1
+1989,519,Clint Miller Farm-CMF10,111,McGowan Farm 136 [5],0.4,1
+1989,519,Clint Miller Farm-CMF10,77,Farris Farm Site [4],0.286,1
+1989,520,Clint Miller Farm-CMF 8,78,Miller Fam CMF 8 [5],0.788,1
+1989,520,Clint Miller Farm-CMF 8,80,Miller Farm CMF 5 [5],0.765,2
+1989,520,Clint Miller Farm-CMF 8,81,Miller Farm CMF 3 [5],0.765,2
+1989,520,Clint Miller Farm-CMF 8,79,Miller Farm CMF 10 [5],0.743,2
+1989,520,Clint Miller Farm-CMF 8,100,Alameda Bay Farm Is. [1],0.389,1
+1989,520,Clint Miller Farm-CMF 8,111,McGowan Farm 136 [5],0.353,1
+1989,520,Clint Miller Farm-CMF 8,77,Farris Farm Site [4],0.294,1
+1989,521,Leonardini Farm-LEN 39,92,Leonardini 39 [5],0.75,1
+1989,521,Leonardini Farm-LEN 39,94,Leonardini 53 [5],0.688,1
+1989,521,Leonardini Farm-LEN 39,108,Leonardini 37 [5],0.688,1
+1989,521,Leonardini Farm-LEN 39,109,Leonardini 52a [5],0.667,1
+1989,521,Leonardini Farm-LEN 39,93,Leonardini 51 [5],0.625,1
+1989,521,Leonardini Farm-LEN 39,77,Farris Farm Site [4],0.471,1
+1989,521,Leonardini Farm-LEN 39,81,Miller Farm CMF 3 [5],0.471,1
+1989,521,Leonardini Farm-LEN 39,80,Miller Farm CMF 5 [5],0.412,1
+1989,521,Leonardini Farm-LEN 39,111,McGowan Farm 136 [5],0.412,1
+1989,521,Leonardini Farm-LEN 39,79,Miller Farm CMF 10 [5],0.4,1
+1989,521,Leonardini Farm-LEN 39,100,Alameda Bay Farm Is. [1],0.389,1
+1989,522,SEAMIST FARM 31,97,Sea Mist 31 [5],0.783,0
+1989,522,SEAMIST FARM 31,77,Farris Farm Site [4],0.5,1
+1989,522,SEAMIST FARM 31,81,Miller Farm CMF 3 [5],0.5,1
+1989,522,SEAMIST FARM 31,79,Miller Farm CMF 10 [5],0.483,1
+1989,522,SEAMIST FARM 31,100,Alameda Bay Farm Is. [1],0.467,1
+1989,522,SEAMIST FARM 31,80,Miller Farm CMF 5 [5],0.429,1
+1989,522,SEAMIST FARM 31,111,McGowan Farm 136 [5],0.429,1
+1989,523,523SIL - Near SIL 68 - on river side of levee (N. of river),114,Salinas River Bridge 117 [5],0.413,1
+1989,524,524GRA - Near GRA 123,86,Granite Const. 123 [5],0.5,0
+1989,525,525MRR - Near Marinovich Farm 65,95,Marinovich 65 [5],0.615,1
+1989,525,525MRR - Near Marinovich Farm 65,112,Marinovich 67 [5],0.615,1
+1989,525,525MRR - Near Marinovich Farm 65,111,McGowan Farm 136 [5],0.39,1
+1989,525,525MRR - Near Marinovich Farm 65,100,Alameda Bay Farm Is. [1],0.372,1
+1989,525,525MRR - Near Marinovich Farm 65,77,Farris Farm Site [4],0.341,1
+1989,525,525MRR - Near Marinovich Farm 65,80,Miller Farm CMF 5 [5],0.341,1
+1989,525,525MRR - Near Marinovich Farm 65,81,Miller Farm CMF 3 [5],0.341,1
+1989,525,525MRR - Near Marinovich Farm 65,79,Miller Farm CMF 10 [5],0.333,1
+1989,526,526MRR - Near Marinovich Farm 67,112,Marinovich 67 [5],0.615,1
+1989,526,526MRR - Near Marinovich Farm 67,95,Marinovich 65 [5],0.564,1
+1989,526,526MRR - Near Marinovich Farm 67,100,Alameda Bay Farm Is. [1],0.372,1
+1989,526,526MRR - Near Marinovich Farm 67,77,Farris Farm Site [4],0.341,1
+1989,526,526MRR - Near Marinovich Farm 67,111,McGowan Farm 136 [5],0.341,1
+1989,526,526MRR - Near Marinovich Farm 67,80,Miller Farm CMF 5 [5],0.293,1
+1989,526,526MRR - Near Marinovich Farm 67,81,Miller Farm CMF 3 [5],0.293,1
+1989,526,526MRR - Near Marinovich Farm 67,79,Miller Farm CMF 10 [5],0.286,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",96,Radovich 99 [5],0.541,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",113,Radovich 98 [5],0.541,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",77,Farris Farm Site [4],0.39,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",100,Alameda Bay Farm Is. [1],0.372,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",111,McGowan Farm 136 [5],0.293,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",80,Miller Farm CMF 5 [5],0.244,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",81,Miller Farm CMF 3 [5],0.244,1
+1989,527,"527RAD - Near Radovich Farm 98, 99",79,Miller Farm CMF 10 [5],0.238,1
+1989,528,528MCG - Near McGowan Farm 136,111,McGowan Farm 136 [5],0.718,2
+1989,528,528MCG - Near McGowan Farm 136,100,Alameda Bay Farm Is. [1],0.439,1
+1989,528,528MCG - Near McGowan Farm 136,81,Miller Farm CMF 3 [5],0.41,1
+1989,528,528MCG - Near McGowan Farm 136,79,Miller Farm CMF 10 [5],0.4,1
+1989,528,528MCG - Near McGowan Farm 136,80,Miller Farm CMF 5 [5],0.359,1
+1989,528,528MCG - Near McGowan Farm 136,77,Farris Farm Site [4],0.308,1
+1989,529,529MCG - Near McGowan Farm 138,111,McGowan Farm 136 [5],0.667,2
+1989,529,529MCG - Near McGowan Farm 138,100,Alameda Bay Farm Is. [1],0.439,1
+1989,529,529MCG - Near McGowan Farm 138,81,Miller Farm CMF 3 [5],0.41,1
+1989,529,529MCG - Near McGowan Farm 138,79,Miller Farm CMF 10 [5],0.4,1
+1989,529,529MCG - Near McGowan Farm 138,80,Miller Farm CMF 5 [5],0.359,1
+1989,529,529MCG - Near McGowan Farm 138,77,Farris Farm Site [4],0.308,1
+1989,530,Southern Pacific Bridge,99,SP Bridge 48 [5],0.5,1
+1989,530,Southern Pacific Bridge,114,Salinas River Bridge 117 [5],0.419,1
+1989,531,531KET - Kett Ranch,90,Jefferson Ranch 32 [5],0.438,1
+1989,531,531KET - Kett Ranch,91,Kett 74 [5],0.364,1
+1989,535,"535SML - UC12 and UC13, Moss Landing",107,Moss Landing S. B.18 [2],0.5,2
+1989,535,"535SML - UC12 and UC13, Moss Landing",73,Moss Landing S.B. UC-14 [2],0.478,2
+1989,536,536ML - UC7 - Bridge and Sandholt,99,SP Bridge 48 [5],0.333,1
+1989,536,536ML - UC7 - Bridge and Sandholt,114,Salinas River Bridge 117 [5],0.298,1
+1989,538,538ML - Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],0.636,2
+1989,538,538ML - Moss Landing State Beach,107,Moss Landing S. B.18 [2],0.619,2
+1989,539,Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],0.718,2
+1989,539,Moss Landing State Beach,107,Moss Landing S. B.18 [2],0.703,2
+1989,540,Moss Landing State Beach,73,Moss Landing S.B. UC-14 [2],0.718,2
+1989,540,Moss Landing State Beach,107,Moss Landing S. B.18 [2],0.703,2
+1989,9116,B2B3 Treasure Island Fire Station,76,T.I. Naval Station [3],0.455,1
+1989,9117,B1B4 Treasure Island Fire Station,76,T.I. Naval Station [3],0.455,1
+1989,9118,"B4,B5 Treasure Island Fire Station",76,T.I. Naval Station [3],0.455,1
+1989,9119,B2B4 Treasure Island Fire Station,76,T.I. Naval Station [3],0.455,1
+1989,9122,Treasure Island Fire Station,76,T.I. Naval Station [3],0.5,1
+1989,9160V,Salinas River North,114,Salinas River Bridge 117 [5],0.667,2
+1989,9164V,Salinas River South,114,Salinas River Bridge 117 [5],0.615,2
+1989,9174,"UC15 Moss Landing, State Beach",73,Moss Landing S.B. UC-14 [2],0.651,2
+1989,9174,"UC15 Moss Landing, State Beach",107,Moss Landing S. B.18 [2],0.634,2
+1989,9175,"UC16 Moss Landing, State Beach",73,Moss Landing S.B. UC-14 [2],0.651,2
+1989,9175,"UC16 Moss Landing, State Beach",107,Moss Landing S. B.18 [2],0.634,2
+1989,9176,UC4 Sandholt Road,72,Sandholdt Rd. UC-4 [2],0.667,0
+1989,9176,UC4 Sandholt Road,103,Sandholdt Rd. UC2 [2],0.667,0
+1989,9176,UC4 Sandholt Road,106,Sandholdt Rd. UC-6 [2],0.667,0
+1989,9178,UC6 Sandholt Road,72,Sandholdt Rd. UC-4 [2],0.667,0
+1989,9178,UC6 Sandholt Road,103,Sandholdt Rd. UC2 [2],0.667,0
+1989,9178,UC6 Sandholt Road,106,Sandholdt Rd. UC-6 [2],0.667,0
+1989,9179,"UC12 Moss Landing, Harbor Office",73,Moss Landing S.B. UC-14 [2],0.578,2
+1989,9179,"UC12 Moss Landing, Harbor Office",107,Moss Landing S. B.18 [2],0.558,2
+1989,9179,"UC12 Moss Landing, Harbor Office",75,Habor Office UC-12&13 [2],0.489,1
+1989,9180,"UC9 Moss Landing, Woodward Marine",74,Woodward Marine UC-11 [2],0.596,2
+1989,9180,"UC9 Moss Landing, Woodward Marine",107,Moss Landing S. B.18 [2],0.5,2
+1989,9180,"UC9 Moss Landing, Woodward Marine",73,Moss Landing S.B. UC-14 [2],0.478,2
+1989,9180,"UC9 Moss Landing, Woodward Marine",70,Marine Lab C4 [2],0.3,1
+1989,9180,"UC9 Moss Landing, Woodward Marine",71,Marine Lab UC-7 [2],0.293,1
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",135,New Port No. 6 Pier,0.311,1
+1995,10,"PORT ISLAND EQ TENT ENCAMPMENT, North",124,Kobe Port Const. Office,0.24,1
+1995,105,SUMIYOSHI GAWA KOEN,143,Sumiyoshi Elementary,0.611,1
+1995,106,"JR WADAMASAKI LINE STATION,",125,Koyo Pump Station,0.421,1
+1995,11,PORT ISLAND MINAMI KOEN,135,New Port No. 6 Pier,0.353,1
+1995,11,PORT ISLAND MINAMI KOEN,124,Kobe Port Const. Office,0.308,1
+1995,12,MAYA WHARF KOEN,144,Nagashi Park,0.5,0
+1995,12,MAYA WHARF KOEN,137,New Wharf Const. Offices,0.424,1
+1995,12,MAYA WHARF KOEN,126,Kobe Wharf Public Co.,0.4,1
+1995,12,MAYA WHARF KOEN,123,Kobe Customs Maya Office B,0.343,1
+1995,12,MAYA WHARF KOEN,122,Kobe Customs Maya Office A,0.286,1
+1995,13,"MITABI KOEN, SUMIYOSHI, HIGASHI-NADA KU",143,Sumiyoshi Elementary,0.392,1
+1995,14,"ROKKO ISLAND, TEMPORARY HOUSING Area-East",130,Hamakoshienn Housing Area,0.517,2
+1995,141,"UTI HAMA KOEN, HIGASHI NADA",130,Hamakoshienn Housing Area,0.533,0
+1995,15,ROKKO ISLAND-TEMPORARY HOUSING-north,130,Hamakoshienn Housing Area,0.436,1
+1995,150,NAGARAKU KOEN,144,Nagashi Park,0.522,0
+1995,16,"ROKKO ISLAND/ EQ TEMPORARY HOUSING, Southwest",130,Hamakoshienn Housing Area,0.393,1
+1995,160,NISHINOMIYA KOUSEI-NENKIN SPORTS CENTER,119,Dust Management Center,0.436,1
+1995,163,NISHINOMIYA HIGASHI HIGH SCHOOL,121,Koyo Junior High School,0.542,2
+1995,163,NISHINOMIYA HIGASHI HIGH SCHOOL,127,Koyo Elementary School,0.333,1
+1995,163,NISHINOMIYA HIGASHI HIGH SCHOOL,120,Imazu Elementary School,0.327,1
+1995,163,NISHINOMIYA HIGASHI HIGH SCHOOL,136,Minatojima Junior High,0.292,1
+1995,165,"NISHINOMIYA, IMAZU SHO GAKKU YARD",120,Imazu Elementary School,0.327,1
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",124,Kobe Port Const. Office,0.276,1
+1995,17,"PORT ISLAND STAGE 2, FLOWER EVENT Parking North",135,New Port No. 6 Pier,0.264,1
+1995,170,"NISHINOMIYA, TOSAN KOEN",133,Nisseki Kobe Oil Tank A,0.513,0
+1995,170,"NISHINOMIYA, TOSAN KOEN",134,Nisseki Kobe Oil Tank B,0.513,0
+1995,172,"Miyamea Koen, Nishinomiya",130,Hamakoshienn Housing Area,0.533,0
+1995,176,"NISHINOMIYA, HAMA KOSHIEN SHO GAKKU",130,Hamakoshienn Housing Area,0.566,0
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",130,Hamakoshienn Housing Area,0.333,1
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",124,Kobe Port Const. Office,0.258,1
+1995,18,"PORT ISLAND STAGE 2, FLOWER EVENT Parking Area South",135,New Port No. 6 Pier,0.246,1
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",124,Kobe Port Const. Office,0.296,1
+1995,19,"PORT ISLAND STAGE2, FLOWER EVENT East Side",135,New Port No. 6 Pier,0.286,1
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",135,New Port No. 6 Pier,0.333,1
+1995,2,"PORT ISLAND-PHASE 2, Site ""C""-1",124,Kobe Port Const. Office,0.293,1
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",124,Kobe Port Const. Office,0.296,1
+1995,20,"PORT ISLAND STAGE2, FLOWER EVENT West Side",135,New Port No. 6 Pier,0.286,1
+1995,26,KOSHIENHAMA BEACH,130,Hamakoshienn Housing Area,0.564,0
+1995,27,"NISHINOMIYA BRIDGE, KOSHIENHAMA",130,Hamakoshienn Housing Area,0.51,0
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",128,Mizukasa Park,0.444,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",142,Shimonakajima Park,0.439,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",144,Nagashi Park,0.4,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",135,New Port No. 6 Pier,0.368,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",139,Honjyo Central Park,0.341,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",124,Kobe Port Const. Office,0.279,1
+1995,3,"PORT ISLAND-PHASE 1, NAKA PARK",138,Fukuzumi Park,0.278,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",142,Shimonakajima Park,0.375,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",128,Mizukasa Park,0.326,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",138,Fukuzumi Park,0.279,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",139,Honjyo Central Park,0.25,1
+1995,6,"ROKKO ISLAND, MARINE-Park, MINAMI KOEN",144,Nagashi Park,0.238,1
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",124,Kobe Port Const. Office,0.316,1
+1995,7,"PORT ISLAND SEWAGE PLANT, EAST SIDE Compacted",135,New Port No. 6 Pier,0.231,1
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",124,Kobe Port Const. Office,0.327,1
+1995,8,"PORT ISLAND SEWAGE PLANT, Vibro-Floatation",135,New Port No. 6 Pier,0.28,1
+1995,88,"KITA KOEN NE, Port Island",135,New Port No. 6 Pier,0.412,1
+1995,88,"KITA KOEN NE, Port Island",124,Kobe Port Const. Office,0.41,1
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",124,Kobe Port Const. Office,0.4,1
+1995,89,"PORT ISLAND, KITA KOEN WEST SIDE",135,New Port No. 6 Pier,0.3,1
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",135,New Port No. 6 Pier,0.267,1
+1995,9,"PORT ISLAND EQ TENT ENCAMPMENT, SO END",124,Kobe Port Const. Office,0.24,1
+1995,90,"KITA KOEN SW, Port Island",135,New Port No. 6 Pier,0.412,1
+1995,90,"KITA KOEN SW, Port Island",124,Kobe Port Const. Office,0.41,1
+1995,9183,"Port Island Instrument Array, 1991",124,Kobe Port Const. Office,0.333,1
+1995,9183,"Port Island Instrument Array, 1991",135,New Port No. 6 Pier,0.279,1
+1995,9184,"Port Island Instrument Array, 1995",124,Kobe Port Const. Office,0.333,1
+1995,9184,"Port Island Instrument Array, 1995",135,New Port No. 6 Pier,0.279,1
+1995,9185,SGK(TRC) Technical Research Center,119,Dust Management Center,0.367,1
+1995,9186,TKS(TPS) Takasago Power Station,125,Koyo Pump Station,0.488,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,125,Koyo Pump Station,0.488,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,124,Kobe Port Const. Office,0.356,1
+1995,9187,KNK(KPS) Kainan Port Sub-station,135,New Port No. 6 Pier,0.3,1
+1999,122,"WUFENG, TAIWAN, STATUE OF LIBERTY SITE",161,WuFeng Site B,0.476,1
+1999,122,"WUFENG, TAIWAN, STATUE OF LIBERTY SITE",162,WuFeng Site C,0.476,1
+1999,122,"WUFENG, TAIWAN, STATUE OF LIBERTY SITE",164,WuFeng Site C-10,0.455,1
+1999,123,"WUFENG, TAIWAN, RICE FIELD NR. GAN SHI",161,WuFeng Site B,0.4,1
+1999,123,"WUFENG, TAIWAN, RICE FIELD NR. GAN SHI",162,WuFeng Site C,0.4,1
+1999,123,"WUFENG, TAIWAN, RICE FIELD NR. GAN SHI",164,WuFeng Site C-10,0.381,1
+1999,123,"WUFENG, TAIWAN, RICE FIELD NR. GAN SHI",146,Soccer Field SF-5 [1],0.364,1
+1999,124,"WUFENG, TAIWAN, TAIWAN PROV.",161,WuFeng Site B,0.424,1
+1999,124,"WUFENG, TAIWAN, TAIWAN PROV.",162,WuFeng Site C,0.424,1
+1999,124,"WUFENG, TAIWAN, TAIWAN PROV.",164,WuFeng Site C-10,0.4,1
+1999,125,"WUFENG, SOUTH OF TAIWAN PROV. ASSEM.",161,WuFeng Site B,0.462,1
+1999,125,"WUFENG, SOUTH OF TAIWAN PROV. ASSEM.",162,WuFeng Site C,0.462,1
+1999,125,"WUFENG, SOUTH OF TAIWAN PROV. ASSEM.",164,WuFeng Site C-10,0.439,1
+1999,126,"WUFENG, KTV KARAOKE BAR, GAN SHI RIVER",161,WuFeng Site B,0.439,1
+1999,126,"WUFENG, KTV KARAOKE BAR, GAN SHI RIVER",162,WuFeng Site C,0.39,1
+1999,126,"WUFENG, KTV KARAOKE BAR, GAN SHI RIVER",164,WuFeng Site C-10,0.372,1
+1999,132,"NANTO, UCLA SITE A",160,Nantou Site C,0.8,0
+1999,132,"NANTO, UCLA SITE A",172,Nantou Site C-8,0.769,0
+1999,132,"NANTO, UCLA SITE A",173,Nantou Site C-7,0.769,0
+1999,132,"NANTO, UCLA SITE A",174,Nantou site C-3 & C-16,0.69,0
+1999,133,"WUFENG, TILTED BLDG #2, LAI WEN SHI",161,WuFeng Site B,0.541,1
+1999,133,"WUFENG, TILTED BLDG #2, LAI WEN SHI",163,WufFeng Site A,0.526,0
+1999,133,"WUFENG, TILTED BLDG #2, LAI WEN SHI",162,WuFeng Site C,0.486,1
+1999,133,"WUFENG, TILTED BLDG #2, LAI WEN SHI",164,WuFeng Site C-10,0.462,1
+1999,134,"WUFENG, GAN SHI RICE FIELDS,",161,WuFeng Site B,0.545,1
+1999,134,"WUFENG, GAN SHI RICE FIELDS,",162,WuFeng Site C,0.545,1
+1999,134,"WUFENG, GAN SHI RICE FIELDS,",164,WuFeng Site C-10,0.514,1
+1999,135,YUAN LIN,166,Yuanlin C-2,0.875,0
+1999,135,YUAN LIN,171,Yuanlin C-4,0.875,0
+1999,135,YUAN LIN,175,Yuanlin C-3,0.875,0
+1999,135,YUAN LIN,167,Yuanlin C-22,0.824,0
+1999,135,YUAN LIN,168,Yuanlin C-24,0.824,0
+1999,135,YUAN LIN,169,Yuanlin C-25,0.824,0
+1999,135,YUAN LIN,170,Yuanlin C-32,0.824,0
+1999,135,YUAN LIN,165,Yuanlini C-19,0.778,0
+1999,9188,"1-11 Adapazari, Turkey",149,Adapazari Site B [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",151,Adapazari Site D [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",152,Adapazari Site E [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",153,Adapazari Site F [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",154,Adapazari Site G [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",155,Adapazari Site H [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",156,Adapazari Site I [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",157,Adapazari Site J [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",158,Adapazari Site K [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",159,Adapazari Site L [2],0.667,1
+1999,9188,"1-11 Adapazari, Turkey",150,Adapazari Site C2 [2],0.647,1
+1999,9189,"1-24 Adapazari, Turkey",149,Adapazari Site B [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",151,Adapazari Site D [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",152,Adapazari Site E [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",153,Adapazari Site F [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",154,Adapazari Site G [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",155,Adapazari Site H [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",156,Adapazari Site I [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",157,Adapazari Site J [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",158,Adapazari Site K [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",159,Adapazari Site L [2],0.667,1
+1999,9189,"1-24 Adapazari, Turkey",150,Adapazari Site C2 [2],0.647,1

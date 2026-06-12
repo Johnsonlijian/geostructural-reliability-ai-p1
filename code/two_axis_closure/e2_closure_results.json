@@ -1,0 +1,116 @@
+{
+  "n_pairs_total": 74,
+  "n_tierA": 68,
+  "n_events_tierA": 15,
+  "amendment": "pre-specified frozen amendment; gate unchanged (>=60 tier-A pairs, >=8 events, in-band n>=20)",
+  "tierA": {
+    "n": 68,
+    "n_events": 15,
+    "label_agreement_vs_pen": 0.8382352941176471,
+    "pen_only": {
+      "auc": 0.8652482269503545,
+      "nll": 0.43451033946235096
+    },
+    "pen_plus_vs": {
+      "auc": 0.8226950354609929,
+      "nll": 0.46865134192915786
+    },
+    "paired_overall": {
+      "d_auc": -0.03898051948051956,
+      "d_auc_ci": [
+        -0.22630887185104054,
+        0.17080527497194156
+      ],
+      "d_nll": -0.027288674358462606,
+      "d_nll_ci": [
+        -0.16730143985375734,
+        0.14092966052883005
+      ],
+      "n_boot_effective": 2000
+    },
+    "n_inband": 25,
+    "inband_classes": [
+      0.0,
+      1.0
+    ],
+    "inband_pen_only": {
+      "auc": 0.8269230769230769,
+      "nll": 0.6392570368310466
+    },
+    "inband_pen_plus_vs": {
+      "auc": 0.891025641025641,
+      "nll": 0.5222484720655772
+    },
+    "paired_inband": {
+      "d_auc": 0.06547619047619047,
+      "d_auc_ci": [
+        -0.1733256939139291,
+        0.29294949494949485
+      ],
+      "d_nll": 0.11987600699029966,
+      "d_nll_ci": [
+        0.021769611543038338,
+        0.19229963859869448
+      ],
+      "n_boot_effective": 1999
+    },
+    "H1_supported": true,
+    "resolved_fraction": 0.48
+  },
+  "tierAB_sensitivity": {
+    "n": 74,
+    "n_events": 16,
+    "label_agreement_vs_pen": 0.8378378378378378,
+    "pen_only": {
+      "auc": 0.8618925831202046,
+      "nll": 0.4326656372859344
+    },
+    "pen_plus_vs": {
+      "auc": 0.8158567774936061,
+      "nll": 0.4496093466663647
+    },
+    "paired_overall": {
+      "d_auc": -0.046598086124401916,
+      "d_auc_ci": [
+        -0.24081185289042278,
+        0.13786923174442195
+      ],
+      "d_nll": -0.008466723506062562,
+      "d_nll_ci": [
+        -0.12137157982105656,
+        0.12256454548829991
+      ],
+      "n_boot_effective": 2000
+    },
+    "n_inband": 26,
+    "inband_classes": [
+      0.0,
+      1.0
+    ],
+    "inband_pen_only": {
+      "auc": 0.9107142857142858,
+      "nll": 0.5634250573268852
+    },
+    "inband_pen_plus_vs": {
+      "auc": 0.8690476190476191,
+      "nll": 0.48439210266386
+    },
+    "paired_inband": {
+      "d_auc": -0.04252136752136748,
+      "d_auc_ci": [
+        -0.4900307017543861,
+        0.15003151260504186
+      ],
+      "d_nll": 0.08201671769984345,
+      "d_nll_ci": [
+        -0.06845429989772824,
+        0.17360857735299634
+      ],
+      "n_boot_effective": 2000
+    },
+    "H1_supported": false,
+    "resolved_fraction": 0.5769230769230769
+  },
+  "status": "DONE",
+  "H1_supported_primary": true
+}

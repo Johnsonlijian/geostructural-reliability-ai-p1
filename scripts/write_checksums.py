@@ -9,7 +9,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = [
     ROOT / "code" / "data" / "processed",
-    ROOT / "figures" / "paper_figures" / "output",
+    ROOT / "figures" / "paper_figures" / "output" / "svg",
+    ROOT / "figures" / "paper_figures" / "output" / "pdf",
+    ROOT / "figures" / "paper_figures" / "output" / "png",
+]
+EXTRA_PATTERNS = [
+    ROOT / "code" / "two_axis_closure" / "*.csv",
+    ROOT / "code" / "two_axis_closure" / "*.json",
 ]
 OUT = ROOT / "DERIVED_OUTPUT_CHECKSUMS.sha256"
 
@@ -26,6 +32,10 @@ def main() -> None:
     rows: list[str] = []
     for target in TARGETS:
         for path in sorted(p for p in target.rglob("*") if p.is_file()):
+            rel = path.relative_to(ROOT).as_posix()
+            rows.append(f"{digest(path)}  {rel}")
+    for pattern in EXTRA_PATTERNS:
+        for path in sorted(pattern.parent.glob(pattern.name)):
             rel = path.relative_to(ROOT).as_posix()
             rows.append(f"{digest(path)}  {rel}")
     OUT.write_text("\n".join(rows) + "\n", encoding="utf-8")

@@ -1,0 +1,1 @@
+The KEA2013 Table S1 catalog is ASCE supplemental material (DOI 10.1061/(ASCE)GT.1943-5606.0000743) and is not redistributed here. Download the supplemental PDF from the article page, place it in an incoming/ folder, and run extract_table_s1.py then run_closure.py. The 2015 erratum (DOI 10.1061/(ASCE)GT.1943-5606.0001390) corrections are applied by the scripts.

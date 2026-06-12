@@ -1,0 +1,13 @@
+panel,dataset,scenario_or_bin,metric,value,lo,hi,n,note
+a,,surface,median_FS,0.64,,,,water-table counterfactual
+a,,surface,Pr_FS_lt_1,0.73,,,,water-table counterfactual
+a,,actual,median_FS,0.9,,,,water-table counterfactual
+a,,actual,Pr_FS_lt_1,0.57,,,,water-table counterfactual
+a,,deep/dry,median_FS,1.25,,,,water-table counterfactual
+a,,deep/dry,Pr_FS_lt_1,0.3,,,,water-table counterfactual
+b,SPT,<=2 m,mean_margin_residual,-0.00246,-0.12213,0.08725,122,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json
+b,SPT,2-5 m,mean_margin_residual,-0.01803,-0.16396,0.12135,81,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json
+b,SPT,5-10 m,mean_margin_residual,0.05729,-0.31517,0.43102,5,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json
+b,CPT,<=2 m,mean_margin_residual,-0.03632,-0.16153,0.0878,131,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json
+b,CPT,2-5 m,mean_margin_residual,0.03756,-0.12534,0.21432,130,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json
+b,CPT,5-10 m,mean_margin_residual,0.08149,-0.14409,0.39698,14,95% cluster-bootstrap CI; archived in code/data/processed/groundwater_residual_stratification.json

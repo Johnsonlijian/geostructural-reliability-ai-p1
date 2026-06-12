@@ -1,7 +1,9 @@
 """Decision-oriented conformal metrics for liquefaction reliability.
 
 Reports efficiency and abstention-like behavior of binary conformal prediction
-sets under plain and mechanism-band calibration.
+sets under plain and mechanism-band calibration. Mechanism bands are defined
+from an out-of-split logistic calibration of the published margin coordinate,
+not from the full ML model's prediction probability.
 """
 
 from __future__ import annotations
@@ -12,6 +14,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import HistGradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
 
 from geoliq.reliability import split_conformal_sets
 
@@ -49,6 +54,7 @@ def load_spt():
         "X": df[fs_cols].to_numpy(float),
         "y": df["y"].astype(int).to_numpy(),
         "groups": df["earthquake"].to_numpy(),
+        "margin": np.log((df["CSR_cetin"] / df["CRR_BI2014"]).to_numpy(float)),
     }
 
 
@@ -60,11 +66,18 @@ def load_cpt():
         "X": df[cols].to_numpy(float),
         "y": df["y"].astype(int).to_numpy(),
         "groups": df["event"].to_numpy(),
+        "margin": np.log1p(np.clip(df["LPI"].to_numpy(float), 0, None)),
     }
 
 
-def band_of(prob: np.ndarray) -> np.ndarray:
+def band_of_margin_probability(prob: np.ndarray) -> np.ndarray:
     return np.clip((prob * 3).astype(int), 0, 2)
+
+
+def fit_margin_probability(margin, y, train_idx, eval_idx):
+    model = make_pipeline(StandardScaler(), LogisticRegression(max_iter=5000))
+    model.fit(np.asarray(margin[train_idx], float).reshape(-1, 1), y[train_idx])
+    return model.predict_proba(np.asarray(margin[eval_idx], float).reshape(-1, 1))[:, 1]
 
 
 def summarize(coverages, sizes):
@@ -81,7 +94,7 @@ def summarize(coverages, sizes):
 
 
 def evaluate_dataset(D, alpha_values=(0.05, 0.10, 0.20), n_rep=60, seed=11):
-    X, y, groups = D["X"], D["y"], D["groups"]
+    X, y, groups, margin = D["X"], D["y"], D["groups"], D["margin"]
     rng = np.random.default_rng(seed)
     unique_groups = np.unique(groups)
     result = {"n": int(len(y)), "n_groups": int(len(unique_groups)), "alpha": {}}
@@ -107,6 +120,8 @@ def evaluate_dataset(D, alpha_values=(0.05, 0.10, 0.20), n_rep=60, seed=11):
             model = hgb().fit(X[tr], y[tr])
             p_cal = model.predict_proba(X[ca])[:, 1]
             p_test = model.predict_proba(X[te])[:, 1]
+            pm_cal = fit_margin_probability(margin, y, tr, ca)
+            pm_test = fit_margin_probability(margin, y, tr, te)
 
             inc0, inc1 = split_conformal_sets(p_cal, y[ca], p_test, alpha=alpha)
             sizes = inc0.astype(int) + inc1.astype(int)
@@ -114,8 +129,8 @@ def evaluate_dataset(D, alpha_values=(0.05, 0.10, 0.20), n_rep=60, seed=11):
             plain_cov.extend(cov.astype(float).tolist())
             plain_size.extend(sizes.astype(int).tolist())
 
-            test_bands = band_of(p_test)
-            calib_bands = band_of(p_cal)
+            test_bands = band_of_margin_probability(pm_test)
+            calib_bands = band_of_margin_probability(pm_cal)
             mond_cov_rep = np.zeros(len(te), dtype=bool)
             mond_size_rep = np.zeros(len(te), dtype=int)
             for bb in [0, 1, 2]:
@@ -162,7 +177,9 @@ def main() -> None:
     out = {
         "interpretation": (
             "Set size 1 is a decisive singleton prediction; set size 2 is an abstention-like "
-            "ambiguous prediction set. Empty sets are reported if they occur."
+            "ambiguous prediction set. Empty sets are reported if they occur. Mechanism-band "
+            "Mondrian calibration uses bands from the non-refitted margin coordinate "
+            "(SPT log(CSR/CRR), CPT log(1+LPI)) after train-only logistic calibration."
         ),
         "datasets": {},
     }

@@ -1,0 +1,46 @@
+vs_site,cetin_site,vs_eq,cetin_eq,match_ratio,y_vs,y_cetin,s_pen,vs1,csr,mw,sigma_eff,fc,earthquake
+AOMORI STATION,Aomori Station,1968 Tokachi Oki Earthquake,1968 Tokachi-Oki M=7.9,0.95,1.0,1.0,1.6147452856341509,139.0,0.21,7.9,57.45,,1968 Tokachi-Oki M=7.9
+AOMORI STATION,Aomori Station,1968 Tokachi Oki Earthquake,1968 Tokachi-Oki M=7.9,0.95,1.0,1.0,1.6147452856341509,139.0,0.21,7.9,57.45,,1968 Tokachi-Oki M=7.9
+LUANNAN,Luan Nan-L2,1976 Tangshan M8 Earthquake,1976 Tangshan Ms=7.8,0.95,1.0,1.0,1.8902529726694144,190.5,0.2,8.0,11.03,,1976 Tangshan Ms=7.8
+LUANNAN,Luan Nan-L2,1976 Tangshan M8 Earthquake,1976 Tangshan Ms=7.8,0.95,1.0,1.0,1.8902529726694144,142.0,0.18,8.0,19.08,,1976 Tangshan Ms=7.8
+YURIAGE KAMI-2,Yuriagekami-2,1978 Miyagi Ken Oki M6.7 Earthquake,1978 Miyagiken-Oki M=7.4,0.95,1.0,1.0,1.7359400105065128,143.1,0.13,6.7,41.54,,1978 Miyagiken-Oki M=7.4
+Kornbloom,Kornbloom B,1979 Imperial Valley M6.5 Earthquake,1979 Imperial Valley ML=6.6,0.95,0.0,0.0,0.6213999513411566,117.1,0.09,6.5,50.21,,1979 Imperial Valley ML=6.6
+McKim,McKim Ranch A,1979 Imperial Valley M6.5 Earthquake,1979 Imperial Valley ML=6.6,0.95,1.0,1.0,2.991775423968252,160.3,0.45,6.5,33.51,,1979 Imperial Valley ML=6.6
+Radio Tower,Radio Tower B1,1979 Imperial Valley M6.5 Earthquake,1979 Imperial Valley ML=6.6,0.95,1.0,1.0,1.245866372819872,98.3,0.18,6.5,48.86,,1979 Imperial Valley ML=6.6
+Kornbloom,Kornbloom B,1981 Westmorland M5.9 Earthquake,1981 WestMorland ML=5.6,0.95,1.0,1.0,0.9338451897146264,117.1,0.28,5.9,50.21,,1981 WestMorland ML=5.6
+McKim,McKim Ranch A,1981 Westmorland M5.9 Earthquake,1981Westmorland ML=5.6,0.95,0.0,0.0,0.4968199824908371,128.7,0.06,5.9,39.59,,1981Westmorland ML=5.6
+Radio Tower,Radio Tower B1,1981 Westmorland M5.9 Earthquake,1981 Westmorland ML=5.6,0.95,1.0,1.0,1.0285729776387589,98.3,0.17,5.9,48.86,,1981 Westmorland ML=5.6
+Wildlife 3,Wildlife B,1981 Westmorland M5.9 Earthquake,1981 WestMorland ML=5.6,0.8888888888888888,1.0,1.0,1.231861165225788,122.9,0.25,5.9,48.38,,1981 WestMorland ML=5.6
+Wildlife 1,Wildlife B,1981 Westmorland M5.9 Earthquake,1981 WestMorland ML=5.6,0.8888888888888888,1.0,1.0,1.231861165225788,136.7,0.25,5.9,48.38,,1981 WestMorland ML=5.6
+Wildlife 2,Wildlife B,1981 Westmorland M5.9 Earthquake,1981 WestMorland ML=5.6,0.8888888888888888,1.0,1.0,1.231861165225788,133.6,0.25,5.9,48.38,,1981 WestMorland ML=5.6
+ARAYA-MOTOMACHI,Arayamotomachi,1983 Nihonkai-Chubu M7.7 Earthquake,1983 Nihonkai-Chubu M=7.7,0.95,1.0,1.0,1.7274777363749854,145.2,0.18,7.7,57.45,,1983 Nihonkai-Chubu M=7.7
+GAIKO WHARF,Gaiko Wharf B-2,1983 Nihonkai-Chubu M7.7 Earthquake,1983 Nihonkai-Chubu M=7.7,0.95,1.0,1.0,1.7953823228333312,184.2,0.24,7.7,48.76,,1983 Nihonkai-Chubu M=7.7
+AOMORI STATION,Aomori Station,1983 Nihonkai-Chubu M7.7 Earthquake,1983 Nihonkai-Chubu M=7.7,0.95,1.0,1.0,0.8236160594823704,139.0,0.12,7.7,57.45,,1983 Nihonkai-Chubu M=7.7
+AOMORI STATION,Aomori Station,1983 Nihonkai-Chubu Aftershocks,1983 Nihonkai-Chubu M=7.7,0.95,1.0,1.0,0.8236160594823704,139.0,0.11,7.0,57.45,,1983 Nihonkai-Chubu M=7.7
+Kornbloom,Kornbloom B,1987 Superstition Hills M6.5 Earthquake,1987 Superstition Hills Mw=6.7,0.95,0.0,0.0,0.942700730077394,117.1,0.11,6.5,41.52,,1987 Superstition Hills Mw=6.7
+McKim,McKim Ranch A,1987 Superstition Hills M6.5 Earthquake,1987 Superstition Hills Mw=6.7,0.95,0.0,0.0,0.9491207910546554,146.0,0.17,6.5,34.81,,1987 Superstition Hills Mw=6.7
+Radio Tower,Radio Tower B1,1987 Superstition Hills M6.5 Earthquake,1987 Elmore Ranch Mw=6.2,0.95,0.0,0.0,0.6077309492544616,99.4,0.1,6.5,43.46,,1987 Elmore Ranch Mw=6.2
+Wildlife 3,Wildlife B,1987 Superstition Hills M6.5 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,1.0,1.0,1.0868101964772712,122.9,0.19,6.5,48.38,,1987 Superstition Hills Mw=6.6
+Wildlife 1,Wildlife B,1987 Superstition Hills M6.5 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,1.0,1.0,1.0868101964772712,136.7,0.19,6.5,48.38,,1987 Superstition Hills Mw=6.6
+Wildlife 2,Wildlife B,1987 Superstition Hills M6.5 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,1.0,1.0,1.0868101964772712,133.6,0.19,6.5,48.38,,1987 Superstition Hills Mw=6.6
+Kornbloom,Kornbloom B,1987 Elmore Ranch M5.9 Earthquake,1987 Superstition Hills Mw=6.7,0.95,0.0,0.0,0.942700730077394,117.1,0.12,5.9,50.21,,1987 Superstition Hills Mw=6.7
+McKim,McKim Ranch A,1987 Elmore Ranch M5.9 Earthquake,1987 Superstition Hills Mw=6.7,0.95,0.0,0.0,0.9491207910546554,146.0,0.05,5.9,34.81,,1987 Superstition Hills Mw=6.7
+Radio Tower,Radio Tower B1,1987 Elmore Ranch M5.9 Earthquake,1987 Elmore Ranch Mw=6.2,0.95,0.0,0.0,0.6077309492544616,98.3,0.09,5.9,48.86,,1987 Elmore Ranch Mw=6.2
+Wildlife 3,Wildlife B,1987 Elmore Ranch M5.9 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,0.0,1.0,1.0868101964772712,122.9,0.11,5.9,48.38,,1987 Superstition Hills Mw=6.6
+Wildlife 1,Wildlife B,1987 Elmore Ranch M5.9 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,0.0,1.0,1.0868101964772712,136.7,0.11,5.9,48.38,,1987 Superstition Hills Mw=6.6
+Wildlife 2,Wildlife B,1987 Elmore Ranch M5.9 Earthquake,1987 Superstition Hills Mw=6.6,0.8888888888888888,0.0,1.0,1.0868101964772712,133.6,0.11,5.9,48.38,,1987 Superstition Hills Mw=6.6
+B1B4 Treasure Island Fire Station,Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,144.2,0.12,7.0,80.0,,1989 Loma Prieta Mw=7
+B2B3 Treasure Island Fire Station,Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,147.7,0.12,7.0,80.0,,1989 Loma Prieta Mw=7
+B2B4 Treasure Island Fire Station,Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,132.8,0.12,7.0,80.0,,1989 Loma Prieta Mw=7
+"B4,B5 Treasure Island Fire Station",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,132.4,0.12,7.0,80.0,,1989 Loma Prieta Mw=7
+CLINT MILLER FARM,Miller Farm ,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,2.2454698746485184,145.6,0.24,7.0,90.1,,1989 Loma Prieta Mw=7
+Clint Miller Farm,Miller Farm ,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,2.2454698746485184,129.3,0.2,7.0,90.71,,1989 Loma Prieta Mw=7
+Clint Miller Farm-CMF10,Miller Farm ,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,2.2454698746485184,147.5,0.27,7.0,96.79,,1989 Loma Prieta Mw=7
+Clint Miller Farm-CMF 8,Miller Farm ,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,2.2454698746485184,157.6,0.26,7.0,95.57,,1989 Loma Prieta Mw=7
+SCPT Treasure Island,Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,142.4,0.12,7.0,84.59,,1989 Loma Prieta Mw=7
+Treasure Island Fire Station,Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,140.6,0.12,7.0,80.0,,1989 Loma Prieta Mw=7
+"UM011 Treasure Island, perimeter",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,147.6,0.12,7.0,53.88,,1989 Loma Prieta Mw=7
+"UM03 Treasure Island, perimeter",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,0.0,1.0,1.3514889450343186,168.9,0.12,7.0,70.54,,1989 Loma Prieta Mw=7
+"UM05 Treasure Island, perimeter",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,147.9,0.13,7.0,62.72,,1989 Loma Prieta Mw=7
+"UM06 Treasure Island, perimeter",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,162.8,0.13,7.0,42.2,,1989 Loma Prieta Mw=7
+"UM09 Treasure Island, perimeter",Treasure Island,1989 Loma Prieta M7.0 Earthquake,1989 Loma Prieta Mw=7,0.95,1.0,1.0,1.3514889450343186,148.4,0.12,7.0,53.88,,1989 Loma Prieta Mw=7

@@ -1,21 +1,25 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper."
-title: "Effective-stress coordinates bound transferable machine-learning gains in liquefaction prediction"
+title: "Physics-anchored validation reveals limits of infrastructure hazard machine learning"
 authors:
-  - family-names: "[Family name]"
-    given-names: "[Given name]"
-affiliation: "Inner Mongolia University of Technology"
+  - family-names: "REN"
+    given-names: "Lijian"
+    orcid: "https://orcid.org/0000-0003-1629-4368"
+    affiliation: "School of Civil Engineering, Inner Mongolia University of Technology; Inner Mongolia Autonomous Region Key Laboratory of Green Construction and Intelligent Operation and Maintenance of Civil Engineering; College of Civil and Transportation Engineering, Hohai University"
 year: 2026
-version: "0.1.0-submission-prep"
+version: "0.1.0-submission"
 repository-code: "https://github.com/Johnsonlijian/geostructural-reliability-ai-p1"
 license: "MIT"
 keywords:
   - soil liquefaction
+  - infrastructure hazard
   - earthquake engineering
   - effective stress
   - physics-informed machine learning
-  - measured improvement bound
-  - operational non-inferiority
+  - grouped validation
+  - validation stress testing
+  - CPT 2024
+  - current-release validation
   - conformal prediction
   - decision reliability
-  - trustworthy AI
+  - trustworthy machine learning

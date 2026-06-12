@@ -1,0 +1,15 @@
+panel,case_or_metric,X_plus_Y,label,source_group,value,note
+b,CB1 fail,0.908,1,CB1,,verified slope-vignette state
+b,CB1 stable,0.639,0,CB1,,verified slope-vignette state
+b,Flume 1 fail,0.992,1,USGS flume,,verified slope-vignette state
+b,Flume 2 fail,1.047,1,USGS flume,,verified slope-vignette state
+b,Flume 3 control,0.852,1,domain control,,verified slope-vignette state
+b,BALT1 stable,0.805,0,BALT,,verified slope-vignette state
+b,BALT2 stable,0.17,0,BALT,,verified slope-vignette state
+b,BALT3 stable,0.799,0,BALT,,verified slope-vignette state
+c,midpoint_q05,,,,0.763,small-N diagnostic reported in SI
+c,midpoint_q50,,,,0.879,small-N diagnostic reported in SI
+c,midpoint_q95,,,,0.998,small-N diagnostic reported in SI
+c,P_midpoint_below_anchor,,,,0.953,small-N diagnostic reported in SI
+c,cross_hazard_AUC,,,,0.895,small-N diagnostic reported in SI
+c,hazard_dummy_Delta_AUC,,,,-0.012,small-N diagnostic reported in SI

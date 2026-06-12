@@ -1,0 +1,102 @@
+{
+  "dataset": "Rateria, Geyin, and Maurer (2024) CPT DesignSafe release",
+  "doi": "10.17603/ds2-8hvd-hd43",
+  "source_project": "DesignSafe PRJ-5746",
+  "counts": {
+    "n": 332,
+    "n_events": 25,
+    "n_manifestation": 181,
+    "n_no_manifestation": 151,
+    "nisqually_cases": 24
+  },
+  "summary": {
+    "CPT_Rateria2024_inverse": {
+      "event_grouped": {
+        "margin_auc": 0.762,
+        "best_nonmargin_model": "monotonic nested HGB",
+        "best_nonmargin_auc_gain": -0.071,
+        "best_nonmargin_auc_gain_ci95": [
+          -0.141,
+          -0.009
+        ],
+        "best_nonmargin_logloss_gain": -0.092,
+        "best_nonmargin_logloss_gain_ci95": [
+          -0.13,
+          -0.051
+        ],
+        "exclude_auc_gain_ge_0.02": true,
+        "exclude_logloss_gain_ge_0.05": true,
+        "computed_protocol_check": {
+          "protocol": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=6)",
+          "margin_model": "logistic calibration of log1p(LPI)",
+          "nonmargin_check_model": "random forest on demand and critical-layer summary features, excluding LPI",
+          "computed_margin_auc": 0.762358,
+          "computed_nonmargin_auc_gain": -0.06489,
+          "computed_nonmargin_logloss_gain": -0.070905
+        }
+      }
+    },
+    "CPT_Rateria2024_measured": {
+      "event_grouped": {
+        "margin_auc": 0.787,
+        "best_nonmargin_model": "full logistic",
+        "best_nonmargin_auc_gain": -0.051,
+        "best_nonmargin_auc_gain_ci95": [
+          -0.084,
+          -0.009
+        ],
+        "best_nonmargin_logloss_gain": -0.116,
+        "best_nonmargin_logloss_gain_ci95": [
+          -0.163,
+          -0.055
+        ],
+        "exclude_auc_gain_ge_0.02": true,
+        "exclude_logloss_gain_ge_0.05": true,
+        "computed_protocol_check": {
+          "protocol": "StratifiedGroupKFold(n_splits=5, shuffle=True, random_state=6)",
+          "margin_model": "logistic calibration of log1p(LPI)",
+          "nonmargin_check_model": "random forest on demand and critical-layer summary features, excluding LPI",
+          "computed_margin_auc": 0.786707,
+          "computed_nonmargin_auc_gain": -0.054224,
+          "computed_nonmargin_logloss_gain": -0.068613
+        }
+      }
+    },
+    "leave_nisqually_out_inverse": {
+      "split": "fixed leave-Nisqually-out",
+      "n_test": 24,
+      "n_test_events": 1,
+      "margin_auc": 0.97,
+      "best_nonmargin_model": "full logistic / nested HGB sensitivity",
+      "best_nonmargin_auc_gain": 0.03,
+      "best_nonmargin_auc_gain_ci95": [
+        0.0,
+        0.13
+      ],
+      "best_nonmargin_logloss_gain": 0.119,
+      "best_nonmargin_logloss_gain_ci95": [
+        0.021,
+        0.236
+      ]
+    },
+    "leave_nisqually_out_measured": {
+      "split": "fixed leave-Nisqually-out",
+      "n_test": 24,
+      "n_test_events": 1,
+      "margin_auc": 0.97,
+      "best_nonmargin_model": "nested/default HGB sensitivity",
+      "best_nonmargin_auc_gain": -0.011,
+      "best_nonmargin_auc_gain_ci95": [
+        -0.093,
+        0.037
+      ],
+      "best_nonmargin_logloss_gain": 0.106,
+      "best_nonmargin_logloss_gain_ci95": [
+        -0.23,
+        0.352
+      ]
+    }
+  },
+  "interpretation": "The 2024 current-release CPT event-grouped results remain margin dominated. Nisqually is included in the 2024 release and is therefore not treated as independent; it is retained only as a fixed held-out event caveat.",
+  "reconstruction_note": "Per-case processed CSV files are rebuilt from the official GLOBALDATASET.mat. The headline summary values mirror the R08 manuscript/Table S14 gate values used for Fig. 2 and the submission text."
+}
