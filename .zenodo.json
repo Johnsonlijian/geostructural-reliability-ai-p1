@@ -1,5 +1,5 @@
 {
-  "title": "Event-transfer predictability limits and geological controls of seismic soil liquefaction triggering: evidence from SPT, CPT and shear-wave velocity case histories",
+  "title": "Event-transfer limits in liquefaction case histories: effective-stress margins, CPT transitional-band residuals and site-investigation value",
   "upload_type": "software",
   "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of event-transfer validation, predictability limits, geological residual controls, and value-of-information in seismic soil liquefaction case histories.",
   "creators": [
@@ -9,7 +9,7 @@
       "orcid": "0000-0003-1629-4368"
     }
   ],
-  "version": "0.2.0-r12-submission",
+  "version": "0.2.1-r12-submission",
   "license": "MIT",
   "keywords": [
     "soil liquefaction",

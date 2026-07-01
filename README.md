@@ -1,9 +1,9 @@
-# Event-Transfer Predictability Limits For Seismic Soil Liquefaction
+# Event-Transfer Limits In Liquefaction Case Histories
 
 This is the public reproducibility package for the paper:
 
-**Event-transfer predictability limits and geological controls of seismic soil liquefaction
-triggering: evidence from SPT, CPT and shear-wave velocity case histories**
+**Event-transfer limits in liquefaction case histories: effective-stress margins, CPT
+transitional-band residuals and site-investigation value**
 
 The package contains code, tests, derived outputs, figure-generation scripts, figure specifications,
 and publication-figure exports. It intentionally excludes active manuscript files, cover letters,
@@ -38,11 +38,12 @@ redistributing the raw sources.
 
 The package supports bounded, reviewer-auditable claims: random splits inflate apparent
 machine-learning skill; under earthquake-grouped validation the published effective-stress margin is
-not detectably exceeded by the tested tuned challengers; the residual floor is geologically
-structured, especially in transitional silt-sand CPT records; and the fixed-rule decision value of
-the margin is positive while added standard predictors contribute little cross-event decision value
-beyond that margin. The package does not claim a universal Bayes limit, a site-specific calibrated
-decision instrument, or that multi-method site investigation is unnecessary.
+not detectably exceeded by the tested tuned challengers; the CPT manifestation residual floor is
+geologically structured, especially in the `Ic`-defined transitional silt-sand band; and the
+fixed-rule decision value of the margin is positive while added standard predictors contribute
+little cross-event decision value beyond that margin. The package does not claim a universal Bayes
+limit, a site-specific calibrated decision instrument, or that multi-method site investigation is
+unnecessary.
 
 The slope-failure vignette is represented by derived non-sensitive rows in
 `code/data/processed/slope_vignette_r12.csv` and uncertainty summaries in
@@ -89,7 +90,8 @@ powershell -ExecutionPolicy Bypass -File .\run_all.ps1
 
 The public repository is
 `https://github.com/Johnsonlijian/geostructural-reliability-ai-p1`. The existing public GitHub
-release `v0.1.0-submission` was verified on 2026-07-01. This working tree prepares an R12-complete
-release candidate (`v0.2.0-r12-submission`) that should be pushed and released before the manuscript
-uses the release URL as the complete reproducibility record. A separate archival DOI has not been
-verified and should be added only after a Zenodo/OSF-style archive is minted.
+release `v0.1.0-submission` was verified on 2026-07-01 but is not R12-complete. The R12 source
+release candidate `v0.2.0-r12-submission` was published on 2026-07-01; this metadata-aligned
+package revision is released as `v0.2.1-r12-submission` after the manuscript title and claim
+boundaries were tightened. A separate archival DOI has not been verified and should be added only
+after a Zenodo/OSF-style archive is minted.
