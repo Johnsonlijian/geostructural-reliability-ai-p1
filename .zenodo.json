@@ -1,7 +1,7 @@
 {
-  "title": "Physics-anchored validation reveals limits of infrastructure hazard machine learning",
+  "title": "Event-transfer predictability limits and geological controls of seismic soil liquefaction triggering: evidence from SPT, CPT and shear-wave velocity case histories",
   "upload_type": "software",
-  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of physics-anchored grouped validation and conformal decision reliability in infrastructure hazard machine learning.",
+  "description": "Reproducibility package with deterministic analysis scripts, derived outputs, provenance records, sensitivity checks, and publication figure sources for a study of event-transfer validation, predictability limits, geological residual controls, and value-of-information in seismic soil liquefaction case histories.",
   "creators": [
     {
       "name": "REN, Lijian",
@@ -9,17 +9,18 @@
       "orcid": "0000-0003-1629-4368"
     }
   ],
-  "version": "0.1.0-submission",
+  "version": "0.2.0-r12-submission",
   "license": "MIT",
   "keywords": [
     "soil liquefaction",
     "infrastructure hazard",
     "earthquake engineering",
-    "physics-informed machine learning",
+    "event-transfer validation",
+    "machine learning",
     "effective stress",
     "grouped validation",
-    "conformal prediction",
-    "decision reliability",
+    "geological controls",
+    "value of information",
     "CPT 2024",
     "trustworthy machine learning"
   ],

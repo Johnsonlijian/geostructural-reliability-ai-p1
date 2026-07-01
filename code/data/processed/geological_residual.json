@@ -1,0 +1,266 @@
+{
+  "method": "Calibrated out-of-fold margin ambiguity a=min(p,1-p) stratified by engineering-geology variables; cluster-bootstrap CIs by earthquake. Mean a = error floor.",
+  "seed": 0,
+  "CPT_Geyin2021": {
+    "overall_floor": {
+      "mean": 0.3018,
+      "lo": 0.2677,
+      "hi": 0.327,
+      "n": 275
+    },
+    "by_soil_behaviour_type_Ic": {
+      "sand-like (Ic<2.05)": {
+        "mean": 0.2776,
+        "lo": 0.2377,
+        "hi": 0.3087,
+        "n": 167
+      },
+      "transitional (2.05-2.60)": {
+        "mean": 0.3392,
+        "lo": 0.3017,
+        "hi": 0.3698,
+        "n": 108
+      },
+      "clay-like (Ic>2.60)": {
+        "mean": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "n": 0
+      }
+    },
+    "by_critical_depth_m": {
+      "shallow (<3m)": {
+        "mean": 0.2638,
+        "lo": 0.222,
+        "hi": 0.3298,
+        "n": 11
+      },
+      "mid (3-6m)": {
+        "mean": 0.2626,
+        "lo": 0.2048,
+        "hi": 0.3355,
+        "n": 38
+      },
+      "deep (>6m)": {
+        "mean": 0.3103,
+        "lo": 0.2764,
+        "hi": 0.3321,
+        "n": 226
+      }
+    },
+    "by_groundwater_depth_m": {
+      "very shallow (<1.5m)": {
+        "mean": 0.2658,
+        "lo": 0.2145,
+        "hi": 0.3399,
+        "n": 71
+      },
+      "shallow (1.5-3m)": {
+        "mean": 0.3173,
+        "lo": 0.2774,
+        "hi": 0.3496,
+        "n": 123
+      },
+      "deeper (>3m)": {
+        "mean": 0.3099,
+        "lo": 0.2812,
+        "hi": 0.3619,
+        "n": 81
+      }
+    },
+    "by_density_qc1Ncs": {
+      "loose (<100)": {
+        "mean": 0.3054,
+        "lo": 0.2684,
+        "hi": 0.3317,
+        "n": 266
+      },
+      "medium (100-150)": {
+        "mean": 0.1973,
+        "lo": 0.0968,
+        "hi": 0.3005,
+        "n": 9
+      },
+      "dense (>150)": {
+        "mean": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "n": 0
+      }
+    },
+    "contrast_transitional_vs_sandlike_Ic": {
+      "diff": 0.0616,
+      "lo": 0.0284,
+      "hi": 0.0832,
+      "P(diff>0)": 0.997
+    }
+  },
+  "CPT_Rateria2024_independent_replication": {
+    "overall_floor": {
+      "mean": 0.2651,
+      "lo": 0.2253,
+      "hi": 0.2966,
+      "n": 332
+    },
+    "by_soil_behaviour_type_Ic": {
+      "sand-like (Ic<2.05)": {
+        "mean": 0.238,
+        "lo": 0.1904,
+        "hi": 0.2794,
+        "n": 160
+      },
+      "transitional (2.05-2.60)": {
+        "mean": 0.2902,
+        "lo": 0.2527,
+        "hi": 0.3215,
+        "n": 172
+      },
+      "clay-like (Ic>2.60)": {
+        "mean": NaN,
+        "lo": NaN,
+        "hi": NaN,
+        "n": 0
+      }
+    },
+    "by_critical_depth_m": {
+      "shallow (<3m)": {
+        "mean": 0.1593,
+        "lo": 0.0558,
+        "hi": 0.2656,
+        "n": 10
+      },
+      "mid (3-6m)": {
+        "mean": 0.1891,
+        "lo": 0.1511,
+        "hi": 0.239,
+        "n": 62
+      },
+      "deep (>6m)": {
+        "mean": 0.2872,
+        "lo": 0.2469,
+        "hi": 0.3128,
+        "n": 260
+      }
+    },
+    "by_groundwater_depth_m": {
+      "very shallow (<1.5m)": {
+        "mean": 0.2151,
+        "lo": 0.1783,
+        "hi": 0.2779,
+        "n": 85
+      },
+      "shallow (1.5-3m)": {
+        "mean": 0.2899,
+        "lo": 0.2366,
+        "hi": 0.3289,
+        "n": 148
+      },
+      "deeper (>3m)": {
+        "mean": 0.2707,
+        "lo": 0.22,
+        "hi": 0.3134,
+        "n": 99
+      }
+    },
+    "by_density_qc1Ncs": {
+      "loose (<100)": {
+        "mean": 0.2662,
+        "lo": 0.2235,
+        "hi": 0.3,
+        "n": 321
+      },
+      "medium (100-150)": {
+        "mean": 0.2478,
+        "lo": 0.1516,
+        "hi": 0.3648,
+        "n": 10
+      },
+      "dense (>150)": {
+        "mean": 0.0588,
+        "lo": 0.0588,
+        "hi": 0.0588,
+        "n": 1
+      }
+    },
+    "contrast_transitional_vs_sandlike_Ic": {
+      "diff": 0.0522,
+      "lo": 0.0159,
+      "hi": 0.0931,
+      "P(diff>0)": 0.998
+    }
+  },
+  "SPT_Cetin2018": {
+    "overall_floor": {
+      "mean": 0.1683,
+      "lo": 0.1153,
+      "hi": 0.2263,
+      "n": 208
+    },
+    "by_fines_content_FC": {
+      "clean sand (FC<5)": {
+        "mean": 0.1755,
+        "lo": 0.0996,
+        "hi": 0.2779,
+        "n": 73
+      },
+      "silty (5-35)": {
+        "mean": 0.1537,
+        "lo": 0.1113,
+        "hi": 0.207,
+        "n": 110
+      },
+      "fines-rich (>35)": {
+        "mean": 0.2109,
+        "lo": 0.1511,
+        "hi": 0.269,
+        "n": 25
+      }
+    },
+    "by_critical_depth_m": {
+      "shallow (<4m)": {
+        "mean": 0.1921,
+        "lo": 0.1415,
+        "hi": 0.2361,
+        "n": 69
+      },
+      "mid (4-8m)": {
+        "mean": 0.162,
+        "lo": 0.1146,
+        "hi": 0.2221,
+        "n": 115
+      },
+      "deep (>8m)": {
+        "mean": 0.1299,
+        "lo": 0.0616,
+        "hi": 0.2865,
+        "n": 24
+      }
+    },
+    "by_density_N1_60cs": {
+      "loose (<12)": {
+        "mean": 0.1645,
+        "lo": 0.1157,
+        "hi": 0.2185,
+        "n": 77
+      },
+      "medium (12-20)": {
+        "mean": 0.2198,
+        "lo": 0.129,
+        "hi": 0.2886,
+        "n": 62
+      },
+      "dense (>20)": {
+        "mean": 0.1262,
+        "lo": 0.0904,
+        "hi": 0.2359,
+        "n": 69
+      }
+    },
+    "contrast_silty_vs_cleansand_FC": {
+      "diff": -0.0218,
+      "lo": -0.0958,
+      "hi": 0.0252,
+      "P(diff>0)": 0.21
+    }
+  }
+}

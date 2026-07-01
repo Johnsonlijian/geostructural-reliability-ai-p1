@@ -1,8 +1,9 @@
-# Grouped Validation Stress Testing For Infrastructure Hazard Machine Learning
+# Event-Transfer Predictability Limits For Seismic Soil Liquefaction
 
 This is the public reproducibility package for the paper:
 
-**Physics-anchored validation reveals limits of infrastructure hazard machine learning**
+**Event-transfer predictability limits and geological controls of seismic soil liquefaction
+triggering: evidence from SPT, CPT and shear-wave velocity case histories**
 
 The package contains code, tests, derived outputs, figure-generation scripts, figure specifications,
 and publication-figure exports. It intentionally excludes active manuscript files, cover letters,
@@ -12,12 +13,14 @@ rights are not controlled by the authors.
 ## Contents
 
 - `code/`: analysis scripts, mechanistic engine, tests, and derived processed outputs.
-- `figures/paper_figures/src/build_manuscript_figures.py`: deterministic script used to generate the six
-  manuscript figures.
-- `figures/paper_figures/data/`: source-data mirrors for the displayed figure values.
-- `figures/paper_figures/figure_provenance.yml`: figure provenance, AI-image, preview-PPTX, and
-  author-signoff boundary notes.
-- `figures/paper_figures/output/`: SVG, PDF, PNG, and PPTX-preview figure outputs.
+- `code/run_predictability_ceiling.py`, `code/run_tuned_ml_challenge.py`,
+  `code/run_overvalidation_benchmark.py`, `code/run_value_of_information.py`,
+  `code/run_geological_residual.py`, and `code/run_cpt2024_external_validation.py`: scripts for
+  the R12 manuscript's main numerical claims.
+- `code/data/processed/`: derived non-sensitive processed tables and JSON outputs used by the
+  manuscript and supplementary information.
+- `figures/reframe_2026-06-30/`: R12 manuscript figure exports in SVG/PDF/PNG.
+- `figures/paper_figures/`: earlier reusable figure-engineering assets retained for provenance.
 - `DATASETS_AND_LINKS.csv`: official source records for raw data retrieval.
 - `REPRODUCIBLE_RUNBOOK.md`: end-to-end reproduction commands.
 - `environment.yml`: Conda environment specification.
@@ -33,15 +36,13 @@ redistributing the raw sources.
 
 ## Evidence Boundary
 
-The package supports a bounded, reviewer-auditable claim: an effective-stress margin is an
-operational reference coordinate for grouped validation and conformal reliability in public
-liquefaction case histories. CPT manifestation remains margin-dominated in the 2021 continuity
-benchmark and the superseding 2024 DesignSafe release under strong grouped machine-learning stress tests, while
-SPT source blocking retains a disclosed residual-fusion caveat. The fixed leave-Nisqually-out
-evaluation is included as a single-event caveat, not as independent validation. The package does not
-claim mathematical sufficiency, a universal Bayes limit, or that groundwater is physically
-unimportant; groundwater is treated as physically essential but largely absorbed into the margin
-before residual learning is tested.
+The package supports bounded, reviewer-auditable claims: random splits inflate apparent
+machine-learning skill; under earthquake-grouped validation the published effective-stress margin is
+not detectably exceeded by the tested tuned challengers; the residual floor is geologically
+structured, especially in transitional silt-sand CPT records; and the fixed-rule decision value of
+the margin is positive while added standard predictors contribute little cross-event decision value
+beyond that margin. The package does not claim a universal Bayes limit, a site-specific calibrated
+decision instrument, or that multi-method site investigation is unnecessary.
 
 The slope-failure vignette is represented by derived non-sensitive rows in
 `code/data/processed/slope_vignette_r12.csv` and uncertainty summaries in
@@ -86,12 +87,9 @@ powershell -ExecutionPolicy Bypass -File .\run_all.ps1
 
 ## Repository Status
 
-This package is prepared for public release at
-`https://github.com/Johnsonlijian/geostructural-reliability-ai-p1`. The author metadata, license,
-source registry, runbook, figure provenance, derived outputs, and checksums have been prepared for a
-submission-stage release. The repository intentionally excludes raw third-party data and active
-submission manuscripts.
-
-For double-blind review, use the anonymized reviewer package supplied with the manuscript submission.
-The public repository URL and archival DOI should be inserted into the manuscript only after the
-double-blind review constraint no longer applies.
+The public repository is
+`https://github.com/Johnsonlijian/geostructural-reliability-ai-p1`. The existing public GitHub
+release `v0.1.0-submission` was verified on 2026-07-01. This working tree prepares an R12-complete
+release candidate (`v0.2.0-r12-submission`) that should be pushed and released before the manuscript
+uses the release URL as the complete reproducibility record. A separate archival DOI has not been
+verified and should be added only after a Zenodo/OSF-style archive is minted.

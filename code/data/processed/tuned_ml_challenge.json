@@ -1,0 +1,125 @@
+{
+  "method": "Nested earthquake-grouped CV (inner GroupKFold GridSearch, outer GroupKFold OOF) for tuned logreg/kNN/HGB/RF on the full predictor set; paired cluster-bootstrap vs the zero-shot mechanistic margin. Margin never refit on labels.",
+  "seed": 0,
+  "n_boot": 1000,
+  "SPT_Cetin2018": {
+    "n": 208,
+    "n_earthquakes": 27,
+    "margin_grouped_auc": {
+      "auc": 0.8982,
+      "lo": 0.8599,
+      "hi": 0.9357
+    },
+    "tuned_ml_grouped_auc": {
+      "logreg_full": {
+        "auc": 0.845,
+        "lo": 0.7695,
+        "hi": 0.9017
+      },
+      "knn": {
+        "auc": 0.7978,
+        "lo": 0.6996,
+        "hi": 0.8572
+      },
+      "hgb": {
+        "auc": 0.8886,
+        "lo": 0.8396,
+        "hi": 0.9199
+      },
+      "rf": {
+        "auc": 0.8677,
+        "lo": 0.7855,
+        "hi": 0.9135
+      }
+    },
+    "best_tuned_ml": "hgb",
+    "best_tuned_ml_minus_margin_AUC": {
+      "delta": -0.0095,
+      "lo": -0.0634,
+      "hi": 0.0264,
+      "P(delta>0)": 0.237
+    },
+    "tuned_ml_beats_margin": false,
+    "margin_sufficient_vs_tuned_ml": true
+  },
+  "CPT_Geyin2021": {
+    "n": 275,
+    "n_earthquakes": 21,
+    "margin_grouped_auc": {
+      "auc": 0.7138,
+      "lo": 0.6132,
+      "hi": 0.8345
+    },
+    "tuned_ml_grouped_auc": {
+      "logreg_full": {
+        "auc": 0.6269,
+        "lo": 0.552,
+        "hi": 0.7479
+      },
+      "knn": {
+        "auc": 0.5698,
+        "lo": 0.5085,
+        "hi": 0.6806
+      },
+      "hgb": {
+        "auc": 0.6201,
+        "lo": 0.5543,
+        "hi": 0.7037
+      },
+      "rf": {
+        "auc": 0.6483,
+        "lo": 0.5903,
+        "hi": 0.7339
+      }
+    },
+    "best_tuned_ml": "rf",
+    "best_tuned_ml_minus_margin_AUC": {
+      "delta": -0.0654,
+      "lo": -0.1369,
+      "hi": -0.0031,
+      "P(delta>0)": 0.024
+    },
+    "tuned_ml_beats_margin": false,
+    "margin_sufficient_vs_tuned_ml": true
+  },
+  "Vs_Kayen2013": {
+    "n": 411,
+    "n_earthquakes": 35,
+    "margin_grouped_auc": {
+      "auc": 0.9118,
+      "lo": 0.8345,
+      "hi": 0.9651
+    },
+    "tuned_ml_grouped_auc": {
+      "logreg_full": {
+        "auc": 0.8823,
+        "lo": 0.8256,
+        "hi": 0.9345
+      },
+      "knn": {
+        "auc": 0.8252,
+        "lo": 0.74,
+        "hi": 0.9112
+      },
+      "hgb": {
+        "auc": 0.892,
+        "lo": 0.8173,
+        "hi": 0.9548
+      },
+      "rf": {
+        "auc": 0.8827,
+        "lo": 0.7926,
+        "hi": 0.9563
+      }
+    },
+    "best_tuned_ml": "hgb",
+    "best_tuned_ml_minus_margin_AUC": {
+      "delta": -0.0198,
+      "lo": -0.0398,
+      "hi": 0.003,
+      "P(delta>0)": 0.043
+    },
+    "tuned_ml_beats_margin": false,
+    "margin_sufficient_vs_tuned_ml": true
+  }
+}

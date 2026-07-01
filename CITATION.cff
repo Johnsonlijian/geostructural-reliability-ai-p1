@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated paper."
-title: "Physics-anchored validation reveals limits of infrastructure hazard machine learning"
+title: "Event-transfer predictability limits and geological controls of seismic soil liquefaction triggering: evidence from SPT, CPT and shear-wave velocity case histories"
 authors:
   - family-names: "REN"
     given-names: "Lijian"
     orcid: "https://orcid.org/0000-0003-1629-4368"
     affiliation: "School of Civil Engineering, Inner Mongolia University of Technology; Inner Mongolia Autonomous Region Key Laboratory of Green Construction and Intelligent Operation and Maintenance of Civil Engineering; College of Civil and Transportation Engineering, Hohai University"
 year: 2026
-version: "0.1.0-submission"
+version: "0.2.0-r12-submission"
 repository-code: "https://github.com/Johnsonlijian/geostructural-reliability-ai-p1"
 license: "MIT"
 keywords:
@@ -15,11 +15,12 @@ keywords:
   - infrastructure hazard
   - earthquake engineering
   - effective stress
-  - physics-informed machine learning
+  - event-transfer validation
+  - machine learning
   - grouped validation
   - validation stress testing
   - CPT 2024
   - current-release validation
-  - conformal prediction
-  - decision reliability
+  - geological controls
+  - value of information
   - trustworthy machine learning

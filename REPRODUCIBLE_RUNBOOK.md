@@ -69,6 +69,24 @@ python run_random_split_sensitivity.py
 python run_conformal_split_sensitivity.py
 ```
 
+For the R12 manuscript numerical claims, run:
+
+```powershell
+python run_predictability_ceiling.py
+python run_tuned_ml_challenge.py
+python run_overvalidation_benchmark.py
+python run_value_of_information.py
+python run_geological_residual.py
+```
+
+The corresponding derived outputs are:
+
+- `code/data/processed/predictability_ceiling.json`
+- `code/data/processed/tuned_ml_challenge.json`
+- `code/data/processed/overvalidation_benchmark.json`
+- `code/data/processed/value_of_information.json`
+- `code/data/processed/geological_residual.json`
+
 The decision-utility audit is computationally heavier because it repeats conformal policy
 simulations. Run it separately when a full audit is needed:
 
@@ -104,6 +122,14 @@ The canonical submission-facing figure sources are the SVG/PDF files plus
 `figures/paper_figures/figure_provenance.yml`. PPTX files embed PNG previews and are not fully
 editable vector source files.
 
+For the R12 manuscript figures, run:
+
+```powershell
+python code\make_figures_reframe.py
+```
+
+Outputs are written to `figures/reframe_2026-06-30/` as SVG/PDF/PNG.
+
 ## Package-Level Processed-Data Reproduction
 
 From the package root:
@@ -123,6 +149,12 @@ one-command check short and can be included with:
 
 The raw-provenance grouped stress test and CPT 2024 current-release validation scripts are
 intentionally excluded from the default one-command check.
+
+To include the R12 manuscript scripts and figures in the package-level check, use:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\run_all.ps1 -R12Manuscript
+```
 If local PowerShell execution policy blocks scripts, use:
 
 ```powershell

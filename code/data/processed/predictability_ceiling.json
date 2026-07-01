@@ -1,0 +1,423 @@
+{
+  "method": "Calibration-robust predictability ceiling: grouped-AUC discrimination ceiling + OOF log-loss floor + isotonic-calibrated irreducible-error floor, all cluster-bootstrapped by earthquake. Sufficiency test asks whether the best multivariate model beats the 1-D mechanistic margin. Margins never refit on labels.",
+  "seed": 0,
+  "n_boot": 1000,
+  "SPT_Cetin2018": {
+    "response": "triggering",
+    "n": 208,
+    "n_earthquakes": 27,
+    "base_rate": 0.5433,
+    "models": {
+      "margin_1d": {
+        "grouped_auc": {
+          "auc": 0.8982,
+          "lo": 0.8599,
+          "hi": 0.9357
+        },
+        "logloss_floor": {
+          "est": 0.4499,
+          "lo": 0.3805,
+          "hi": 0.5447
+        },
+        "calibrated_error_floor": {
+          "est": 0.1683,
+          "lo": 0.1153,
+          "hi": 0.2263
+        },
+        "min_error_rate": 0.1683
+      },
+      "logistic_full": {
+        "grouped_auc": {
+          "auc": 0.8503,
+          "lo": 0.7832,
+          "hi": 0.9031
+        },
+        "logloss_floor": {
+          "est": 0.4747,
+          "lo": 0.3926,
+          "hi": 0.5572
+        },
+        "calibrated_error_floor": {
+          "est": 0.226,
+          "lo": 0.1948,
+          "hi": 0.2714
+        },
+        "min_error_rate": 0.226
+      },
+      "knn": {
+        "grouped_auc": {
+          "auc": 0.8105,
+          "lo": 0.7119,
+          "hi": 0.8665
+        },
+        "logloss_floor": {
+          "est": 0.5296,
+          "lo": 0.4688,
+          "hi": 0.6191
+        },
+        "calibrated_error_floor": {
+          "est": 0.2404,
+          "lo": 0.2151,
+          "hi": 0.2725
+        },
+        "min_error_rate": 0.2404
+      },
+      "gb": {
+        "grouped_auc": {
+          "auc": 0.8688,
+          "lo": 0.823,
+          "hi": 0.9096
+        },
+        "logloss_floor": {
+          "est": 0.4798,
+          "lo": 0.4022,
+          "hi": 0.6073
+        },
+        "calibrated_error_floor": {
+          "est": 0.1971,
+          "lo": 0.1677,
+          "hi": 0.2236
+        },
+        "min_error_rate": 0.1971
+      }
+    },
+    "best_multivariate": "gb",
+    "sufficiency_test": {
+      "best_mv_minus_margin_AUC": {
+        "delta": -0.0293,
+        "lo": -0.0803,
+        "hi": 0.0038,
+        "P(delta>0)": 0.048
+      },
+      "best_mv_minus_margin_error_floor": {
+        "gap_mv_minus_margin": 0.0288,
+        "lo": -0.042,
+        "hi": 0.0919,
+        "P(mv_lower_floor)": 0.3
+      },
+      "multivariate_beats_margin_on_AUC": false,
+      "multivariate_beats_margin_on_error_floor": false,
+      "margin_is_sufficient_coordinate": true
+    },
+    "predictability_ceiling": {
+      "discrimination_AUC_ceiling": {
+        "auc": 0.8982,
+        "lo": 0.8599,
+        "hi": 0.9357
+      },
+      "irreducible_error_floor_calibrated": {
+        "est": 0.1683,
+        "lo": 0.1153,
+        "hi": 0.2263
+      },
+      "min_error_rate": 0.1683
+    },
+    "label_noise_sensitivity_on_margin_floor": [
+      {
+        "rho": 0.0,
+        "intrinsic_floor": 0.1683
+      },
+      {
+        "rho": 0.05,
+        "intrinsic_floor": 0.1314
+      },
+      {
+        "rho": 0.1,
+        "intrinsic_floor": 0.0854
+      },
+      {
+        "rho": 0.15,
+        "intrinsic_floor": 0.0261
+      }
+    ],
+    "features": [
+      "Mw",
+      "amax_g",
+      "sigma_v_kpa",
+      "sigma_eff_kpa",
+      "rd",
+      "FC",
+      "N1_60",
+      "N1_60cs",
+      "crit_depth_m",
+      "water_depth_ft"
+    ]
+  },
+  "CPT_Geyin2021": {
+    "response": "surface_manifestation",
+    "n": 275,
+    "n_earthquakes": 21,
+    "base_rate": 0.5782,
+    "models": {
+      "margin_1d": {
+        "grouped_auc": {
+          "auc": 0.7138,
+          "lo": 0.6132,
+          "hi": 0.8345
+        },
+        "logloss_floor": {
+          "est": 0.6049,
+          "lo": 0.5281,
+          "hi": 0.6765
+        },
+        "calibrated_error_floor": {
+          "est": 0.3018,
+          "lo": 0.2677,
+          "hi": 0.327
+        },
+        "min_error_rate": 0.3018
+      },
+      "logistic_full": {
+        "grouped_auc": {
+          "auc": 0.6319,
+          "lo": 0.5535,
+          "hi": 0.7622
+        },
+        "logloss_floor": {
+          "est": 0.7566,
+          "lo": 0.6053,
+          "hi": 0.9447
+        },
+        "calibrated_error_floor": {
+          "est": 0.3527,
+          "lo": 0.3088,
+          "hi": 0.381
+        },
+        "min_error_rate": 0.3527
+      },
+      "knn": {
+        "grouped_auc": {
+          "auc": 0.5735,
+          "lo": 0.5075,
+          "hi": 0.6636
+        },
+        "logloss_floor": {
+          "est": 0.7228,
+          "lo": 0.6335,
+          "hi": 0.7961
+        },
+        "calibrated_error_floor": {
+          "est": 0.3745,
+          "lo": 0.3587,
+          "hi": 0.3897
+        },
+        "min_error_rate": 0.3745
+      },
+      "gb": {
+        "grouped_auc": {
+          "auc": 0.6219,
+          "lo": 0.5341,
+          "hi": 0.6966
+        },
+        "logloss_floor": {
+          "est": 0.9205,
+          "lo": 0.7799,
+          "hi": 1.148
+        },
+        "calibrated_error_floor": {
+          "est": 0.3491,
+          "lo": 0.3301,
+          "hi": 0.3616
+        },
+        "min_error_rate": 0.3491
+      }
+    },
+    "best_multivariate": "logistic_full",
+    "sufficiency_test": {
+      "best_mv_minus_margin_AUC": {
+        "delta": -0.0819,
+        "lo": -0.1217,
+        "hi": -0.0298,
+        "P(delta>0)": 0.0
+      },
+      "best_mv_minus_margin_error_floor": {
+        "gap_mv_minus_margin": 0.0509,
+        "lo": 0.0214,
+        "hi": 0.0681,
+        "P(mv_lower_floor)": 0.0
+      },
+      "multivariate_beats_margin_on_AUC": false,
+      "multivariate_beats_margin_on_error_floor": false,
+      "margin_is_sufficient_coordinate": true
+    },
+    "predictability_ceiling": {
+      "discrimination_AUC_ceiling": {
+        "auc": 0.7138,
+        "lo": 0.6132,
+        "hi": 0.8345
+      },
+      "irreducible_error_floor_calibrated": {
+        "est": 0.3018,
+        "lo": 0.2677,
+        "hi": 0.327
+      },
+      "min_error_rate": 0.3018
+    },
+    "label_noise_sensitivity_on_margin_floor": [
+      {
+        "rho": 0.0,
+        "intrinsic_floor": 0.3018
+      },
+      {
+        "rho": 0.05,
+        "intrinsic_floor": 0.2798
+      },
+      {
+        "rho": 0.1,
+        "intrinsic_floor": 0.2522
+      },
+      {
+        "rho": 0.15,
+        "intrinsic_floor": 0.2169
+      }
+    ],
+    "features": [
+      "Mw",
+      "PGA",
+      "GWT",
+      "crit_FS",
+      "crit_depth",
+      "qc1Ncs_crit",
+      "Ic_crit",
+      "sev_crit",
+      "n_liq_layers",
+      "LPI"
+    ]
+  },
+  "Vs_Kayen2013": {
+    "response": "triggering",
+    "n": 411,
+    "n_earthquakes": 35,
+    "base_rate": 0.6983,
+    "models": {
+      "margin_1d": {
+        "grouped_auc": {
+          "auc": 0.9118,
+          "lo": 0.8345,
+          "hi": 0.9651
+        },
+        "logloss_floor": {
+          "est": 0.3184,
+          "lo": 0.2215,
+          "hi": 0.4591
+        },
+        "calibrated_error_floor": {
+          "est": 0.1411,
+          "lo": 0.1108,
+          "hi": 0.1753
+        },
+        "min_error_rate": 0.1411
+      },
+      "logistic_full": {
+        "grouped_auc": {
+          "auc": 0.8905,
+          "lo": 0.8284,
+          "hi": 0.9438
+        },
+        "logloss_floor": {
+          "est": 0.3598,
+          "lo": 0.2727,
+          "hi": 0.4692
+        },
+        "calibrated_error_floor": {
+          "est": 0.1606,
+          "lo": 0.1237,
+          "hi": 0.2052
+        },
+        "min_error_rate": 0.1606
+      },
+      "knn": {
+        "grouped_auc": {
+          "auc": 0.8312,
+          "lo": 0.7554,
+          "hi": 0.9085
+        },
+        "logloss_floor": {
+          "est": 0.446,
+          "lo": 0.3543,
+          "hi": 0.548
+        },
+        "calibrated_error_floor": {
+          "est": 0.1873,
+          "lo": 0.1547,
+          "hi": 0.2159
+        },
+        "min_error_rate": 0.1873
+      },
+      "gb": {
+        "grouped_auc": {
+          "auc": 0.8757,
+          "lo": 0.7988,
+          "hi": 0.9428
+        },
+        "logloss_floor": {
+          "est": 0.3941,
+          "lo": 0.2561,
+          "hi": 0.5635
+        },
+        "calibrated_error_floor": {
+          "est": 0.1484,
+          "lo": 0.1109,
+          "hi": 0.1893
+        },
+        "min_error_rate": 0.1484
+      }
+    },
+    "best_multivariate": "logistic_full",
+    "sufficiency_test": {
+      "best_mv_minus_margin_AUC": {
+        "delta": -0.0213,
+        "lo": -0.0523,
+        "hi": 0.0153,
+        "P(delta>0)": 0.123
+      },
+      "best_mv_minus_margin_error_floor": {
+        "gap_mv_minus_margin": 0.0195,
+        "lo": -0.0031,
+        "hi": 0.038,
+        "P(mv_lower_floor)": 0.041
+      },
+      "multivariate_beats_margin_on_AUC": false,
+      "multivariate_beats_margin_on_error_floor": false,
+      "margin_is_sufficient_coordinate": true
+    },
+    "predictability_ceiling": {
+      "discrimination_AUC_ceiling": {
+        "auc": 0.9118,
+        "lo": 0.8345,
+        "hi": 0.9651
+      },
+      "irreducible_error_floor_calibrated": {
+        "est": 0.1411,
+        "lo": 0.1108,
+        "hi": 0.1753
+      },
+      "min_error_rate": 0.1411
+    },
+    "label_noise_sensitivity_on_margin_floor": [
+      {
+        "rho": 0.0,
+        "intrinsic_floor": 0.1411
+      },
+      {
+        "rho": 0.05,
+        "intrinsic_floor": 0.1012
+      },
+      {
+        "rho": 0.1,
+        "intrinsic_floor": 0.0514
+      },
+      {
+        "rho": 0.15,
+        "intrinsic_floor": 0.0
+      }
+    ],
+    "features": [
+      "vs1",
+      "csr",
+      "mw",
+      "sigma_eff_kpa",
+      "fc"
+    ]
+  }
+}

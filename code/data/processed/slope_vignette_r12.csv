@@ -1,0 +1,9 @@
+case_id,source_id,facility,role,hazard,outcome,label,X,Y,X_plus_Y,boundary_note
+CB1_COOSBAY_1996_FAIL,BORJA_COOSBAY_2012,CB1,primary,slope,failure,1,0.380,0.529,0.908,CB1-style hydromechanical continuum-limit-equilibrium failure state
+CB1_COOSBAY_24h_STABLE,BORJA_COOSBAY_2012,CB1,primary,slope,stable,0,0.380,0.259,0.639,Stable state from same source
+USGS_FLUME_EXP1_gwinflow,USGS_FLUME_REID_IVERSON,USGS_FLUME,primary,slope,failure,1,0.716,0.276,0.992,Failure under groundwater-inflow hydrologic trigger
+USGS_FLUME_EXP2_modsprink,USGS_FLUME_REID_IVERSON,USGS_FLUME,primary,slope,failure,1,0.716,0.331,1.047,Failure under moderate sprinkling trigger
+USGS_FLUME_EXP3_highsprink,USGS_FLUME_REID_IVERSON,USGS_FLUME,domain_control,slope,failure,1,0.716,0.136,0.852,Pre-specified domain-control failure excluded from primary separation claim
+BALT1_SFBAY_2023_STABLE,USGS_SCIENCEBASE_BALT,BALT1,primary,slope,stable,0,0.635,0.170,0.805,Stable monitoring control
+BALT2_SFBAY_2023_STABLE,USGS_SCIENCEBASE_BALT,BALT2,primary,slope,stable,0,0.169,0.001,0.170,Stable monitoring control
+BALT3_SFBAY_2023_STABLE,USGS_SCIENCEBASE_BALT,BALT3,primary,slope,stable,0,0.143,0.656,0.799,Stable monitoring control

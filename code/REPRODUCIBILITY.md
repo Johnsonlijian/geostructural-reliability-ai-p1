@@ -1,4 +1,4 @@
-# Reproducibility - P1 Grouped Validation Stress-Test Study
+# Reproducibility - P1 Mechanism-Anchored Validation Study
 
 Deterministic analysis; no wet lab; public data only. The public package should distribute scripts, configuration, provenance records, derived non-sensitive outputs, and generated figures. Do not redistribute raw third-party data unless the source license explicitly permits it.
 

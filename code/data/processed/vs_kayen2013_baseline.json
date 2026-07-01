@@ -1,0 +1,34 @@
+{
+  "n_raw_rows": 415,
+  "n": 411,
+  "n_events": 35,
+  "base_rate": 0.6983,
+  "n_liq": 287,
+  "n_noliq": 124,
+  "grouped_vs_margin_auc": {
+    "auc": 0.9189,
+    "lo": 0.8467,
+    "hi": 0.9677
+  },
+  "margin_definition": "s_Vs = -g/sigma_eps with g = (0.0073*Vs1)^2.8011 - 1.946*ln(CSR) - 2.6168*ln(Mw) - 0.0099*ln(sigma'_v0[kPa]) + 0.0028*FC, sigma_eps=0.4809; P_L=Phi(s_Vs). Kayen et al. (2013) Eq.(13) with the Kayen et al. (2015) erratum sign fix. Coefficients NEVER refit on labels (zero-shot).",
+  "csr_source": "Kayen et al. (2013) Table S1 reported CSR column ('csr'), taken as-is; NOT recomputed. (Table S1 also carries amax_g, rd, sigma_v, sigma_eff so a Seed-Idriss recompute is possible, but the reported CSR is preferred per task.)",
+  "fc_policy": "FC=0 for all rows (Table S1 as parsed has no FC column); per vs_engine_spec.md.",
+  "label_policy": "liquefied Yes->1, No->0, Marginal/ambiguous->DROP (no imputation).",
+  "grouping": "event = Kayen 2013 earthquake/section header (matches SPT 'earthquake' / CPT 'event').",
+  "engine": "vs_kayen2013.margin (Kayen 2013 Eq.13 + 2015 erratum); coefficients never refit.",
+  "seed": 0,
+  "n_boot": 1000,
+  "rows_dropped": [
+    {
+      "reason": "label not Yes/No (Marginal/ambiguous field performance)",
+      "n": 4
+    }
+  ],
+  "n_dropped_total": 4,
+  "provenance_dois": {
+    "kayen2013_jgge": "10.1061/(ASCE)GT.1943-5606.0000743",
+    "kayen2015_erratum": "10.1061/(ASCE)GT.1943-5606.0001390"
+  },
+  "source_table": "Kayen et al. (2013) ASCE Supplemental Data Table S1 (415 parsed case rows).",
+  "harmonization": "Column schema mirrors data/processed/cetin2018_baseline_records.csv (y, earthquake, sigma_eff_kpa) and geyin2021_cpt_records.csv (event); margin via bootstrap_auc_ci as in run_predictability_ceiling.py."
+}

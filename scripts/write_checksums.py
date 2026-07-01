@@ -12,12 +12,14 @@ TARGETS = [
     ROOT / "figures" / "paper_figures" / "output" / "svg",
     ROOT / "figures" / "paper_figures" / "output" / "pdf",
     ROOT / "figures" / "paper_figures" / "output" / "png",
+    ROOT / "figures" / "reframe_2026-06-30",
 ]
 EXTRA_PATTERNS = [
     ROOT / "code" / "two_axis_closure" / "*.csv",
     ROOT / "code" / "two_axis_closure" / "*.json",
 ]
 OUT = ROOT / "DERIVED_OUTPUT_CHECKSUMS.sha256"
+EXCLUDE_NAME_FRAGMENTS = ("review",)
 
 
 def digest(path: Path) -> str:
@@ -32,6 +34,8 @@ def main() -> None:
     rows: list[str] = []
     for target in TARGETS:
         for path in sorted(p for p in target.rglob("*") if p.is_file()):
+            if any(fragment in path.name.lower() for fragment in EXCLUDE_NAME_FRAGMENTS):
+                continue
             rel = path.relative_to(ROOT).as_posix()
             rows.append(f"{digest(path)}  {rel}")
     for pattern in EXTRA_PATTERNS:

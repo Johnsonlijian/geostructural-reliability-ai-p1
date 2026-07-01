@@ -1,0 +1,13 @@
+quantity,value,boundary_note
+primary_effective_stress_n,7,Three failures and four stable controls
+domain_control_n,1,USGS flume Exp3 retained separately
+primary_nominal_auc,1.000,Rank diagnostic only
+primary_fail_min_X_plus_Y,0.908,Nominal primary failures at or above this value
+primary_stable_max_X_plus_Y,0.805,Nominal stable controls at or below this value
+prob_primary_order_separated,0.544,30000 conservative uncertainty samples
+transition_mid_q05,0.763,Empirical slope-transition midpoint
+transition_mid_q50,0.879,Empirical slope-transition midpoint
+transition_mid_q95,0.998,Empirical slope-transition midpoint
+prob_transition_mid_below_1,0.953,Finite-slope transition offset relative to X_plus_Y equals 1 theory anchor
+pooled_liq_slope_AUC,0.895,208 SPT liquefaction states plus eight slope states
+delta_auc_hazard_dummy,-0.012,Hazard dummy does not improve pooled AUC in this diagnostic

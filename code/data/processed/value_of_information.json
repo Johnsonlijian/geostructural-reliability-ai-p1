@@ -1,0 +1,790 @@
+{
+  "method": "Out-of-fold calibrated logistic posteriors; Bayes threshold p*=1/(1+R) from theory (no in-sample thresholding); VoI in units of C_FP. Δ tests whether the FULL standard predictor set adds decision value beyond the 1-D mechanistic margin.",
+  "safety_note": "Δ concerns extra PREDICTORS on one labelled record; it is NOT a statement about multi-method site investigation (profiling, layer/seam detection, redundancy), which remain standard practice and are not substitutable.",
+  "caveats": "VoI uses class-conditional rates so π can be swept, but covariate shift across populations is untested; π and R are decision inputs, reported as a sensitivity not a per-site rule; cross-modality arms are different sites/responses with shared earthquakes.",
+  "seed": 0,
+  "n_boot": 800,
+  "SPT_Cetin2018": {
+    "n": 208,
+    "n_earthquakes": 27,
+    "base_rate": 0.5433,
+    "margin_voi_oof_at_operating_points": {
+      "pi=0.2,R=5": {
+        "voi": 0.2021,
+        "lo": 0.0308,
+        "hi": 0.3575
+      },
+      "pi=0.2,R=10": {
+        "voi": 0.1937,
+        "lo": 0.0308,
+        "hi": 0.3403
+      },
+      "pi=0.35,R=10": {
+        "voi": 0.1574,
+        "lo": 0.025,
+        "hi": 0.2765
+      }
+    },
+    "in_sample_optimism": {
+      "pi=0.2,R=5": {
+        "voi_oof": 0.2021,
+        "voi_in_sample": 0.4976,
+        "optimism_gap": 0.2954
+      },
+      "pi=0.2,R=10": {
+        "voi_oof": 0.1937,
+        "voi_in_sample": 0.4505,
+        "optimism_gap": 0.2568
+      },
+      "pi=0.35,R=10": {
+        "voi_oof": 0.1574,
+        "voi_in_sample": 0.3007,
+        "optimism_gap": 0.1433
+      }
+    },
+    "extra_predictors_added_value": {
+      "pi=0.2,R=5": {
+        "delta_full_minus_margin": 0.0501,
+        "lo": -0.0655,
+        "hi": 0.2242,
+        "P(full_adds_value)": 0.749
+      },
+      "pi=0.2,R=10": {
+        "delta_full_minus_margin": 0.0,
+        "lo": -0.1041,
+        "hi": 0.1445,
+        "P(full_adds_value)": 0.489
+      },
+      "pi=0.35,R=10": {
+        "delta_full_minus_margin": 0.0,
+        "lo": -0.0846,
+        "hi": 0.1174,
+        "P(full_adds_value)": 0.489
+      }
+    },
+    "margin_voi_surface": {
+      "2": [
+        {
+          "pi": 0.05,
+          "voi": -0.5009
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.3702
+        },
+        {
+          "pi": 0.15,
+          "voi": -0.2395
+        },
+        {
+          "pi": 0.2,
+          "voi": -0.1088
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.0219
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.1526
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.2333
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.214
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1947
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1754
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.1561
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.1367
+        }
+      ],
+      "5": [
+        {
+          "pi": 0.05,
+          "voi": -0.46
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.1726
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.1147
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.2021
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.1895
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.1768
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.1642
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.1516
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1389
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1263
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.1137
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.1011
+        }
+      ],
+      "10": [
+        {
+          "pi": 0.05,
+          "voi": -0.22
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.2179
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.2058
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.1937
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.1816
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.1695
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.1574
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.1453
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1332
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1211
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.1089
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.0968
+        }
+      ],
+      "20": [
+        {
+          "pi": 0.05,
+          "voi": 0.2
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.1895
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.1789
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.1684
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.1579
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.1474
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.1368
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.1263
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1158
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1053
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.0947
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.0842
+        }
+      ]
+    }
+  },
+  "CPT_Geyin2021": {
+    "n": 275,
+    "n_earthquakes": 21,
+    "base_rate": 0.5782,
+    "margin_voi_oof_at_operating_points": {
+      "pi=0.2,R=5": {
+        "voi": 0.126,
+        "lo": 0.0434,
+        "hi": 0.2338
+      },
+      "pi=0.2,R=10": {
+        "voi": 0.0438,
+        "lo": 0.0,
+        "hi": 0.1093
+      },
+      "pi=0.35,R=10": {
+        "voi": 0.012,
+        "lo": -0.0164,
+        "hi": 0.0734
+      }
+    },
+    "in_sample_optimism": {
+      "pi=0.2,R=5": {
+        "voi_oof": 0.126,
+        "voi_in_sample": 0.2474,
+        "optimism_gap": 0.1214
+      },
+      "pi=0.2,R=10": {
+        "voi_oof": 0.0438,
+        "voi_in_sample": 0.1651,
+        "optimism_gap": 0.1213
+      },
+      "pi=0.35,R=10": {
+        "voi_oof": 0.012,
+        "voi_in_sample": 0.0909,
+        "optimism_gap": 0.0788
+      }
+    },
+    "extra_predictors_added_value": {
+      "pi=0.2,R=5": {
+        "delta_full_minus_margin": -0.0339,
+        "lo": -0.0981,
+        "hi": 0.0165,
+        "P(full_adds_value)": 0.091
+      },
+      "pi=0.2,R=10": {
+        "delta_full_minus_margin": -0.0219,
+        "lo": -0.0665,
+        "hi": 0.0286,
+        "P(full_adds_value)": 0.165
+      },
+      "pi=0.35,R=10": {
+        "delta_full_minus_margin": -0.006,
+        "lo": -0.0336,
+        "hi": 0.0237,
+        "P(full_adds_value)": 0.27
+      }
+    },
+    "margin_voi_surface": {
+      "2": [
+        {
+          "pi": 0.05,
+          "voi": -0.513
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.388
+        },
+        {
+          "pi": 0.15,
+          "voi": -0.263
+        },
+        {
+          "pi": 0.2,
+          "voi": -0.138
+        },
+        {
+          "pi": 0.25,
+          "voi": -0.013
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.1119
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.1869
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.1619
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1369
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1119
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.0868
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.0618
+        }
+      ],
+      "5": [
+        {
+          "pi": 0.05,
+          "voi": -0.5327
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.2465
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.0397
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.126
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.1122
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.0984
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.0847
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.0709
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.0571
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.0433
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.0296
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.0158
+        }
+      ],
+      "10": [
+        {
+          "pi": 0.05,
+          "voi": -0.3744
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.065
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.0544
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.0438
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.0332
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.0226
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.012
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.0014
+        },
+        {
+          "pi": 0.45,
+          "voi": -0.0092
+        },
+        {
+          "pi": 0.5,
+          "voi": -0.0198
+        },
+        {
+          "pi": 0.55,
+          "voi": -0.0304
+        },
+        {
+          "pi": 0.6,
+          "voi": -0.041
+        }
+      ],
+      "20": [
+        {
+          "pi": 0.05,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.0
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.0
+        }
+      ]
+    }
+  },
+  "Vs_Kayen2013": {
+    "n": 411,
+    "n_earthquakes": 35,
+    "base_rate": 0.6983,
+    "margin_voi_oof_at_operating_points": {
+      "pi=0.2,R=5": {
+        "voi": 0.3484,
+        "lo": 0.237,
+        "hi": 0.459
+      },
+      "pi=0.2,R=10": {
+        "voi": 0.271,
+        "lo": 0.1629,
+        "hi": 0.3765
+      },
+      "pi=0.35,R=10": {
+        "voi": 0.2202,
+        "lo": 0.1324,
+        "hi": 0.3059
+      }
+    },
+    "in_sample_optimism": {
+      "pi=0.2,R=5": {
+        "voi_oof": 0.3484,
+        "voi_in_sample": 0.481,
+        "optimism_gap": 0.1326
+      },
+      "pi=0.2,R=10": {
+        "voi_oof": 0.271,
+        "voi_in_sample": 0.4253,
+        "optimism_gap": 0.1543
+      },
+      "pi=0.35,R=10": {
+        "voi_oof": 0.2202,
+        "voi_in_sample": 0.3407,
+        "optimism_gap": 0.1206
+      }
+    },
+    "extra_predictors_added_value": {
+      "pi=0.2,R=5": {
+        "delta_full_minus_margin": -0.0839,
+        "lo": -0.1514,
+        "hi": -0.0149,
+        "P(full_adds_value)": 0.003
+      },
+      "pi=0.2,R=10": {
+        "delta_full_minus_margin": -0.0774,
+        "lo": -0.1245,
+        "hi": -0.0276,
+        "P(full_adds_value)": 0.0
+      },
+      "pi=0.35,R=10": {
+        "delta_full_minus_margin": -0.0629,
+        "lo": -0.1011,
+        "hi": -0.0224,
+        "P(full_adds_value)": 0.0
+      }
+    },
+    "margin_voi_surface": {
+      "2": [
+        {
+          "pi": 0.05,
+          "voi": -0.3447
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.2217
+        },
+        {
+          "pi": 0.15,
+          "voi": -0.0986
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.0244
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.1475
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.2705
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.3435
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.3166
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.2896
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.2626
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.2357
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.2087
+        }
+      ],
+      "5": [
+        {
+          "pi": 0.05,
+          "voi": -0.2863
+        },
+        {
+          "pi": 0.1,
+          "voi": -0.0081
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.2702
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.3484
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.3266
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.3048
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.2831
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.2613
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.2395
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.2177
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.196
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.1742
+        }
+      ],
+      "10": [
+        {
+          "pi": 0.05,
+          "voi": -0.1282
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.3048
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.2879
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.271
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.254
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.2371
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.2202
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.2032
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1863
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1694
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.1524
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.1355
+        }
+      ],
+      "20": [
+        {
+          "pi": 0.05,
+          "voi": 0.2911
+        },
+        {
+          "pi": 0.1,
+          "voi": 0.2758
+        },
+        {
+          "pi": 0.15,
+          "voi": 0.2605
+        },
+        {
+          "pi": 0.2,
+          "voi": 0.2452
+        },
+        {
+          "pi": 0.25,
+          "voi": 0.2298
+        },
+        {
+          "pi": 0.3,
+          "voi": 0.2145
+        },
+        {
+          "pi": 0.35,
+          "voi": 0.1992
+        },
+        {
+          "pi": 0.4,
+          "voi": 0.1839
+        },
+        {
+          "pi": 0.45,
+          "voi": 0.1685
+        },
+        {
+          "pi": 0.5,
+          "voi": 0.1532
+        },
+        {
+          "pi": 0.55,
+          "voi": 0.1379
+        },
+        {
+          "pi": 0.6,
+          "voi": 0.1226
+        }
+      ]
+    }
+  }
+}

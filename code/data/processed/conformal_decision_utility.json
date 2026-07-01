@@ -1,0 +1,867 @@
+{
+  "interpretation": "Decision utility uses a transparent policy: singleton conformal sets trigger a binary decision; two-label and empty sets are routed to review/investigation. Positive cost reduction means the conformal policy is cheaper than forcing every HGB prediction into a binary decision under that cost scenario. Mechanism bands use train-only logistic calibration of SPT log(CSR/CRR) or CPT log(1+LPI), not the full ML score.",
+  "settings": {
+    "n_repeats": 60,
+    "alpha_values": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "cost_scenarios": {
+      "fn5_fp1_review0.25": {
+        "false_negative": 5.0,
+        "false_positive": 1.0,
+        "review": 0.25,
+        "empty": 1.0
+      },
+      "fn5_fp1_review0.50": {
+        "false_negative": 5.0,
+        "false_positive": 1.0,
+        "review": 0.5,
+        "empty": 1.25
+      },
+      "fn10_fp1_review0.50": {
+        "false_negative": 10.0,
+        "false_positive": 1.0,
+        "review": 0.5,
+        "empty": 1.5
+      }
+    }
+  },
+  "datasets": {
+    "SPT_Cetin2018": {
+      "n": 208,
+      "n_groups": 27,
+      "alpha": {
+        "0.05": {
+          "target_coverage": 0.95,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.95326,
+            "mean_set_size": 1.652011,
+            "singleton_rate": 0.347989,
+            "two_label_rate": 0.652011,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.137814,
+            "singleton_false_negative_rate_per_case": 0.011247,
+            "singleton_false_positive_rate_per_case": 0.035493,
+            "hard_binary_error_rate": 0.305215,
+            "hard_false_negative_rate_per_case": 0.124447,
+            "hard_false_positive_rate_per_case": 0.180768,
+            "n_predictions_total": 4111,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.803003,
+                "conformal_policy_cost_per_case": 0.254731,
+                "cost_reduction_per_case": 0.548272,
+                "relative_cost_reduction": 0.626801
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.803003,
+                "conformal_policy_cost_per_case": 0.417734,
+                "cost_reduction_per_case": 0.38527,
+                "relative_cost_reduction": 0.391312
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.425238,
+                "conformal_policy_cost_per_case": 0.473969,
+                "cost_reduction_per_case": 0.951269,
+                "relative_cost_reduction": 0.563686
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.967829,
+                "mean_set_size": 1.465569,
+                "singleton_rate": 0.534431,
+                "two_label_rate": 0.465569,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.157357,
+                "hard_binary_error_rate": 0.201104,
+                "n_predictions_total": 776
+              },
+              "1": {
+                "coverage": 0.931709,
+                "mean_set_size": 1.749572,
+                "singleton_rate": 0.250428,
+                "two_label_rate": 0.749572,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.301743,
+                "hard_binary_error_rate": 0.429604,
+                "n_predictions_total": 2036
+              },
+              "2": {
+                "coverage": 0.984275,
+                "mean_set_size": 1.500334,
+                "singleton_rate": 0.499666,
+                "two_label_rate": 0.500334,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.028926,
+                "hard_binary_error_rate": 0.148704,
+                "n_predictions_total": 1299
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.951314,
+            "mean_set_size": 1.6278,
+            "singleton_rate": 0.366533,
+            "two_label_rate": 0.630634,
+            "empty_rate": 0.002833,
+            "singleton_error_rate": 0.107407,
+            "singleton_false_negative_rate_per_case": 0.01612,
+            "singleton_false_positive_rate_per_case": 0.029732,
+            "hard_binary_error_rate": 0.305215,
+            "hard_false_negative_rate_per_case": 0.124447,
+            "hard_false_positive_rate_per_case": 0.180768,
+            "n_predictions_total": 4111,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.803003,
+                "conformal_policy_cost_per_case": 0.270825,
+                "cost_reduction_per_case": 0.532178,
+                "relative_cost_reduction": 0.60808
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.803003,
+                "conformal_policy_cost_per_case": 0.429192,
+                "cost_reduction_per_case": 0.373812,
+                "relative_cost_reduction": 0.377564
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.425238,
+                "conformal_policy_cost_per_case": 0.510501,
+                "cost_reduction_per_case": 0.914737,
+                "relative_cost_reduction": 0.539723
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.960322,
+                "mean_set_size": 1.427084,
+                "singleton_rate": 0.558717,
+                "two_label_rate": 0.434183,
+                "empty_rate": 0.007099,
+                "singleton_error_rate": 0.142207,
+                "hard_binary_error_rate": 0.201104,
+                "n_predictions_total": 776
+              },
+              "1": {
+                "coverage": 0.947714,
+                "mean_set_size": 1.770854,
+                "singleton_rate": 0.229146,
+                "two_label_rate": 0.770854,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.228248,
+                "hard_binary_error_rate": 0.429604,
+                "n_predictions_total": 2036
+              },
+              "2": {
+                "coverage": 0.970336,
+                "mean_set_size": 1.444418,
+                "singleton_rate": 0.552301,
+                "two_label_rate": 0.446058,
+                "empty_rate": 0.00164,
+                "singleton_error_rate": 0.047799,
+                "hard_binary_error_rate": 0.148704,
+                "n_predictions_total": 1299
+              }
+            }
+          }
+        },
+        "0.10": {
+          "target_coverage": 0.9,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.907826,
+            "mean_set_size": 1.491284,
+            "singleton_rate": 0.508716,
+            "two_label_rate": 0.491284,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.174914,
+            "singleton_false_negative_rate_per_case": 0.040022,
+            "singleton_false_positive_rate_per_case": 0.052151,
+            "hard_binary_error_rate": 0.30649,
+            "hard_false_negative_rate_per_case": 0.128816,
+            "hard_false_positive_rate_per_case": 0.177674,
+            "n_predictions_total": 3727,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.821753,
+                "conformal_policy_cost_per_case": 0.375085,
+                "cost_reduction_per_case": 0.446669,
+                "relative_cost_reduction": 0.534014
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.821753,
+                "conformal_policy_cost_per_case": 0.497906,
+                "cost_reduction_per_case": 0.323848,
+                "relative_cost_reduction": 0.363269
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.465832,
+                "conformal_policy_cost_per_case": 0.698018,
+                "cost_reduction_per_case": 0.767814,
+                "relative_cost_reduction": 0.488861
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.960192,
+                "mean_set_size": 1.380331,
+                "singleton_rate": 0.619669,
+                "two_label_rate": 0.380331,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.096889,
+                "hard_binary_error_rate": 0.210209,
+                "n_predictions_total": 683
+              },
+              "1": {
+                "coverage": 0.866152,
+                "mean_set_size": 1.576745,
+                "singleton_rate": 0.423255,
+                "two_label_rate": 0.576745,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.32406,
+                "hard_binary_error_rate": 0.424938,
+                "n_predictions_total": 1833
+              },
+              "2": {
+                "coverage": 0.976462,
+                "mean_set_size": 1.327673,
+                "singleton_rate": 0.672327,
+                "two_label_rate": 0.327673,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.036757,
+                "hard_binary_error_rate": 0.125562,
+                "n_predictions_total": 1211
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.924112,
+            "mean_set_size": 1.525156,
+            "singleton_rate": 0.474844,
+            "two_label_rate": 0.525156,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.154384,
+            "singleton_false_negative_rate_per_case": 0.036323,
+            "singleton_false_positive_rate_per_case": 0.039565,
+            "hard_binary_error_rate": 0.30649,
+            "hard_false_negative_rate_per_case": 0.128816,
+            "hard_false_positive_rate_per_case": 0.177674,
+            "n_predictions_total": 3727,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.821753,
+                "conformal_policy_cost_per_case": 0.352467,
+                "cost_reduction_per_case": 0.469286,
+                "relative_cost_reduction": 0.559241
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.821753,
+                "conformal_policy_cost_per_case": 0.483756,
+                "cost_reduction_per_case": 0.337997,
+                "relative_cost_reduction": 0.375688
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.465832,
+                "conformal_policy_cost_per_case": 0.665369,
+                "cost_reduction_per_case": 0.800464,
+                "relative_cost_reduction": 0.507835
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.954658,
+                "mean_set_size": 1.359487,
+                "singleton_rate": 0.640513,
+                "two_label_rate": 0.359487,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.101315,
+                "hard_binary_error_rate": 0.210209,
+                "n_predictions_total": 683
+              },
+              "1": {
+                "coverage": 0.917573,
+                "mean_set_size": 1.694139,
+                "singleton_rate": 0.305861,
+                "two_label_rate": 0.694139,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.274941,
+                "hard_binary_error_rate": 0.424938,
+                "n_predictions_total": 1833
+              },
+              "2": {
+                "coverage": 0.95956,
+                "mean_set_size": 1.274418,
+                "singleton_rate": 0.725582,
+                "two_label_rate": 0.274418,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.054968,
+                "hard_binary_error_rate": 0.125562,
+                "n_predictions_total": 1211
+              }
+            }
+          }
+        },
+        "0.20": {
+          "target_coverage": 0.8,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.821822,
+            "mean_set_size": 1.326613,
+            "singleton_rate": 0.656007,
+            "two_label_rate": 0.335303,
+            "empty_rate": 0.00869,
+            "singleton_error_rate": 0.25517,
+            "singleton_false_negative_rate_per_case": 0.067992,
+            "singleton_false_positive_rate_per_case": 0.101496,
+            "hard_binary_error_rate": 0.333454,
+            "hard_false_negative_rate_per_case": 0.125253,
+            "hard_false_positive_rate_per_case": 0.208201,
+            "n_predictions_total": 4427,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.834467,
+                "conformal_policy_cost_per_case": 0.533974,
+                "cost_reduction_per_case": 0.300493,
+                "relative_cost_reduction": 0.307917
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.834467,
+                "conformal_policy_cost_per_case": 0.619972,
+                "cost_reduction_per_case": 0.214495,
+                "relative_cost_reduction": 0.182087
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.460734,
+                "conformal_policy_cost_per_case": 0.962107,
+                "cost_reduction_per_case": 0.498628,
+                "relative_cost_reduction": 0.240476
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.874538,
+                "mean_set_size": 1.301191,
+                "singleton_rate": 0.688605,
+                "two_label_rate": 0.306293,
+                "empty_rate": 0.005102,
+                "singleton_error_rate": 0.202639,
+                "hard_binary_error_rate": 0.304928,
+                "n_predictions_total": 932
+              },
+              "1": {
+                "coverage": 0.740264,
+                "mean_set_size": 1.361613,
+                "singleton_rate": 0.616868,
+                "two_label_rate": 0.372373,
+                "empty_rate": 0.01076,
+                "singleton_error_rate": 0.396463,
+                "hard_binary_error_rate": 0.455585,
+                "n_predictions_total": 1987
+              },
+              "2": {
+                "coverage": 0.929133,
+                "mean_set_size": 1.243852,
+                "singleton_rate": 0.75034,
+                "two_label_rate": 0.246756,
+                "empty_rate": 0.002904,
+                "singleton_error_rate": 0.106164,
+                "hard_binary_error_rate": 0.161994,
+                "n_predictions_total": 1508
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.835333,
+            "mean_set_size": 1.322005,
+            "singleton_rate": 0.645384,
+            "two_label_rate": 0.338311,
+            "empty_rate": 0.016305,
+            "singleton_error_rate": 0.224373,
+            "singleton_false_negative_rate_per_case": 0.059415,
+            "singleton_false_positive_rate_per_case": 0.088947,
+            "hard_binary_error_rate": 0.333454,
+            "hard_false_negative_rate_per_case": 0.125253,
+            "hard_false_positive_rate_per_case": 0.208201,
+            "n_predictions_total": 4427,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.834467,
+                "conformal_policy_cost_per_case": 0.486907,
+                "cost_reduction_per_case": 0.347561,
+                "relative_cost_reduction": 0.374182
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.834467,
+                "conformal_policy_cost_per_case": 0.575561,
+                "cost_reduction_per_case": 0.258907,
+                "relative_cost_reduction": 0.24808
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.460734,
+                "conformal_policy_cost_per_case": 0.876714,
+                "cost_reduction_per_case": 0.58402,
+                "relative_cost_reduction": 0.318087
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.872856,
+                "mean_set_size": 1.273452,
+                "singleton_rate": 0.685125,
+                "two_label_rate": 0.294163,
+                "empty_rate": 0.020712,
+                "singleton_error_rate": 0.199799,
+                "hard_binary_error_rate": 0.304928,
+                "n_predictions_total": 932
+              },
+              "1": {
+                "coverage": 0.814791,
+                "mean_set_size": 1.498142,
+                "singleton_rate": 0.495337,
+                "two_label_rate": 0.501402,
+                "empty_rate": 0.003261,
+                "singleton_error_rate": 0.368238,
+                "hard_binary_error_rate": 0.455585,
+                "n_predictions_total": 1987
+              },
+              "2": {
+                "coverage": 0.899825,
+                "mean_set_size": 1.134987,
+                "singleton_rate": 0.835452,
+                "two_label_rate": 0.149767,
+                "empty_rate": 0.014781,
+                "singleton_error_rate": 0.119315,
+                "hard_binary_error_rate": 0.161994,
+                "n_predictions_total": 1508
+              }
+            }
+          }
+        }
+      }
+    },
+    "CPT_Geyin2021": {
+      "n": 275,
+      "n_groups": 21,
+      "alpha": {
+        "0.05": {
+          "target_coverage": 0.95,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.941299,
+            "mean_set_size": 1.815692,
+            "singleton_rate": 0.184308,
+            "two_label_rate": 0.815692,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.28038,
+            "singleton_false_negative_rate_per_case": 0.017401,
+            "singleton_false_positive_rate_per_case": 0.0413,
+            "hard_binary_error_rate": 0.379085,
+            "hard_false_negative_rate_per_case": 0.151772,
+            "hard_false_positive_rate_per_case": 0.227313,
+            "n_predictions_total": 5446,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.986174,
+                "conformal_policy_cost_per_case": 0.332227,
+                "cost_reduction_per_case": 0.653946,
+                "relative_cost_reduction": 0.622919
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.986174,
+                "conformal_policy_cost_per_case": 0.53615,
+                "cost_reduction_per_case": 0.450023,
+                "relative_cost_reduction": 0.379316
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.745034,
+                "conformal_policy_cost_per_case": 0.623154,
+                "cost_reduction_per_case": 1.121879,
+                "relative_cost_reduction": 0.56763
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.972729,
+                "mean_set_size": 1.825372,
+                "singleton_rate": 0.174628,
+                "two_label_rate": 0.825372,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.167498,
+                "hard_binary_error_rate": 0.270023,
+                "n_predictions_total": 1087
+              },
+              "1": {
+                "coverage": 0.943648,
+                "mean_set_size": 1.908143,
+                "singleton_rate": 0.091857,
+                "two_label_rate": 0.908143,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.562541,
+                "hard_binary_error_rate": 0.518233,
+                "n_predictions_total": 1985
+              },
+              "2": {
+                "coverage": 0.938161,
+                "mean_set_size": 1.773426,
+                "singleton_rate": 0.226574,
+                "two_label_rate": 0.773426,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.226669,
+                "hard_binary_error_rate": 0.291905,
+                "n_predictions_total": 2374
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.929487,
+            "mean_set_size": 1.791978,
+            "singleton_rate": 0.208022,
+            "two_label_rate": 0.791978,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.329636,
+            "singleton_false_negative_rate_per_case": 0.023578,
+            "singleton_false_positive_rate_per_case": 0.046934,
+            "hard_binary_error_rate": 0.379085,
+            "hard_false_negative_rate_per_case": 0.151772,
+            "hard_false_positive_rate_per_case": 0.227313,
+            "n_predictions_total": 5446,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.986174,
+                "conformal_policy_cost_per_case": 0.36282,
+                "cost_reduction_per_case": 0.623353,
+                "relative_cost_reduction": 0.59325
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.986174,
+                "conformal_policy_cost_per_case": 0.560815,
+                "cost_reduction_per_case": 0.425359,
+                "relative_cost_reduction": 0.357365
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.745034,
+                "conformal_policy_cost_per_case": 0.678706,
+                "cost_reduction_per_case": 1.066327,
+                "relative_cost_reduction": 0.540278
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.960562,
+                "mean_set_size": 1.791188,
+                "singleton_rate": 0.208812,
+                "two_label_rate": 0.791188,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.217486,
+                "hard_binary_error_rate": 0.270023,
+                "n_predictions_total": 1087
+              },
+              "1": {
+                "coverage": 0.918451,
+                "mean_set_size": 1.861396,
+                "singleton_rate": 0.138604,
+                "two_label_rate": 0.861396,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.512022,
+                "hard_binary_error_rate": 0.518233,
+                "n_predictions_total": 1985
+              },
+              "2": {
+                "coverage": 0.924422,
+                "mean_set_size": 1.74359,
+                "singleton_rate": 0.25641,
+                "two_label_rate": 0.74359,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.26056,
+                "hard_binary_error_rate": 0.291905,
+                "n_predictions_total": 2374
+              }
+            }
+          }
+        },
+        "0.10": {
+          "target_coverage": 0.9,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.913411,
+            "mean_set_size": 1.727256,
+            "singleton_rate": 0.272744,
+            "two_label_rate": 0.727256,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.294081,
+            "singleton_false_negative_rate_per_case": 0.029009,
+            "singleton_false_positive_rate_per_case": 0.057579,
+            "hard_binary_error_rate": 0.383633,
+            "hard_false_negative_rate_per_case": 0.170919,
+            "hard_false_positive_rate_per_case": 0.212714,
+            "n_predictions_total": 5775,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 1.067309,
+                "conformal_policy_cost_per_case": 0.38444,
+                "cost_reduction_per_case": 0.682869,
+                "relative_cost_reduction": 0.603578
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.067309,
+                "conformal_policy_cost_per_case": 0.566254,
+                "cost_reduction_per_case": 0.501055,
+                "relative_cost_reduction": 0.393136
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.921905,
+                "conformal_policy_cost_per_case": 0.711302,
+                "cost_reduction_per_case": 1.210603,
+                "relative_cost_reduction": 0.554094
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.94919,
+                "mean_set_size": 1.722214,
+                "singleton_rate": 0.277786,
+                "two_label_rate": 0.722214,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.200435,
+                "hard_binary_error_rate": 0.27695,
+                "n_predictions_total": 1165
+              },
+              "1": {
+                "coverage": 0.928577,
+                "mean_set_size": 1.860696,
+                "singleton_rate": 0.139304,
+                "two_label_rate": 0.860696,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.444933,
+                "hard_binary_error_rate": 0.512944,
+                "n_predictions_total": 2211
+              },
+              "2": {
+                "coverage": 0.908768,
+                "mean_set_size": 1.692898,
+                "singleton_rate": 0.307102,
+                "two_label_rate": 0.692898,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.275688,
+                "hard_binary_error_rate": 0.309039,
+                "n_predictions_total": 2399
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.917406,
+            "mean_set_size": 1.748909,
+            "singleton_rate": 0.251091,
+            "two_label_rate": 0.748909,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.315419,
+            "singleton_false_negative_rate_per_case": 0.024497,
+            "singleton_false_positive_rate_per_case": 0.058097,
+            "hard_binary_error_rate": 0.383633,
+            "hard_false_negative_rate_per_case": 0.170919,
+            "hard_false_positive_rate_per_case": 0.212714,
+            "n_predictions_total": 5775,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 1.067309,
+                "conformal_policy_cost_per_case": 0.36781,
+                "cost_reduction_per_case": 0.699499,
+                "relative_cost_reduction": 0.609048
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.067309,
+                "conformal_policy_cost_per_case": 0.555037,
+                "cost_reduction_per_case": 0.512272,
+                "relative_cost_reduction": 0.39597
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.921905,
+                "conformal_policy_cost_per_case": 0.677523,
+                "cost_reduction_per_case": 1.244381,
+                "relative_cost_reduction": 0.559418
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.957253,
+                "mean_set_size": 1.745633,
+                "singleton_rate": 0.254367,
+                "two_label_rate": 0.745633,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.206856,
+                "hard_binary_error_rate": 0.27695,
+                "n_predictions_total": 1165
+              },
+              "1": {
+                "coverage": 0.926449,
+                "mean_set_size": 1.852714,
+                "singleton_rate": 0.147286,
+                "two_label_rate": 0.852714,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.485991,
+                "hard_binary_error_rate": 0.512944,
+                "n_predictions_total": 2211
+              },
+              "2": {
+                "coverage": 0.908621,
+                "mean_set_size": 1.714137,
+                "singleton_rate": 0.285863,
+                "two_label_rate": 0.714137,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.334326,
+                "hard_binary_error_rate": 0.309039,
+                "n_predictions_total": 2399
+              }
+            }
+          }
+        },
+        "0.20": {
+          "target_coverage": 0.8,
+          "plain": {
+            "n_repeats_used": 60,
+            "coverage": 0.805881,
+            "mean_set_size": 1.435159,
+            "singleton_rate": 0.564841,
+            "two_label_rate": 0.435159,
+            "empty_rate": 0.0,
+            "singleton_error_rate": 0.332146,
+            "singleton_false_negative_rate_per_case": 0.068579,
+            "singleton_false_positive_rate_per_case": 0.12554,
+            "hard_binary_error_rate": 0.363598,
+            "hard_false_negative_rate_per_case": 0.136492,
+            "hard_false_positive_rate_per_case": 0.227106,
+            "n_predictions_total": 5662,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.909566,
+                "conformal_policy_cost_per_case": 0.577225,
+                "cost_reduction_per_case": 0.33234,
+                "relative_cost_reduction": 0.349932
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.909566,
+                "conformal_policy_cost_per_case": 0.686015,
+                "cost_reduction_per_case": 0.22355,
+                "relative_cost_reduction": 0.19112
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.592025,
+                "conformal_policy_cost_per_case": 1.028911,
+                "cost_reduction_per_case": 0.563114,
+                "relative_cost_reduction": 0.305947
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.89898,
+                "mean_set_size": 1.472443,
+                "singleton_rate": 0.527557,
+                "two_label_rate": 0.472443,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.166787,
+                "hard_binary_error_rate": 0.236382,
+                "n_predictions_total": 1056
+              },
+              "1": {
+                "coverage": 0.757299,
+                "mean_set_size": 1.544605,
+                "singleton_rate": 0.455395,
+                "two_label_rate": 0.544605,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.549542,
+                "hard_binary_error_rate": 0.496524,
+                "n_predictions_total": 2043
+              },
+              "2": {
+                "coverage": 0.82158,
+                "mean_set_size": 1.36709,
+                "singleton_rate": 0.63291,
+                "two_label_rate": 0.36709,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.290162,
+                "hard_binary_error_rate": 0.303841,
+                "n_predictions_total": 2563
+              }
+            }
+          },
+          "mechanism_band": {
+            "n_repeats_used": 60,
+            "coverage": 0.817584,
+            "mean_set_size": 1.485809,
+            "singleton_rate": 0.504905,
+            "two_label_rate": 0.490452,
+            "empty_rate": 0.004643,
+            "singleton_error_rate": 0.353609,
+            "singleton_false_negative_rate_per_case": 0.058607,
+            "singleton_false_positive_rate_per_case": 0.119165,
+            "hard_binary_error_rate": 0.363598,
+            "hard_false_negative_rate_per_case": 0.136492,
+            "hard_false_positive_rate_per_case": 0.227106,
+            "n_predictions_total": 5662,
+            "cost_scenarios": {
+              "fn5_fp1_review0.25": {
+                "always_classify_cost_per_case": 0.909566,
+                "conformal_policy_cost_per_case": 0.539458,
+                "cost_reduction_per_case": 0.370108,
+                "relative_cost_reduction": 0.388883
+              },
+              "fn5_fp1_review0.50": {
+                "always_classify_cost_per_case": 0.909566,
+                "conformal_policy_cost_per_case": 0.663231,
+                "cost_reduction_per_case": 0.246334,
+                "relative_cost_reduction": 0.211925
+              },
+              "fn10_fp1_review0.50": {
+                "always_classify_cost_per_case": 1.592025,
+                "conformal_policy_cost_per_case": 0.957428,
+                "cost_reduction_per_case": 0.634597,
+                "relative_cost_reduction": 0.346462
+              }
+            },
+            "by_mechanism_band": {
+              "0": {
+                "coverage": 0.912839,
+                "mean_set_size": 1.523009,
+                "singleton_rate": 0.472617,
+                "two_label_rate": 0.525196,
+                "empty_rate": 0.002187,
+                "singleton_error_rate": 0.158405,
+                "hard_binary_error_rate": 0.236382,
+                "n_predictions_total": 1056
+              },
+              "1": {
+                "coverage": 0.785995,
+                "mean_set_size": 1.611346,
+                "singleton_rate": 0.388654,
+                "two_label_rate": 0.611346,
+                "empty_rate": 0.0,
+                "singleton_error_rate": 0.540203,
+                "hard_binary_error_rate": 0.496524,
+                "n_predictions_total": 2043
+              },
+              "2": {
+                "coverage": 0.801903,
+                "mean_set_size": 1.359798,
+                "singleton_rate": 0.620014,
+                "two_label_rate": 0.369892,
+                "empty_rate": 0.010094,
+                "singleton_error_rate": 0.301295,
+                "hard_binary_error_rate": 0.303841,
+                "n_predictions_total": 2563
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
